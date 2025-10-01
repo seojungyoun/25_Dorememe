@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A862C422-D396-D99D-8183-55A2AEE72005}|VRPen.csproj|C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\assets\\vrpen\\vrpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A862C422-D396-D99D-8183-55A2AEE72005}|VRPen.csproj|solutionrelative:assets\\vrpen\\vrpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A862C422-D396-D99D-8183-55A2AEE72005}|VRPen.csproj|C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\assets\\vrpen\\vrpeninputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A862C422-D396-D99D-8183-55A2AEE72005}|VRPen.csproj|solutionrelative:assets\\vrpen\\vrpeninputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515BF6B1-8933-9436-4E2D-EC55AEA4AC98}|Assembly-CSharp.csproj|c:\\users\\belli\\desktop\\younnii\\25-2\\\uB514\uD5042\\dorememe2\\assets\\02 scripts\\clearexporthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515BF6B1-8933-9436-4E2D-EC55AEA4AC98}|Assembly-CSharp.csproj|solutionrelative:assets\\02 scripts\\clearexporthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515BF6B1-8933-9436-4E2D-EC55AEA4AC98}|Assembly-CSharp.csproj|c:\\users\\belli\\desktop\\younnii\\25-2\\\uB514\uD5042\\dorememe2\\assets\\clearexport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515BF6B1-8933-9436-4E2D-EC55AEA4AC98}|Assembly-CSharp.csproj|solutionrelative:assets\\clearexport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23C3FA1-8D60-FD7C-DC02-282B0F37925E}|VRPen.Editor.csproj|C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\assets\\vrpen\\editor\\vrpen.editor.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A23C3FA1-8D60-FD7C-DC02-282B0F37925E}|VRPen.Editor.csproj|solutionrelative:assets\\vrpen\\editor\\vrpen.editor.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClearExportHandler.cs",
+              "DocumentMoniker": "C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\Assets\\02 Scripts\\ClearExportHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\02 Scripts\\ClearExportHandler.cs",
+              "ToolTip": "C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\Assets\\02 Scripts\\ClearExportHandler.cs",
+              "RelativeToolTip": "Assets\\02 Scripts\\ClearExportHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T15:21:29.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VRPen.Editor.asmdef",
+              "DocumentMoniker": "C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\Assets\\VRPen\\Editor\\VRPen.Editor.asmdef",
+              "RelativeDocumentMoniker": "Assets\\VRPen\\Editor\\VRPen.Editor.asmdef",
+              "ToolTip": "C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\Assets\\VRPen\\Editor\\VRPen.Editor.asmdef",
+              "RelativeToolTip": "Assets\\VRPen\\Editor\\VRPen.Editor.asmdef",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001874|",
+              "WhenOpened": "2025-09-27T15:10:58.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClearExport.cs",
+              "DocumentMoniker": "C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\Assets\\ClearExport.cs",
+              "RelativeDocumentMoniker": "Assets\\ClearExport.cs",
+              "ToolTip": "C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\Assets\\ClearExport.cs",
+              "RelativeToolTip": "Assets\\ClearExport.cs",
+              "ViewState": "AgIAAFgBAAAAAAAAAAAiwHABAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T15:05:27.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VRPenInputActions.cs",
+              "DocumentMoniker": "C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\Assets\\VRPen\\VRPenInputActions.cs",
+              "RelativeDocumentMoniker": "Assets\\VRPen\\VRPenInputActions.cs",
+              "ToolTip": "C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\Assets\\VRPen\\VRPenInputActions.cs",
+              "RelativeToolTip": "Assets\\VRPen\\VRPenInputActions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T01:58:06.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VRPen.cs",
+              "DocumentMoniker": "C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\Assets\\VRPen\\VRPen.cs",
+              "RelativeDocumentMoniker": "Assets\\VRPen\\VRPen.cs",
+              "ToolTip": "C:\\Users\\belli\\Desktop\\younnii\\25-2\\\uB514\uD5042\\Dorememe2\\Assets\\VRPen\\VRPen.cs",
+              "RelativeToolTip": "Assets\\VRPen\\VRPen.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAqwNgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T01:49:44.979Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

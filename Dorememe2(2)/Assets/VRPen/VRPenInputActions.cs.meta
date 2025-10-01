@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: e47bf27f54354d7dbd00fcd676d3b390
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _asset: {fileID: -944628639613478452, guid: 0cd32b9045bfdd4438941f5a0b81ec9e,
+      type: 3}
+  - _drawAction: {fileID: 7584226106317088145, guid: 0cd32b9045bfdd4438941f5a0b81ec9e,
+      type: 3}
+  - _changeColorAction: {fileID: -5580063010216643958, guid: 0cd32b9045bfdd4438941f5a0b81ec9e,
+      type: 3}
+  - _menuToggle: {fileID: -6256314689932908566, guid: 0cd32b9045bfdd4438941f5a0b81ec9e,
+      type: 3}
+  - _menuUpDown: {fileID: -1495806055079534872, guid: 0cd32b9045bfdd4438941f5a0b81ec9e,
+      type: 3}
+  - _menuEnter: {fileID: 5368776607322103597, guid: 0cd32b9045bfdd4438941f5a0b81ec9e,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 294171
+  packageName: VR Pen
+  packageVersion: 1.0
+  assetPath: Assets/VRPen/VRPenInputActions.cs
+  uploadId: 713294
