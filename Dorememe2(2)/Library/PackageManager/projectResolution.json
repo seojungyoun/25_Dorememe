@@ -1,465 +1,355 @@
 {
   "context": {
     "projectPath": "C:/Users/belli/Documents/GitHub/25_Dorememe/Dorememe2(2)/Packages",
-    "unityVersion": "6000.2.3f1"
+    "unityVersion": "6000.0.29f1"
   },
   "inputs": [
     "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Packages\\manifest.json",
-    "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Packages\\packages-lock.json",
-    "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
+    "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Packages\\packages-lock.json"
   ],
   "outputs": {
     "com.unity.2d.sprite@1.0.0": {
       "name": "com.unity.2d.sprite",
-      "displayName": "2D Sprite",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.2d.sprite@331abd9a1e2f",
-      "fingerprint": "331abd9a1e2ff424a1ef2626e16936071ab7ce3d",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.2d.sprite",
+      "fingerprint": "0e70656ef5df5c7161c8cfc6f24ab0dde0dc637e",
       "editorCompatibility": "2019.2.0a1",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.2d.tilemap@1.0.0": {
       "name": "com.unity.2d.tilemap",
-      "displayName": "2D Tilemap Editor",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.2d.tilemap@ba4a6b72f451",
-      "fingerprint": "ba4a6b72f4518be32ffa911682e3c1f11de50354",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.2d.tilemap",
+      "fingerprint": "90fc3d022e139285a361c6ed808cb991b4d07184",
       "editorCompatibility": "2019.2.0a1",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.ads@4.4.2": {
       "name": "com.unity.ads",
-      "displayName": "Advertisement Legacy",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.ads@a7b997f68a1d",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.ads",
       "fingerprint": "a7b997f68a1d40387ca4d33fc75578709c140a37",
       "editorCompatibility": "2018.4.18f1",
       "version": "4.4.2",
-      "source": "registry",
-      "testable": false
+      "source": "registry"
     },
     "com.unity.ai.navigation@2.0.8": {
       "name": "com.unity.ai.navigation",
-      "displayName": "AI Navigation",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.ai.navigation@eb5635ad590d",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.ai.navigation",
       "fingerprint": "eb5635ad590d47cef2a5c920d9475cc222db3f67",
       "editorCompatibility": "6000.0.0a1",
       "version": "2.0.8",
-      "source": "registry",
-      "testable": false
+      "source": "registry"
     },
     "com.unity.analytics@3.8.1": {
       "name": "com.unity.analytics",
-      "displayName": "Analytics Library",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.analytics@6cc66d58ac08",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.analytics",
       "fingerprint": "6cc66d58ac08950316d3b86a26c92187aca1ddb0",
       "editorCompatibility": "2019.3.0a1",
       "version": "3.8.1",
-      "source": "registry",
-      "testable": false
+      "source": "registry"
     },
     "com.unity.collab-proxy@2.9.2": {
       "name": "com.unity.collab-proxy",
-      "displayName": "Unity Version Control",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.collab-proxy@8f3c30ecd081",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.collab-proxy",
       "fingerprint": "8f3c30ecd081c36da7c76793dbf29df18a0d828a",
       "editorCompatibility": "2021.3.0f1",
       "version": "2.9.2",
-      "source": "registry",
-      "testable": false
+      "source": "registry"
     },
     "com.unity.ide.rider@3.0.36": {
       "name": "com.unity.ide.rider",
-      "displayName": "JetBrains Rider Editor",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.ide.rider@4d374c7eb6db",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.ide.rider",
       "fingerprint": "4d374c7eb6db6907c7e6925e3086c3c73f926e13",
       "editorCompatibility": "2019.4.6f1",
       "version": "3.0.36",
-      "source": "registry",
-      "testable": false
+      "source": "registry"
     },
     "com.unity.ide.visualstudio@2.0.23": {
       "name": "com.unity.ide.visualstudio",
-      "displayName": "Visual Studio Editor",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.ide.visualstudio@198cdf337d13",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.ide.visualstudio",
       "fingerprint": "198cdf337d13c83ca953581515630d66b779e92b",
       "editorCompatibility": "2019.4.25f1",
       "version": "2.0.23",
       "source": "registry",
-      "testable": false
+      "errors": [
+        "The following dependencies could not be resolved:\n  com.unity.test-framework"
+      ]
     },
     "com.unity.multiplayer.center@1.0.0": {
       "name": "com.unity.multiplayer.center",
-      "displayName": "Multiplayer Center",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.multiplayer.center@f3fb577b3546",
-      "fingerprint": "f3fb577b3546594b97b8cc34307cd621f60f1c73",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.multiplayer.center",
+      "fingerprint": "f502d8ac613fa076192423e73892fbd89eb4049b",
       "editorCompatibility": "6000.0.0a1",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.purchasing@4.12.2": {
       "name": "com.unity.purchasing",
-      "displayName": "In App Purchasing",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.purchasing@649c6c7b3b1b",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.purchasing",
       "fingerprint": "649c6c7b3b1b6277839041f4987c0a1e66176678",
       "editorCompatibility": "2020.3.0a1",
       "version": "4.12.2",
-      "source": "registry",
-      "testable": false
-    },
-    "com.unity.test-framework@1.5.1": {
-      "name": "com.unity.test-framework",
-      "displayName": "Test Framework",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.test-framework@a6f5be5f149c",
-      "fingerprint": "a6f5be5f149c799640cce1ac6aa4057426adc0c7",
-      "editorCompatibility": "2022.3.0a1",
-      "version": "1.5.1",
-      "source": "builtin",
-      "testable": false
+      "source": "registry"
     },
     "com.unity.timeline@1.8.9": {
       "name": "com.unity.timeline",
-      "displayName": "Timeline",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.timeline@6b9e48457ddb",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.timeline",
       "fingerprint": "6b9e48457ddb4f64813d77fd77efc79a8f3102ae",
       "editorCompatibility": "2021.3.0a1",
       "version": "1.8.9",
-      "source": "registry",
-      "testable": false
+      "source": "registry"
     },
     "com.unity.ugui@2.0.0": {
       "name": "com.unity.ugui",
-      "displayName": "Unity UI",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.ugui@f33505fcd0e6",
-      "fingerprint": "f33505fcd0e66d6f57e0171cfd77214cf3f156d1",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.ugui",
+      "fingerprint": "b59254db9e7ca0cf2a9d3b7af4d6cad72c3acf44",
       "editorCompatibility": "2019.2.0a1",
       "version": "2.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.xr.legacyinputhelpers@2.1.12": {
       "name": "com.unity.xr.legacyinputhelpers",
-      "displayName": "XR Legacy Input Helpers",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.xr.legacyinputhelpers@b7579e86f3b4",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.xr.legacyinputhelpers",
       "fingerprint": "b7579e86f3b456c909fda6b875fba7ab1eeb1322",
       "editorCompatibility": "2019.4.0a1",
       "version": "2.1.12",
-      "source": "registry",
-      "testable": false
+      "source": "registry"
     },
     "com.unity.modules.accessibility@1.0.0": {
       "name": "com.unity.modules.accessibility",
-      "displayName": "Accessibility",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.accessibility",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.accessibility",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.ai@1.0.0": {
       "name": "com.unity.modules.ai",
-      "displayName": "AI",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.ai",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.ai",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.androidjni@1.0.0": {
       "name": "com.unity.modules.androidjni",
-      "displayName": "Android JNI",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.androidjni",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.androidjni",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.animation@1.0.0": {
       "name": "com.unity.modules.animation",
-      "displayName": "Animation",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.animation",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.animation",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.assetbundle@1.0.0": {
       "name": "com.unity.modules.assetbundle",
-      "displayName": "Asset Bundle",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.assetbundle",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.assetbundle",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.audio@1.0.0": {
       "name": "com.unity.modules.audio",
-      "displayName": "Audio",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.audio",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.audio",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.cloth@1.0.0": {
       "name": "com.unity.modules.cloth",
-      "displayName": "Cloth",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.cloth",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.cloth",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.director@1.0.0": {
       "name": "com.unity.modules.director",
-      "displayName": "Director",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.director",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.director",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.imageconversion@1.0.0": {
       "name": "com.unity.modules.imageconversion",
-      "displayName": "Image Conversion",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.imageconversion",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.imageconversion",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.imgui@1.0.0": {
       "name": "com.unity.modules.imgui",
-      "displayName": "IMGUI",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.imgui",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.imgui",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.jsonserialize@1.0.0": {
       "name": "com.unity.modules.jsonserialize",
-      "displayName": "JSONSerialize",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.jsonserialize",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.jsonserialize",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.particlesystem@1.0.0": {
       "name": "com.unity.modules.particlesystem",
-      "displayName": "Particle System",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.particlesystem",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.particlesystem",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.physics@1.0.0": {
       "name": "com.unity.modules.physics",
-      "displayName": "Physics",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.physics",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.physics",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.physics2d@1.0.0": {
       "name": "com.unity.modules.physics2d",
-      "displayName": "Physics 2D",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.physics2d",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.physics2d",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.screencapture@1.0.0": {
       "name": "com.unity.modules.screencapture",
-      "displayName": "Screen Capture",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.screencapture",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.screencapture",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.terrain@1.0.0": {
       "name": "com.unity.modules.terrain",
-      "displayName": "Terrain",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.terrain",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.terrain",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.terrainphysics@1.0.0": {
       "name": "com.unity.modules.terrainphysics",
-      "displayName": "Terrain Physics",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.terrainphysics",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.terrainphysics",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.tilemap@1.0.0": {
       "name": "com.unity.modules.tilemap",
-      "displayName": "Tilemap",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.tilemap",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.tilemap",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.ui@1.0.0": {
       "name": "com.unity.modules.ui",
-      "displayName": "UI",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.ui",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.ui",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.uielements@1.0.0": {
       "name": "com.unity.modules.uielements",
-      "displayName": "UIElements",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.uielements",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.uielements",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.umbra@1.0.0": {
       "name": "com.unity.modules.umbra",
-      "displayName": "Umbra",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.umbra",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.umbra",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.unityanalytics@1.0.0": {
       "name": "com.unity.modules.unityanalytics",
-      "displayName": "Unity Analytics",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unityanalytics",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.unityanalytics",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.unitywebrequest@1.0.0": {
       "name": "com.unity.modules.unitywebrequest",
-      "displayName": "Unity Web Request",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequest",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.unitywebrequest",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.unitywebrequestassetbundle@1.0.0": {
       "name": "com.unity.modules.unitywebrequestassetbundle",
-      "displayName": "Unity Web Request Asset Bundle",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequestassetbundle",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.unitywebrequestassetbundle",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.unitywebrequestaudio@1.0.0": {
       "name": "com.unity.modules.unitywebrequestaudio",
-      "displayName": "Unity Web Request Audio",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequestaudio",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.unitywebrequestaudio",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.unitywebrequesttexture@1.0.0": {
       "name": "com.unity.modules.unitywebrequesttexture",
-      "displayName": "Unity Web Request Texture",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequesttexture",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.unitywebrequesttexture",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.unitywebrequestwww@1.0.0": {
       "name": "com.unity.modules.unitywebrequestwww",
-      "displayName": "Unity Web Request WWW",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequestwww",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.unitywebrequestwww",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.vehicles@1.0.0": {
       "name": "com.unity.modules.vehicles",
-      "displayName": "Vehicles",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.vehicles",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.vehicles",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.video@1.0.0": {
       "name": "com.unity.modules.video",
-      "displayName": "Video",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.video",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.video",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.vr@1.0.0": {
       "name": "com.unity.modules.vr",
-      "displayName": "VR",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.vr",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.vr",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.wind@1.0.0": {
       "name": "com.unity.modules.wind",
-      "displayName": "Wind",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.wind",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.wind",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.xr@1.0.0": {
       "name": "com.unity.modules.xr",
-      "displayName": "XR",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.xr",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.xr",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.subsystems@1.0.0": {
       "name": "com.unity.modules.subsystems",
-      "displayName": "Subsystems",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.subsystems",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.subsystems",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
     },
     "com.unity.modules.hierarchycore@1.0.0": {
       "name": "com.unity.modules.hierarchycore",
-      "displayName": "Hierarchy Core",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.3f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.hierarchycore",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.modules.hierarchycore",
       "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
+      "source": "builtin"
+    },
+    "com.unity.services.core@1.13.0": {
+      "name": "com.unity.services.core",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.services.core",
+      "fingerprint": "ebe452e552b92964f64e438bdc2e6a7d850c66cc",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "1.13.0",
+      "source": "registry"
     },
     "com.unity.ext.nunit@2.0.5": {
       "name": "com.unity.ext.nunit",
-      "displayName": "Custom NUnit",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.ext.nunit@031a54704bff",
-      "fingerprint": "031a54704bffe39e6a0324909f8eaa4565bdebf2",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.ext.nunit",
+      "fingerprint": "60ef35ffd3cd5e2f5c8887a4a4ca6148854cd092",
       "editorCompatibility": "2019.4.0a1",
       "version": "2.0.5",
-      "source": "builtin",
-      "testable": false
+      "source": "registry"
     },
-    "com.unity.services.core@1.14.0": {
-      "name": "com.unity.services.core",
-      "displayName": "Services Core",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.services.core@9e81a5e38245",
-      "fingerprint": "9e81a5e382457b799480b311ce51187be99abbbf",
-      "editorCompatibility": "2021.3.0a1",
-      "version": "1.14.0",
-      "source": "registry",
-      "testable": false
-    },
-    "com.unity.services.analytics@6.1.0": {
+    "com.unity.services.analytics@6.0.1": {
       "name": "com.unity.services.analytics",
-      "displayName": "Analytics",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.services.analytics@10a9ca5d5622",
-      "fingerprint": "10a9ca5d56226d26b71614c3ee36a91aaa253b96",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.services.analytics",
+      "fingerprint": "f7e249983920dd67eba8952b09e37a6fe4582dd0",
       "editorCompatibility": "2021.3.0a1",
-      "version": "6.1.0",
-      "source": "registry",
-      "testable": false
+      "version": "6.0.1",
+      "source": "registry"
     },
     "com.unity.nuget.newtonsoft-json@3.2.1": {
       "name": "com.unity.nuget.newtonsoft-json",
-      "displayName": "Newtonsoft Json",
-      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json@74deb55db2a0",
+      "resolvedPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe2(2)\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json",
       "fingerprint": "74deb55db2a0c29ddfda576608bcb86abbd13ee6",
       "editorCompatibility": "2018.4.0a1",
       "version": "3.2.1",
-      "source": "registry",
-      "testable": false
+      "source": "registry"
     }
   }
 }
