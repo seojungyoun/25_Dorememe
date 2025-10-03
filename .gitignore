@@ -4,4 +4,5 @@
 [Bb]uild/
 [Uu]serSettings/
 Packages/PackageCache/
+Logs/
 .DS_Store
