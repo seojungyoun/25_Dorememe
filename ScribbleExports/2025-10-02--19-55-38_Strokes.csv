@@ -1,0 +1,4 @@
+StrokeIndex,ColorR,ColorG,ColorB,ColorA,BrushSize,Start_X,Start_Y,Start_Z,End_X,End_Y,End_Z
+
+--- Color Usage Statistics (RGB Only) ---
+UsedColor(RGB),Count
