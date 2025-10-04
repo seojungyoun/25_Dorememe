@@ -2,7 +2,10 @@
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
-[Uu]serSettings/
-Packages/PackageCache/
-Logs/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+Assets/AssetStoreTools*
+Packages/com.unity.collab-proxy/
 .DS_Store

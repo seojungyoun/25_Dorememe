@@ -1084,6 +1084,10 @@
       <HintPath>Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
+      <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
       <HintPath>Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll</HintPath>
       <Private>False</Private>
@@ -1400,15 +1404,23 @@
       <HintPath>Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
-      <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj">
+      <Project>{AC7AC0F5-DE88-A149-86C9-1337C9962320}</Project>
+      <Name>Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.csproj">
+      <Project>{C16A13E8-F24D-41BD-0966-02B738E7FB01}</Project>
+      <Name>Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.Hands.csproj">
       <Project>{BB5B3496-8566-760B-61CD-7392125B6F9E}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.Hands</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.VisionOS.Editor.csproj">
+      <Project>{089263F6-16C7-579C-2168-03429998F394}</Project>
+      <Name>Unity.XR.Interaction.Toolkit.Samples.VisionOS.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VRPen.Editor.csproj">
       <Project>{42A15397-D5BE-9380-DFA8-0EE0F21F53C6}</Project>
@@ -1418,13 +1430,29 @@
       <Project>{2C1B7E86-44C8-2FB7-1A44-755A0AC62B7D}</Project>
       <Name>VRPen</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.csproj">
+      <Project>{A20E280C-DFA2-D5B9-F896-D542A67C2705}</Project>
+      <Name>Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.Hands.Editor.csproj">
       <Project>{E57B55FF-B684-E756-0DA8-0087EC6B4A7F}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.Hands.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.csproj">
+      <Project>{205BAF82-9F43-5F21-43CF-E7AC8570950E}</Project>
+      <Name>Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj">
       <Project>{6BD31FED-BFE6-1C2F-E7E4-C4C721F0A952}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.StarterAssets</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.VisionOS.csproj">
+      <Project>{039B493B-A026-B7ED-6760-0A4C45D3ED9A}</Project>
+      <Name>Unity.XR.Interaction.Toolkit.Samples.VisionOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.csproj">
+      <Project>{E94F98FD-2964-8B05-65CA-2C3C9D044A1B}</Project>
+      <Name>Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj">
       <Project>{A6DE0C67-F9FA-E569-CBB5-A867B1C6959B}</Project>
