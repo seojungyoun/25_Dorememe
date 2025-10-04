@@ -1430,6 +1430,10 @@
       <Project>{2C1B7E86-44C8-2FB7-1A44-755A0AC62B7D}</Project>
       <Name>VRPen</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.Hands.Samples.VisualizerSample.csproj">
+      <Project>{DF6015B8-B8F8-A26B-F250-649A81520760}</Project>
+      <Name>Unity.XR.Hands.Samples.VisualizerSample</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.csproj">
       <Project>{A20E280C-DFA2-D5B9-F896-D542A67C2705}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard</Name>
