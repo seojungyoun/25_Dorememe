@@ -1,0 +1,435 @@
+Unity Editor version:    6000.0.29f1 (9fafe5c9db65)
+Branch:                  6000.0/release
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.6.1 (Build 24G90)
+Darwin version:          24.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/6000.0.29f1-arm64/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/parkseojeong/Desktop/Project/25_Dorememe/25_Dorememe/Dorememe3
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51585
+-job-worker-count
+3
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: /Users/parkseojeong/Desktop/Project/25_Dorememe/25_Dorememe/Dorememe3
+/Users/parkseojeong/Desktop/Project/25_Dorememe/25_Dorememe/Dorememe3
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8662343872]  Target information:
+
+Player connection [8662343872]  * "[IP] 172.30.104.118 [Port] 0 [Flags] 2 [Guid] 1752040851 [EditorId] 1752040851 [Version] 1048832 [Id] OSXEditor(0,bagseojeong-ui-MacBookPro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8662343872] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8662343872] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 16.34 ms, found 13 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.29f1 (9fafe5c9db65)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.0.29f1-arm64/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/parkseojeong/Desktop/Project/25_Dorememe/25_Dorememe/Dorememe3/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+ preferred device: Apple M1 Pro (high power)
+Metal devices available: 1
+0: Apple M1 Pro (high power)
+Using device Apple M1 Pro (high power)
+Initializing Metal device caps: Apple M1 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.29f1-arm64/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.29f1-arm64/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.0.29f1-arm64/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56977
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/6000.0.29f1-arm64/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000702 seconds.
+- Loaded All Assemblies, in  0.356 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.476 seconds
+Domain Reload Profiling: 832ms
+	BeginReloadAssembly (106ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (157ms)
+		LoadAssemblies (105ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (154ms)
+			TypeCache.Refresh (153ms)
+				TypeCache.ScanAssembly (140ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (476ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (428ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (233ms)
+			ProcessInitializeOnLoadMethodAttributes (140ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.786 seconds
+Refreshing native plugins compatible for Editor in 4.12 ms, found 13 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 4.54 ms, found 13 plugins.
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.TypeInitializationException: The type initializer for 'UnityEditor.XR.Interaction.Toolkit.Samples.VisionOS.Editor.VisionOSSampleProjectValidation' threw an exception. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.CoreUtils.Editor.PackageVersionUtility.UpdatePackageVersions () [0x00034] in ./Library/PackageCache/com.unity.xr.core-utils/Editor/ProjectValidation/PackageVersionUtility.cs:46 
+  at Unity.XR.CoreUtils.Editor.PackageVersionUtility.GetPackageVersion (System.String packageName) [0x00011] in ./Library/PackageCache/com.unity.xr.core-utils/Editor/ProjectValidation/PackageVersionUtility.cs:67 
+  at UnityEditor.XR.Interaction.Toolkit.Samples.VisionOS.Editor.VisionOSSampleProjectValidation..cctor () [0x00032] in /Users/parkseojeong/Desktop/Project/25_Dorememe/25_Dorememe/Dorememe3/Assets/Samples/XR Interaction Toolkit/3.0.8/visionOS/Editor/Scripts/VisionOSSampleProjectValidation.cs:32 
+   --- End of inner exception stack trace ---
+  at (wrapper managed-to-native) System.Object.__icall_wrapper_mono_gc_wbarrier_generic_nostore_internal(intptr)
+  at (wrapper write-barrier) System.Object.wbarrier_conc(intptr)
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <3aacbe608a2f468eb6bb1c15e219490d>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <3aacbe608a2f468eb6bb1c15e219490d>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <3aacbe608a2f468eb6bb1c15e219490d>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:142 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:146)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 146)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.PolySpatial.PolySpatialSettings.LoadPackageVersion () [0x0003c] in ./Library/PackageCache/com.unity.polyspatial/Runtime/Public/PolySpatialSettingsForEditor.cs:243 
+  at Unity.PolySpatial.PolySpatialSettings.InitializeInEditor () [0x00007] in ./Library/PackageCache/com.unity.polyspatial/Runtime/Public/PolySpatialSettingsForEditor.cs:225 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <3aacbe608a2f468eb6bb1c15e219490d>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <3aacbe608a2f468eb6bb1c15e219490d>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <3aacbe608a2f468eb6bb1c15e219490d>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:142 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:146)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 146)
+
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.921 seconds
+Domain Reload Profiling: 1707ms
+	BeginReloadAssembly (108ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (592ms)
+		LoadAssemblies (262ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (372ms)
+			TypeCache.Refresh (281ms)
+				TypeCache.ScanAssembly (257ms)
+			BuildScriptInfoCaches (74ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (921ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (798ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (538ms)
+			ProcessInitializeOnLoadMethodAttributes (162ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Launching external process: /Applications/Unity/Hub/Editor/6000.0.29f1-arm64/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 4.71 ms, found 13 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 190 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7036 unused Assets / (6.7 MB). Loaded Objects now: 7745.
+Memory consumption went from 171.1 MB to 164.4 MB.
+Total: 9.571000 ms (FindLiveObjects: 0.641416 ms CreateObjectMapping: 0.237708 ms MarkObjects: 5.091375 ms  DeleteObjects: 3.599750 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 12221.288277 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Mesh.shadergraph
+  artifactKey: Guid(6fea08e8012f2429ba5abec01e96cd09) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Mesh.shadergraph using Guid(6fea08e8012f2429ba5abec01e96cd09) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e201e484c7901dccbb91c69512710678') in 1.15980975 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureLit_Billboard.shadergraph
+  artifactKey: Guid(68bef0c5500b8cf439431d81909e0910) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureLit_Billboard.shadergraph using Guid(68bef0c5500b8cf439431d81909e0910) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '92c4ed50bfc5e728598cb9448e62bbce') in 0.625787417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureLit.shadergraph
+  artifactKey: Guid(51929eb02e0924745ab9abffd92a7e38) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureLit.shadergraph using Guid(51929eb02e0924745ab9abffd92a7e38) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'a4fdd47c0825dd983def7fa2d07c4e44') in 0.346463417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008437 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Billboard.shadergraph
+  artifactKey: Guid(de75a75b3c9f4874ba2da0963f9eceec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Billboard.shadergraph using Guid(de75a75b3c9f4874ba2da0963f9eceec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '7cb32b4b0983068c76147dd294e88441') in 0.617248042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003713 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/LitBakedMeshParticles.shadergraph
+  artifactKey: Guid(5289589c1ffa042cda01bb4f48f557b9) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/LitBakedMeshParticles.shadergraph using Guid(5289589c1ffa042cda01bb4f48f557b9) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '330e7f4590b617d8ed8554768d3ab1f1') in 0.042683292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/TextSDFSmoothstep.shadergraph
+  artifactKey: Guid(37a4366187364499d9e9ef99ee64e3e7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/TextSDFSmoothstep.shadergraph using Guid(37a4366187364499d9e9ef99ee64e3e7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '4288d6eb160b9b95e6f8d072c8a813b7') in 0.049423375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureUnlit.shadergraph
+  artifactKey: Guid(4a33372903b7d374ca51ba81da42d89d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureUnlit.shadergraph using Guid(4a33372903b7d374ca51ba81da42d89d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'fe836e5073f51b68bc5509d3badc634c') in 0.338136667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/MaskingShader.shadergraph
+  artifactKey: Guid(7f7cb649f1ab84e65be9bf2a547029e4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/MaskingShader.shadergraph using Guid(7f7cb649f1ab84e65be9bf2a547029e4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '6b42da4e38f02ee4d876e59f85cc51fe') in 0.034676334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.058601 seconds.
+  path: Assets/Demo(2).unity
+  artifactKey: Guid(12c3258f2612b438f8e357d392991c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo(2).unity using Guid(12c3258f2612b438f8e357d392991c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'efbe1489090404df1da5e0c2b69dbe1a') in 0.000867542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x31ea8b000 may have been prematurely finalized
+DirectoryNotFoundException: Could not find a part of the path "/Users/parkseojeong/Desktop/Project/25_Dorememe/25_Dorememe/Dorememe3/Packages/com.unity.transport/Analyzers/Unity.Transport.Analyzers.dll".
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00164] in <3aacbe608a2f468eb6bb1c15e219490d>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <3aacbe608a2f468eb6bb1c15e219490d>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at Mono.Cecil.ModuleDefinition.GetFileStream (System.String fileName, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00006] in <a6860a9f6366437387ebdc1f225b7fd4>:0 
+  at Mono.Cecil.ModuleDefinition.ReadModule (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00008] in <a6860a9f6366437387ebdc1f225b7fd4>:0 
+  at Mono.Cecil.AssemblyDefinition.ReadAssembly (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00000] in <a6860a9f6366437387ebdc1f225b7fd4>:0 
+  at UnityEditor.AssemblyValidation.ValidateRoslynAnalyzers (System.String[] analyzerPaths) [0x00025] in /Users/bokken/build/output/unity/unity/Editor/Mono/AssemblyValidation.cs:146 
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/AssemblyValidation.cs Line: 146)
+
+- Loaded All Assemblies, in  0.899 seconds
+Refreshing native plugins compatible for Editor in 3.37 ms, found 11 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.TypeInitializationException: The type initializer for 'UnityEditor.XR.Interaction.Toolkit.Samples.VisionOS.Editor.VisionOSSampleProjectValidation' threw an exception. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.CoreUtils.Editor.PackageVersionUtility.UpdatePackageVersions () [0x00034] in ./Library/PackageCache/com.unity.xr.core-utils/Editor/ProjectValidation/PackageVersionUtility.cs:46 
+  at Unity.XR.CoreUtils.Editor.PackageVersionUtility.GetPackageVersion (System.String packageName) [0x00011] in ./Library/PackageCache/com.unity.xr.core-utils/Editor/ProjectValidation/PackageVersionUtility.cs:67 
+  at UnityEditor.XR.Interaction.Toolkit.Samples.VisionOS.Editor.VisionOSSampleProjectValidation..cctor () [0x00032] in /Users/parkseojeong/Desktop/Project/25_Dorememe/25_Dorememe/Dorememe3/Assets/Samples/XR Interaction Toolkit/3.0.8/visionOS/Editor/Scripts/VisionOSSampleProjectValidation.cs:32 
+   --- End of inner exception stack trace ---
+  at (wrapper managed-to-native) System.Object.__icall_wrapper_mono_gc_wbarrier_generic_nostore_internal(intptr)
+  at (wrapper write-barrier) System.Object.wbarrier_conc(intptr)
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <3aacbe608a2f468eb6bb1c15e219490d>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <3aacbe608a2f468eb6bb1c15e219490d>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <3aacbe608a2f468eb6bb1c15e219490d>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:142 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:146)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 146)
+
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.972 seconds
+Domain Reload Profiling: 1873ms
+	BeginReloadAssembly (270ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (139ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (546ms)
+		LoadAssemblies (299ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (303ms)
+			TypeCache.Refresh (135ms)
+				TypeCache.ScanAssembly (117ms)
+			BuildScriptInfoCaches (152ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (972ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (775ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (148ms)
+			ProcessInitializeOnLoadAttributes (491ms)
+			ProcessInitializeOnLoadMethodAttributes (124ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 4.08 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6337 unused Assets / (6.9 MB). Loaded Objects now: 7041.
+Memory consumption went from 173.6 MB to 166.7 MB.
+Total: 9.220583 ms (FindLiveObjects: 0.345709 ms CreateObjectMapping: 0.209833 ms MarkObjects: 4.846375 ms  DeleteObjects: 3.817792 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 22.800051 seconds.
+  path: Assets/Demo(2) 1.unity
+  artifactKey: Guid(826e27d429bd6463b93f39ffc6fbd56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo(2) 1.unity using Guid(826e27d429bd6463b93f39ffc6fbd56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3975f3700bac2e1bcfbfa82ee5644252') in 0.001269166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.206899 seconds.
+  path: Assets/Demo1.unity
+  artifactKey: Guid(826e27d429bd6463b93f39ffc6fbd56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo1.unity using Guid(826e27d429bd6463b93f39ffc6fbd56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a11e2e0999072a4a01760b1e78a49cdb') in 0.000386 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.947856 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(1330da88c012746c88ce79cbf90255f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(1330da88c012746c88ce79cbf90255f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e791fbc35a75ba8813b1785c0afaee11') in 0.001617834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
