@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 5e0ddf9626cf4eb6b48b83329c5e1527
+timeCreated: 1684693921
+AssetOrigin:
+  serializedVersion: 1
+  productId: 294171
+  packageName: VR Pen
+  packageVersion: 1.0
+  assetPath: Assets/VRPen/VRPenLegacyInput.cs
+  uploadId: 713294
