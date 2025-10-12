@@ -13,7 +13,6 @@ namespace VRPenNamespace
         public Quaternion BrushRotation = Quaternion.identity;
         public Material BrushMaterial;
 
-        // ⭐ 1. Undo 횟수 카운터 추가
         public int UndoCount { get; private set; } = 0;
 
         private Matrix4x4 _matrix;
@@ -28,8 +27,20 @@ namespace VRPenNamespace
         public void Start()
         {
             _matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, Vector3.one);
+            InitPenMesh();
 
-            _penMesh = new Mesh();
+            _brushPB ??= new MaterialPropertyBlock();
+            _brushPB.SetColor(_Color, BrushColor);
+        }
+
+        public void InitPenMesh()
+        {
+            if (_penMesh == null)
+            {
+                _penMesh = new Mesh();
+            }
+
+            _penMesh.Clear();
 
             var shift = BrushSize;
 
@@ -57,9 +68,7 @@ namespace VRPenNamespace
             };
 
             _penMesh.colors = Enumerable.Repeat(Color.white, _penMesh.vertexCount).ToArray();
-
-            _brushPB ??= new MaterialPropertyBlock();
-            _brushPB.SetColor(_Color, BrushColor);
+            _penMesh.RecalculateNormals();
         }
 
         internal void NewStroke(Color color, bool load)
@@ -68,7 +77,9 @@ namespace VRPenNamespace
             _currentMesh.Stroke = new VRPen.Stroke()
             {
                 Color = color,
-                Points = new List<Vector3>()
+                Points = new List<Vector3>(),
+                BrushSize = BrushSize,
+                BrushAlpha = color.a
             };
 
             if (!load)
@@ -123,7 +134,6 @@ namespace VRPenNamespace
                     _currentMesh = null;
                 }
 
-                // ⭐ 2. Undo 횟수 증가
                 UndoCount++;
             }
         }
@@ -237,6 +247,9 @@ namespace VRPenNamespace
                 tris.Clear();
                 colors.Clear();
 
+                Color meshColor = Stroke.Color;
+                meshColor.a = Stroke.BrushAlpha;
+
                 for (int i = 0; i < dirs.Count; i++)
                 {
                     vertex.Add(dirs[i].pos - dirs[i].left * _shift);
@@ -244,10 +257,10 @@ namespace VRPenNamespace
                     vertex.Add(dirs[i].pos + dirs[i].left * _shift);
                     vertex.Add(dirs[i].pos - dirs[i].up * _shift);
 
-                    colors.Add(Stroke.Color);
-                    colors.Add(Stroke.Color);
-                    colors.Add(Stroke.Color);
-                    colors.Add(Stroke.Color);
+                    colors.Add(meshColor);
+                    colors.Add(meshColor);
+                    colors.Add(meshColor);
+                    colors.Add(meshColor);
                 }
 
                 for (int i = 0; i < vertex.Count - 4; i += 4)

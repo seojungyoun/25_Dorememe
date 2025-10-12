@@ -1,23 +1,26 @@
 Shader "Unlit/PenShader"
-{    
+{
     Properties {
         [PerRendererData] _Color ("Color", Color) = (1,1,1,1)
-        }
+    }
     SubShader
     {
         Tags
         {
-            "RenderType"="Opaque"
+            "RenderType"="Transparent"
+            "Queue"="Transparent"
         }
         LOD 100
         Cull Off
         
         Pass
         {
+            Blend SrcAlpha OneMinusSrcAlpha
+            
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            #pragma multi_compile_fog            
+            #pragma multi_compile_fog          
 
             #include "UnityCG.cginc"
 
@@ -57,6 +60,7 @@ Shader "Unlit/PenShader"
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
                 
                 fixed4 col = i.color * _Color;
+                
                 return col;
             }
             ENDCG

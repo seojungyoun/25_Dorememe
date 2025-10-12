@@ -22,6 +22,7 @@ namespace VRPenNamespace
         [SerializeField] private float _paintDelay = 0.5f;
         [SerializeField] public Material _material;
         [SerializeField] public float _brushSize = 0.02f;
+        [SerializeField] public float _brushAlpha = 1.0f;
 
         private bool _drawing;
 
@@ -61,6 +62,24 @@ namespace VRPenNamespace
         {
             _colorIndex++;
             _colorIndex %= _colors.Length;
+
+            Color newColor = _colors[_colorIndex];
+            newColor.a = _brushAlpha;
+            _core.SetColor(newColor);
+        }
+
+        public void SetBrushSize(float newSize)
+        {
+            _brushSize = newSize;
+        }
+
+        public void SetBrushAlpha(float newAlpha)
+        {
+            _brushAlpha = newAlpha;
+
+            Color currentColor = _colors[_colorIndex];
+            currentColor.a = _brushAlpha;
+            _core.SetColor(currentColor);
         }
 
         private void InitCore()
@@ -68,7 +87,9 @@ namespace VRPenNamespace
             if (_core == null)
             {
                 _core = new VRPenCore();
-                _core.BrushColor = _colors[0];
+                Color initialColor = _colors[0];
+                initialColor.a = _brushAlpha;
+                _core.BrushColor = initialColor;
                 _core.BrushSize = _brushSize;
                 _core.BrushMaterial = _material;
                 _core.Start();
@@ -79,6 +100,12 @@ namespace VRPenNamespace
         {
             InitCore();
             _core.Draw();
+
+            if (Mathf.Abs(_core.BrushSize - _brushSize) > 0.0001f)
+            {
+                _core.BrushSize = _brushSize;
+                _core.InitPenMesh();
+            }
 
             if (!Application.isPlaying) return;
 
@@ -103,7 +130,6 @@ namespace VRPenNamespace
             if (_input.ChangeColor)
             {
                 ChangeColor();
-                _core.SetColor(_colors[_colorIndex]);
             }
 
             var drawing = _input.IsDrawing;
@@ -113,7 +139,9 @@ namespace VRPenNamespace
                 _drawing = drawing;
                 if (drawing)
                 {
-                    _core.NewStroke(_colors[_colorIndex], false);
+                    Color strokeColor = _colors[_colorIndex];
+                    strokeColor.a = _brushAlpha;
+                    _core.NewStroke(strokeColor, false);
                     _lastPosition = _brushPoint.position;
                     _lastTime = Time.time;
                     OnNewStroke?.Invoke();
@@ -350,7 +378,7 @@ end_header");
 
             sb.AppendLine();
 
-            sb.AppendLine("Stroke Index,Color R,Color G,Color B,Luminance,Brush Size,Start X,Start Y,Start Z,End X,End Y,End Z");
+            sb.AppendLine("Stroke Index,Color R,Color G,Color B,Alpha,Transparency,Brush Size,Start X,Start Y,Start Z,End X,End Y,End Z");
 
             for (int i = 0; i < _core._strokeMeshes.Count; i++)
             {
@@ -363,14 +391,13 @@ end_header");
                 Vector3 start = stroke.Points.First();
                 Vector3 end = stroke.Points.Last();
 
-                sb.AppendLine($"{i + 1},{c.r:F3},{c.g:F3},{c.b:F3},{luminance:F3},{_core.BrushSize:F4},{start.x:F4},{start.y:F4},{start.z:F4},{end.x:F4},{end.y:F4},{end.z:F4}");
+                sb.AppendLine($"{i + 1},{c.r:F3},{c.g:F3},{c.b:F3},{stroke.BrushAlpha:F3},{luminance:F3},{stroke.BrushSize:F4},{start.x:F4},{start.y:F4},{start.z:F4},{end.x:F4},{end.y:F4},{end.z:F4}");
             }
 
             sb.AppendLine();
 
             sb.AppendLine($"Undo Count,{_core.UndoCount}");
 
-            // --- 저장 경로 수정 ---
             string exportDir = Path.Combine(Application.persistentDataPath, "ScribbleExports");
             Directory.CreateDirectory(exportDir);
 
@@ -402,17 +429,19 @@ end_header");
             var bounds = new Bounds();
             bool hasBounds = false;
 
-            foreach (var stroke in _core._strokeMeshes)
+            foreach (var strokeMesh in _core._strokeMeshes)
             {
-                if (stroke == null) continue;
+                if (strokeMesh == null) continue;
 
                 var astroke = new Stroke();
-                astroke.Color = stroke.Stroke.Color;
+                astroke.Color = strokeMesh.Stroke.Color;
                 astroke.Points = new List<Vector3>();
+                astroke.BrushSize = strokeMesh.Stroke.BrushSize;
+                astroke.BrushAlpha = strokeMesh.Stroke.BrushAlpha;
 
-                for (int i = 0; i < stroke.Stroke.Points.Count; i++)
+                for (int i = 0; i < strokeMesh.Stroke.Points.Count; i++)
                 {
-                    var p = stroke.Stroke.Points[i];
+                    var p = strokeMesh.Stroke.Points[i];
                     astroke.Points.Add(p);
                     if (!hasBounds)
                     {
@@ -422,7 +451,7 @@ end_header");
                     bounds.Encapsulate(p);
                 }
 
-                Scribble.Strokes.Add(stroke.Stroke);
+                Scribble.Strokes.Add(strokeMesh.Stroke);
             }
 
             Scribble.Bounds = bounds;
@@ -432,7 +461,9 @@ end_header");
         {
             if (_brushPoint != null && _colors != null && _colorIndex < _colors.Length)
             {
-                Gizmos.color = _colors[_colorIndex];
+                Color gizmoColor = _colors[_colorIndex];
+                gizmoColor.a = _brushAlpha;
+                Gizmos.color = gizmoColor;
                 Gizmos.DrawSphere(_brushPoint.position, 0.01f);
             }
         }
@@ -442,6 +473,8 @@ end_header");
         {
             public Color Color;
             public List<Vector3> Points;
+            public float BrushSize;
+            public float BrushAlpha;
         }
     }
 
