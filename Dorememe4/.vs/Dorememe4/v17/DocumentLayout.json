@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{688203C3-D1BC-7504-26C6-4DDE4269D090}|VRPen.csproj|C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\assets\\vrpen\\vrpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{688203C3-D1BC-7504-26C6-4DDE4269D090}|VRPen.csproj|c:\\users\\belli\\documents\\github\\25_dorememe\\dorememe4\\assets\\vrpen\\vrpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{688203C3-D1BC-7504-26C6-4DDE4269D090}|VRPen.csproj|solutionrelative:assets\\vrpen\\vrpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,15 +11,15 @@
       "RelativeMoniker": "D:0:0:{688203C3-D1BC-7504-26C6-4DDE4269D090}|VRPen.csproj|solutionrelative:assets\\vrpen\\vrpencore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{688203C3-D1BC-7504-26C6-4DDE4269D090}|VRPen.csproj|c:\\users\\belli\\documents\\github\\25_dorememe\\dorememe4\\assets\\vrpen\\penshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "AbsoluteMoniker": "D:0:0:{688203C3-D1BC-7504-26C6-4DDE4269D090}|VRPen.csproj|C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\assets\\vrpen\\penshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{688203C3-D1BC-7504-26C6-4DDE4269D090}|VRPen.csproj|solutionrelative:assets\\vrpen\\penshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{688203C3-D1BC-7504-26C6-4DDE4269D090}|VRPen.csproj|c:\\users\\belli\\documents\\github\\25_dorememe\\dorememe4\\assets\\vrpen\\vrpeninputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{688203C3-D1BC-7504-26C6-4DDE4269D090}|VRPen.csproj|C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\assets\\vrpen\\vrpeninputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{688203C3-D1BC-7504-26C6-4DDE4269D090}|VRPen.csproj|solutionrelative:assets\\vrpen\\vrpeninputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|Assembly-CSharp.csproj|c:\\users\\belli\\documents\\github\\25_dorememe\\dorememe4\\assets\\02 scripts\\scenechange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|Assembly-CSharp.csproj|C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\assets\\02 scripts\\scenechange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|Assembly-CSharp.csproj|solutionrelative:assets\\02 scripts\\scenechange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -58,8 +58,7 @@
               "RelativeToolTip": "Assets\\VRPen\\PenShader.shader",
               "ViewState": "AgIAAC0AAAAAAAAAAAAUwEQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-10-12T04:42:33.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-12T04:42:33.964Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "Assets\\02 Scripts\\SceneChange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T02:54:31.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-12T02:54:31.904Z"
             },
             {
               "$type": "Document",
@@ -96,8 +94,7 @@
               "RelativeToolTip": "Assets\\VRPen\\VRPenInputActions.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAUwDIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T08:04:43.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T08:04:43.685Z"
             },
             {
               "$type": "Document",
@@ -109,8 +106,7 @@
               "RelativeToolTip": "Assets\\VRPen\\VRPenCore.cs",
               "ViewState": "AgIAAE8BAAAAAAAAAAAgwGUBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T08:00:23.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T08:00:23.254Z"
             },
             {
               "$type": "Document",
@@ -132,7 +128,7 @@
               "RelativeDocumentMoniker": "Assets\\VRPen\\VRPen.cs",
               "ToolTip": "C:\\Users\\belli\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\VRPen.cs",
               "RelativeToolTip": "Assets\\VRPen\\VRPen.cs",
-              "ViewState": "AgIAAG8BAAAAAAAAAAAYwIABAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAADgBAAAAAAAAAAAkwEgBAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-11T07:53:00.179Z",
               "EditorCaption": ""
