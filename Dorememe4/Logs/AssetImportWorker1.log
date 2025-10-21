@@ -15,7 +15,7 @@ C:/Users/silvi/OneDrive/ë°”íƒ• í™”ë©´/Project/25_Dorememe/Dorememe4
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-53243
+58273
 -job-worker-count
 3
 -background-job-worker-count
@@ -59,12 +59,12 @@ C:/Users/silvi/OneDrive/ë°”íƒ• í™”ë©´/Project/25_Dorememe/Dorememe4
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [40996]  Target information:
+Player connection [54084]  Target information:
 
-Player connection [40996]  * "[IP] 192.168.45.226 [Port] 0 [Flags] 2 [Guid] 381877508 [EditorId] 381877508 [Version] 1048832 [Id] WindowsEditor(7,¹Ú¼­Á¤) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [54084]  * "[IP] 192.168.45.226 [Port] 0 [Flags] 2 [Guid] 2364825190 [EditorId] 2364825190 [Version] 1048832 [Id] WindowsEditor(7,¹Ú¼­Á¤) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [40996] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [40996] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [54084] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [54084] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,9 +75,9 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 717.98 ms, found 18 plugins.
+Refreshing native plugins compatible for Editor in 368.77 ms, found 18 plugins.
 Unity memory allocator detected: MetaXRAudio native memory allocations will be tracked.
-Preloading 3 native plugins for Editor in 28.28 ms.
+Preloading 3 native plugins for Editor in 41.20 ms.
 Initialize engine version: 6000.0.29f1 (9fafe5c9db65)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/silvi/OneDrive/ë°”íƒ• í™”ë©´/Project/25_Dorememe/Dorememe4/Assets
@@ -94,61 +94,61 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56892
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.088089 seconds.
-- Loaded All Assemblies, in  6.752 seconds
+Registered in 0.027722 seconds.
+- Loaded All Assemblies, in  3.099 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1972 ms
+Android Extension - Scanning For ADB Devices 4278 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.346 seconds
-Domain Reload Profiling: 12052ms
-	BeginReloadAssembly (3257ms)
+- Finished resetting the current domain, in  8.085 seconds
+Domain Reload Profiling: 11171ms
+	BeginReloadAssembly (971ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (5ms)
-	RebuildCommonClasses (758ms)
-	RebuildNativeTypeToScriptingClass (131ms)
-	initialDomainReloadingComplete (690ms)
-	LoadAllAssembliesAndSetupDomain (1866ms)
-		LoadAssemblies (3226ms)
+		CreateAndSetChildDomain (9ms)
+	RebuildCommonClasses (202ms)
+	RebuildNativeTypeToScriptingClass (65ms)
+	initialDomainReloadingComplete (258ms)
+	LoadAllAssembliesAndSetupDomain (1587ms)
+		LoadAssemblies (929ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1837ms)
-			TypeCache.Refresh (1831ms)
-				TypeCache.ScanAssembly (1700ms)
+		AnalyzeDomain (1575ms)
+			TypeCache.Refresh (1566ms)
+				TypeCache.ScanAssembly (1473ms)
 			BuildScriptInfoCaches (1ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (5351ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (8088ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (4716ms)
+		SetupLoadedEditorAssemblies (7575ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2746ms)
-			SetLoadedEditorAssemblies (37ms)
-			BeforeProcessingInitializeOnLoad (57ms)
-			ProcessInitializeOnLoadAttributes (1227ms)
-			ProcessInitializeOnLoadMethodAttributes (520ms)
-			AfterProcessingInitializeOnLoad (129ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (5437ms)
+			SetLoadedEditorAssemblies (80ms)
+			BeforeProcessingInitializeOnLoad (134ms)
+			ProcessInitializeOnLoadAttributes (1525ms)
+			ProcessInitializeOnLoadMethodAttributes (385ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  7.936 seconds
+- Loaded All Assemblies, in 13.143 seconds
 Script 'CharacterController' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 335.88 ms, found 18 plugins.
+Refreshing native plugins compatible for Editor in 431.35 ms, found 18 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
@@ -158,7 +158,7 @@ Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 319.55 ms, found 18 plugins.
+Refreshing native plugins compatible for Editor in 279.93 ms, found 18 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -189,167 +189,898 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in 15.234 seconds
-Domain Reload Profiling: 23049ms
-	BeginReloadAssembly (1010ms)
+- Finished resetting the current domain, in  8.846 seconds
+Domain Reload Profiling: 21894ms
+	BeginReloadAssembly (2779ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (39ms)
+		DisableScriptedObjects (1072ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (151ms)
-	RebuildCommonClasses (193ms)
-	RebuildNativeTypeToScriptingClass (64ms)
-	initialDomainReloadingComplete (245ms)
-	LoadAllAssembliesAndSetupDomain (6300ms)
-		LoadAssemblies (4317ms)
+		CreateAndSetChildDomain (204ms)
+	RebuildCommonClasses (953ms)
+	RebuildNativeTypeToScriptingClass (176ms)
+	initialDomainReloadingComplete (338ms)
+	LoadAllAssembliesAndSetupDomain (8801ms)
+		LoadAssemblies (7070ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (2613ms)
-			TypeCache.Refresh (1856ms)
-				TypeCache.ScanAssembly (1668ms)
-			BuildScriptInfoCaches (630ms)
-			ResolveRequiredComponents (115ms)
-	FinalizeReload (15237ms)
+		AnalyzeDomain (2847ms)
+			TypeCache.Refresh (1330ms)
+				TypeCache.ScanAssembly (1240ms)
+			BuildScriptInfoCaches (1042ms)
+			ResolveRequiredComponents (458ms)
+	FinalizeReload (8848ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (13798ms)
+		SetupLoadedEditorAssemblies (7077ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (131ms)
-			SetLoadedEditorAssemblies (121ms)
-			BeforeProcessingInitializeOnLoad (2403ms)
-			ProcessInitializeOnLoadAttributes (10185ms)
-			ProcessInitializeOnLoadMethodAttributes (897ms)
-			AfterProcessingInitializeOnLoad (58ms)
-			EditorAssembliesLoaded (2ms)
+			InitializePlatformSupportModulesInManaged (65ms)
+			SetLoadedEditorAssemblies (64ms)
+			BeforeProcessingInitializeOnLoad (1146ms)
+			ProcessInitializeOnLoadAttributes (5269ms)
+			ProcessInitializeOnLoadMethodAttributes (505ms)
+			AfterProcessingInitializeOnLoad (27ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (29ms)
+		AwakeInstancesAfterBackupRestoration (34ms)
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 450.25 ms, found 18 plugins.
-Preloading 3 native plugins for Editor in 1.13 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 224.04 ms, found 18 plugins.
+Preloading 3 native plugins for Editor in 0.68 ms.
 Unloading 310 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 8720 unused Assets / (8.6 MB). Loaded Objects now: 9512.
-Memory consumption went from 217.6 MB to 209.1 MB.
-Total: 410.174500 ms (FindLiveObjects: 35.053800 ms CreateObjectMapping: 11.298000 ms MarkObjects: 327.322400 ms  DeleteObjects: 36.492600 ms)
+Unloading 8724 unused Assets / (7.5 MB). Loaded Objects now: 9521.
+Memory consumption went from 219.0 MB to 211.5 MB.
+Total: 41.118100 ms (FindLiveObjects: 1.225000 ms CreateObjectMapping: 1.202800 ms MarkObjects: 31.750400 ms  DeleteObjects: 6.934600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 163913.698043 seconds.
-  path: Assets/01 Scence/Intro.unity
-  artifactKey: Guid(7a4091363d8c4934b821d38d965a4cd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/Intro.unity using Guid(7a4091363d8c4934b821d38d965a4cd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd54c1db0378dd189a9430eea8078f6f') in 0.0306205 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 24.611 seconds
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 421.23 ms, found 18 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 180.24 ms, found 18 plugins.
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus\Runtime\OculusLoader.cs:307 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus\Runtime\OculusLoader.cs:292 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <ed969b0e627d471da4848289f9c322df>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <ed969b0e627d471da4848289f9c322df>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <ed969b0e627d471da4848289f9c322df>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  9.524 seconds
-Domain Reload Profiling: 33429ms
-	BeginReloadAssembly (4129ms)
-		ExecutionOrderSort (19ms)
-		DisableScriptedObjects (264ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (4ms)
-		CreateAndSetChildDomain (1823ms)
-	RebuildCommonClasses (204ms)
-	RebuildNativeTypeToScriptingClass (238ms)
-	initialDomainReloadingComplete (1057ms)
-	LoadAllAssembliesAndSetupDomain (18271ms)
-		LoadAssemblies (15316ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (3415ms)
-			TypeCache.Refresh (2393ms)
-				TypeCache.ScanAssembly (1956ms)
-			BuildScriptInfoCaches (872ms)
-			ResolveRequiredComponents (104ms)
-	FinalizeReload (9529ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (7378ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (47ms)
-			SetLoadedEditorAssemblies (23ms)
-			BeforeProcessingInitializeOnLoad (749ms)
-			ProcessInitializeOnLoadAttributes (5252ms)
-			ProcessInitializeOnLoadMethodAttributes (1269ms)
-			AfterProcessingInitializeOnLoad (36ms)
-			EditorAssembliesLoaded (2ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (41ms)
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 534.31 ms, found 18 plugins.
-Preloading 3 native plugins for Editor in 1.08 ms.
-Unloading 59 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 8724 unused Assets / (4.1 MB). Loaded Objects now: 9538.
-Memory consumption went from 212.1 MB to 208.0 MB.
-Total: 234.197400 ms (FindLiveObjects: 18.573000 ms CreateObjectMapping: 9.817100 ms MarkObjects: 182.499900 ms  DeleteObjects: 23.298100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 991.701821 seconds.
-  path: Assets/UModelerX_ThemePark_URP_Editable/Scenes/Hyper-Casual_ThemePark_AllPropsScene.unity
-  artifactKey: Guid(8d9739a41456a73428cba2ee08af550f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UModelerX_ThemePark_URP_Editable/Scenes/Hyper-Casual_ThemePark_AllPropsScene.unity using Guid(8d9739a41456a73428cba2ee08af550f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a563e4239880debdf2d2d01d64e44f9') in 0.0257262 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 173236.891488 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Models/PushButton.fbx
+  artifactKey: Guid(7ab6f3b0fd1a6ba41b2a47766c16613f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Models/PushButton.fbx using Guid(7ab6f3b0fd1a6ba41b2a47766c16613f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d16171f2ed3aff6ed4089315ea08ef4') in 4.6239614 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/UModelerX_ThemePark_URP_Editable/Prefabs/Building_TicketOffice_00.prefab
-  artifactKey: Guid(a42ff20ead9e0f843b8d9b4ab342d7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UModelerX_ThemePark_URP_Editable/Prefabs/Building_TicketOffice_00.prefab using Guid(a42ff20ead9e0f843b8d9b4ab342d7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d15c7935982b14044861d70f17d3b0a') in 10.666658 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+  Time since last request: 0.000062 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Templates/Confirm@2x.png
+  artifactKey: Guid(571cad57defb6480a92d20c9eb4e1dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Templates/Confirm@2x.png using Guid(571cad57defb6480a92d20c9eb4e1dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51eeb6d464566d912120823340d9609b') in 0.2639758 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.754935 seconds.
-  path: Assets/UModelerX_ThemePark_URP_Editable/Scenes/Hyper-Casual_ThemePark_DemoScene.unity
-  artifactKey: Guid(74a4b8a8d81710c4dbefe758e0fd5e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UModelerX_ThemePark_URP_Editable/Scenes/Hyper-Casual_ThemePark_DemoScene.unity using Guid(74a4b8a8d81710c4dbefe758e0fd5e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b3f116cd8cd6c506e2d7f80165a5f54') in 0.0048606 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000838 seconds.
+  path: Assets/VRTemplateAssets/Materials/Anchor Materials/Anchor Glow Gradient.png
+  artifactKey: Guid(7461125ec591a1548883bd61123e9138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Anchor Materials/Anchor Glow Gradient.png using Guid(7461125ec591a1548883bd61123e9138) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4939b58d3c9a7ec722be946310b951f6') in 0.1243846 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Materials/Controller_White.mat
+  artifactKey: Guid(9f12d299d16099343a3c5c0d7285822a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Materials/Controller_White.mat using Guid(9f12d299d16099343a3c5c0d7285822a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9b6732712ca8b4c81b6b3a4c52d9172') in 0.623931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BI.png
+  artifactKey: Guid(0a502ee0f898544229fafde9a476b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BI.png using Guid(0a502ee0f898544229fafde9a476b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c25734ff65214a010dff98e6aaee2fa') in 0.0525743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Accounts/AccountChangePasswordView.png
+  artifactKey: Guid(c87967aad14e2476eafedf764aab37ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Accounts/AccountChangePasswordView.png using Guid(c87967aad14e2476eafedf764aab37ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79dab355569782a6b9a32973065b3408') in 0.1648171 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Materials/Controller_Grey.mat
+  artifactKey: Guid(99685157b02e4d446bbecb015645e5e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Materials/Controller_Grey.mat using Guid(99685157b02e4d446bbecb015645e5e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '807c43677dabd9983a6f8c76d735aa52') in 0.1234335 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Homes/ProductsView@2x.png
+  artifactKey: Guid(a64ebfb0ebca14b65bf6ab675fe8ebae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Homes/ProductsView@2x.png using Guid(a64ebfb0ebca14b65bf6ab675fe8ebae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eda8072a9167224824418bfb4a9fa765') in 0.0396921 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Font/NotoSansKR-Medium.ttf
+  artifactKey: Guid(351f102e031a9a64181a7302c86d697a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/NotoSansKR-Medium.ttf using Guid(351f102e031a9a64181a7302c86d697a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd68ac7d747f717b83aba5b884916729') in 0.0969756 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/VRTemplateAssets/Materials/Environment/Grey.mat
+  artifactKey: Guid(e1b4debff657aa94293a2e4e5f15b8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Environment/Grey.mat using Guid(e1b4debff657aa94293a2e4e5f15b8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '83244f70e90afd8e6e85b70be1fd31ba') in 0.5117396 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Views/Developments/CurveSources/CurveSourceView/Add@2x.png
+  artifactKey: Guid(0f51a1fb2d75643b8974dbc3db4ee025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Views/Developments/CurveSources/CurveSourceView/Add@2x.png using Guid(0f51a1fb2d75643b8974dbc3db4ee025) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '340b2acf968fb5089c1815831266b61f') in 0.0355603 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BR.png
+  artifactKey: Guid(ccc8cb289d37b4ab1a008b18b70c4d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BR.png using Guid(ccc8cb289d37b4ab1a008b18b70c4d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97114ecc72071836ce9796ad61e420d6') in 0.0317971 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/UI/btn2.png
+  artifactKey: Guid(0b368a45294ea4d6dad4e7ddeda62ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/btn2.png using Guid(0b368a45294ea4d6dad4e7ddeda62ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '251e5244029b23bf57cd9ef590e98673') in 0.0374521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Accounts/AccountUnsubscribingView@2x.png
+  artifactKey: Guid(62047cb607859459da6146564aaf516a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Accounts/AccountUnsubscribingView@2x.png using Guid(62047cb607859459da6146564aaf516a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1fb54c60824ecb919c2bb4bdad91bfe3') in 0.0390301 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/CR.png
+  artifactKey: Guid(64d2b768e414b45e4961c720846fa73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/CR.png using Guid(64d2b768e414b45e4961c720846fa73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '713d71959f035bd8b99787741f2cf5e1') in 0.0576671 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BM.png
+  artifactKey: Guid(e42c309421aee469fbf05138e73a3e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BM.png using Guid(e42c309421aee469fbf05138e73a3e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'afb212c06abc95b53ff4eee1b04d9f4d') in 0.0293378 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/VRTemplateAssets/Fonts/Inter/Inter-Regular.ttf
+  artifactKey: Guid(78c7f42a7547f22448a621eaeeef3fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Fonts/Inter/Inter-Regular.ttf using Guid(78c7f42a7547f22448a621eaeeef3fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b8ff30228fe7e3fb05bdc5a197aba72') in 0.065614 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Hands Interaction Demo/HandsDemoSceneAssets/Materials/Chrome.mat
+  artifactKey: Guid(2edb876ca20f6ea40b4ebb61f96f1df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Hands Interaction Demo/HandsDemoSceneAssets/Materials/Chrome.mat using Guid(2edb876ca20f6ea40b4ebb61f96f1df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'afc1c55d144df335d476799b8a9fcdb4') in 0.0320738 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BG.png
+  artifactKey: Guid(df527e83c05a14eaa9de7b609222deb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BG.png using Guid(df527e83c05a14eaa9de7b609222deb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e25610c52ca20a8e12970b3884929973') in 0.0669574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/VRTemplateAssets/Materials/UI/Blue.mat
+  artifactKey: Guid(6252b551806ea8940a1613d21e68a460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/UI/Blue.mat using Guid(6252b551806ea8940a1613d21e68a460) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b626595d38e655ce5e48921261969e6d') in 0.0665301 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Font/SFPRODISPLAYBOLD.OTF
+  artifactKey: Guid(bfeea047a4c45794aaa28d3750cd4111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/SFPRODISPLAYBOLD.OTF using Guid(bfeea047a4c45794aaa28d3750cd4111) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '019e015658eaf97bd1f55d11dbf6f1e6') in 0.0239992 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Materials/Concrete Grey.mat
+  artifactKey: Guid(842f1b88643f1bb458ba6243088e344e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Materials/Concrete Grey.mat using Guid(842f1b88643f1bb458ba6243088e344e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1918e6e4d5828029d5b8ac203adc7f1a') in 0.0680784 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Homes/ProductStatusBarView/CheckForUpdate@2x.png
+  artifactKey: Guid(e6ff4df50ecfc4aebb0afcc94a96de32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Homes/ProductStatusBarView/CheckForUpdate@2x.png using Guid(e6ff4df50ecfc4aebb0afcc94a96de32) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc7c342d64459e8094d5fc62cf2f4cc7') in 0.0316508 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/CaptionView/CaptionView@2x.png
+  artifactKey: Guid(98c1c5dbec69841dabe9d52f4b5fa342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/CaptionView/CaptionView@2x.png using Guid(98c1c5dbec69841dabe9d52f4b5fa342) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f72d12242008cffe30a6bc9de418eeaa') in 0.0274553 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/VRTemplateAssets/Materials/Environment/Concrete Grey.mat
+  artifactKey: Guid(7d02519ee5c8cb745b09b59fc3d367fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Environment/Concrete Grey.mat using Guid(7d02519ee5c8cb745b09b59fc3d367fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '394b85a5d2c302466aa311a07a24c5f4') in 0.0328667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/VRTemplateAssets/Materials/Environment/Grid Dark Tight.mat
+  artifactKey: Guid(43672be0899539340ba6ac5db322693c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Environment/Grid Dark Tight.mat using Guid(43672be0899539340ba6ac5db322693c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8658c9aecfacf6a2e3e8023b1f8aa0da') in 0.0482604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/VRTemplateAssets/Materials/Locomotion/Blue Standard.mat
+  artifactKey: Guid(7632678931fb0f34cb3d81b319e6fd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Locomotion/Blue Standard.mat using Guid(7632678931fb0f34cb3d81b319e6fd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51d0bc52c1bc6ee8cbe5d09b848ac062') in 0.2324132 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Material/Right hand.png
+  artifactKey: Guid(630704cc356fcfb419955b345adc0cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Right hand.png using Guid(630704cc356fcfb419955b345adc0cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96c7646661ae241cca5ae69070c81914') in 0.0463822 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Views/Developments/CurveSources/CurveSourceView/Remove@2x.png
+  artifactKey: Guid(0319a001b525c488cabce29b04527d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Views/Developments/CurveSources/CurveSourceView/Remove@2x.png using Guid(0319a001b525c488cabce29b04527d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '710c1265ebe94277c3382a8b9479fd36') in 0.078105 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SI.png
+  artifactKey: Guid(3f014daebe9f6475099bff702c7f8f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SI.png using Guid(3f014daebe9f6475099bff702c7f8f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b8f9d95dbf127dc34cb0916d9c65d9b') in 0.0562183 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/VRTemplateAssets/Materials/Environment/Concrete.mat
+  artifactKey: Guid(00dc025bc6aa88645ad0114c7607fb6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Environment/Concrete.mat using Guid(00dc025bc6aa88645ad0114c7607fb6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9967e03d1b4fbc05f27251a9ecc17e1') in 0.0475387 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/VRTemplateAssets/Materials/Locomotion/BlinkLine.mat
+  artifactKey: Guid(adc6df264fa86214ab5c08e683a21f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Locomotion/BlinkLine.mat using Guid(adc6df264fa86214ab5c08e683a21f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9f29a12f5475f1ee2cd86fadf3868cb') in 0.3457098 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BW.png
+  artifactKey: Guid(02b104cb35cd545b4a861356aa184ef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BW.png using Guid(02b104cb35cd545b4a861356aa184ef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10a15fdbaf18c5e5ac738001907da6da') in 0.0530535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b07165221eb30f1d131c031cf0bb9a41') in 0.0271018 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/PT.png
+  artifactKey: Guid(48d60c04d5f434467980ae8c2b6e0403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/PT.png using Guid(48d60c04d5f434467980ae8c2b6e0403) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9bdb3554b0414a27c631704f23f0adb0') in 0.0297305 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/VRTemplateAssets/Fonts/Inter/Inter-Regular SDF NoBackfaceCulling.asset
+  artifactKey: Guid(fbb7c6a04be6d8341934b839f24b42e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Fonts/Inter/Inter-Regular SDF NoBackfaceCulling.asset using Guid(fbb7c6a04be6d8341934b839f24b42e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd79dd9f5462297b0c722cabcffbfb60') in 0.1390063 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SE.png
+  artifactKey: Guid(3dd4ead7da4774843895f725d7666bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SE.png using Guid(3dd4ead7da4774843895f725d7666bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f924f44a37cd04ff6b773e62da43406b') in 0.0620842 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/VRTemplateAssets/Materials/Environment/Glass.mat
+  artifactKey: Guid(9c52a7e85c986c2429f4638c6756501c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Environment/Glass.mat using Guid(9c52a7e85c986c2429f4638c6756501c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f94992432b8fd3c88c3fadc12943cc18') in 0.4714311 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/VRTemplateAssets/Materials/Environment/Concrete Blue.mat
+  artifactKey: Guid(895b038bf03adba4c951968630c6032d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Environment/Concrete Blue.mat using Guid(895b038bf03adba4c951968630c6032d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b369b935754f989d538c31c21d290f00') in 0.0459062 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SO.png
+  artifactKey: Guid(72c5eb96bbfd346d2a391682b6fa63c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SO.png using Guid(72c5eb96bbfd346d2a391682b6fa63c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f32af7687a6b264cf49db1404388ab40') in 0.0324372 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Sprites/Checkmark.png
+  artifactKey: Guid(db3e7b7c8db355e499429545071a0321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Sprites/Checkmark.png using Guid(db3e7b7c8db355e499429545071a0321) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4589b653ca01c27c2391bd565b8c5861') in 0.042217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/AR.png
+  artifactKey: Guid(5851987aab92540018c4ca76a5a242c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/AR.png using Guid(5851987aab92540018c4ca76a5a242c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dec283b3f78f9df79f239f756f85b961') in 0.0347964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Views/Developments/CurveSources/CurveSourceView/Remove.png
+  artifactKey: Guid(21e9a26c2a3b444debfe59e74821325c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Views/Developments/CurveSources/CurveSourceView/Remove.png using Guid(21e9a26c2a3b444debfe59e74821325c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b6be19920970b20642da0e048ad8369') in 0.0417823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/PS.png
+  artifactKey: Guid(35f576a9b3f584c639c8d97f90472513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/PS.png using Guid(35f576a9b3f584c639c8d97f90472513) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1137f4c44e3d166fbbb200e7da5ae8bc') in 0.0478297 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/VRTemplateAssets/Materials/Skybox/Hub Skybox Blue 2.mat
+  artifactKey: Guid(5334f277fcb843944aebc29131d0b5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Skybox/Hub Skybox Blue 2.mat using Guid(5334f277fcb843944aebc29131d0b5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e1df080e01f2298444cd04762a1a2806') in 0.038937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BL.png
+  artifactKey: Guid(123524b54cff64b8cb1170479cf9feaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BL.png using Guid(123524b54cff64b8cb1170479cf9feaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0dcdc921179b804e10237148c20199d8') in 0.0184565 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/VRTemplateAssets/Sprites/Icons/Chevron.png
+  artifactKey: Guid(c587cac8808c8b745adbae420e9acc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Sprites/Icons/Chevron.png using Guid(c587cac8808c8b745adbae420e9acc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92e4d8b9fbe9ae2035fec4c0c75808af') in 0.0313295 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/VRTemplateAssets/Materials/Anchor Materials/Anchor Base.mat
+  artifactKey: Guid(19fd09f1fd9347644a27778b73938d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Anchor Materials/Anchor Base.mat using Guid(19fd09f1fd9347644a27778b73938d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea2cbdcd8c1c8b30a652d4ba3b1d7751') in 0.0380704 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/PN.png
+  artifactKey: Guid(6dbe8a7fc210f42c6a52bfa5725eaf63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/PN.png using Guid(6dbe8a7fc210f42c6a52bfa5725eaf63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '28a4e2d9e2b6594d41bf7d4dcb3a9633') in 0.07661 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/UI/Bg.png
+  artifactKey: Guid(79d0a04cdc9ab4a63b39612b072444b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Bg.png using Guid(79d0a04cdc9ab4a63b39612b072444b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8765c2467e1f83699cffa6125473629f') in 0.0641719 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/VRTemplateAssets/Sprites/UI/CircleMask.png
+  artifactKey: Guid(79dfa83adcf72d541946168c849ba331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Sprites/UI/CircleMask.png using Guid(79dfa83adcf72d541946168c849ba331) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cdeb1804cc52325d0a280758d9a6081') in 0.0404972 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SD.png
+  artifactKey: Guid(ea481687afee74880973badba8a20a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SD.png using Guid(ea481687afee74880973badba8a20a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '432fe34ea419c8450c1178a3b7a96fbd') in 0.0411795 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SA.png
+  artifactKey: Guid(f93900763c2334dd18d328e1ee668b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SA.png using Guid(f93900763c2334dd18d328e1ee668b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '98607ea81e642bd4ab4feaf9db18248c') in 0.0432633 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/VRTemplateAssets/Sprites/UI/Circle_60x60_Vertical.png
+  artifactKey: Guid(83d67d78424a7e24fa4bef36e1e32541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Sprites/UI/Circle_60x60_Vertical.png using Guid(83d67d78424a7e24fa4bef36e1e32541) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3becc9e5246d6a3110211a4036f28db5') in 0.0242743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Samples/XR Hands/1.6.1/HandVisualizer/Materials/Blue.mat
+  artifactKey: Guid(7b26add94f09dc44fb811013f007a3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Hands/1.6.1/HandVisualizer/Materials/Blue.mat using Guid(7b26add94f09dc44fb811013f007a3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1112016ff9a23b998a032c25d98a1539') in 0.0392826 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/AF.png
+  artifactKey: Guid(1cbf095fc30dd4d3189722fcd449daee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/AF.png using Guid(1cbf095fc30dd4d3189722fcd449daee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43750ff353ed2885f937f03bcb5a153e') in 0.0404536 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/AZ.png
+  artifactKey: Guid(1ab291c24333149b3b249cfee3e1b364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/AZ.png using Guid(1ab291c24333149b3b249cfee3e1b364) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ae59c44558a226df055d1aff9034306') in 0.0453293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/PL.png
+  artifactKey: Guid(e59f94d42fb924fcaba8675bbc482fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/PL.png using Guid(e59f94d42fb924fcaba8675bbc482fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7df05d0abf0815040874183706d5ca23') in 0.1325158 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Homes/ProductItemView/ShowContext@2x.png
+  artifactKey: Guid(72fc42ca6aeef4852b734810f64e4cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Homes/ProductItemView/ShowContext@2x.png using Guid(72fc42ca6aeef4852b734810f64e4cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a062e9bc6225dfeed94a9befcb19973d') in 0.0574084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Samples/XR Hands/1.6.1/HandVisualizer/Materials/HandsDefaultMaterial.mat
+  artifactKey: Guid(613690cd962241049a0ec289a6ff835e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Hands/1.6.1/HandVisualizer/Materials/HandsDefaultMaterial.mat using Guid(613690cd962241049a0ec289a6ff835e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2d3b8fd0da386f314f390e791934923') in 0.3060721 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/AI.png
+  artifactKey: Guid(51d25a6f90574420a946dce8a8072c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/AI.png using Guid(51d25a6f90574420a946dce8a8072c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1feea3650f57b623d007e0acb6f6c0fb') in 0.050624 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/VRTemplateAssets/Sprites/UI/Circle_60x60 Outline 4.png
+  artifactKey: Guid(ac11a0f708f466246a121e038d4b6755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Sprites/UI/Circle_60x60 Outline 4.png using Guid(ac11a0f708f466246a121e038d4b6755) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0911c03ba29f90db09b937fc07b604e') in 0.0506714 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Sprites/Forward.png
+  artifactKey: Guid(f8ecc54972abacc46a93f671b0602139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Sprites/Forward.png using Guid(f8ecc54972abacc46a93f671b0602139) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4c1c6be6aeca2ef527f05eb19e89075') in 0.0647038 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/VRTemplateAssets/Models/Blink/BlinkVisual.fbx
+  artifactKey: Guid(abd83a5f2e97de448a64683eb362a566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Models/Blink/BlinkVisual.fbx using Guid(abd83a5f2e97de448a64683eb362a566) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63f9793a716d962019e01b523d0f1c51') in 0.0682963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/VRTemplateAssets/Sprites/Icons/Rotate Left.png
+  artifactKey: Guid(ae2fef5f6398dd24caa6e6bb247b3d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Sprites/Icons/Rotate Left.png using Guid(ae2fef5f6398dd24caa6e6bb247b3d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '150ae73b3a897df0b96b194420a467df') in 0.0554106 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/NotificationView/ReddotLarge.png
+  artifactKey: Guid(d06bdd3c2c7c042319a1f9cd179e0a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/NotificationView/ReddotLarge.png using Guid(d06bdd3c2c7c042319a1f9cd179e0a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8945e9ff0875a0b104b67d16bc1bf48') in 0.0411904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/PR.png
+  artifactKey: Guid(d4cdfddd432784c1d8021c6e885a8ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/PR.png using Guid(d4cdfddd432784c1d8021c6e885a8ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b724badf96461b384f88de2827e156f') in 0.0449825 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BD.png
+  artifactKey: Guid(e08bf2262ad8d48dc9e479c915305afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BD.png using Guid(e08bf2262ad8d48dc9e479c915305afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b55c0b7303579a82eefaa37dda8a8648') in 0.0578237 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/VRTemplateAssets/Sprites/UI/Round Radius 10 Outline.png
+  artifactKey: Guid(58bc8d49e10d1bc40813d8974b8b3a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Sprites/UI/Round Radius 10 Outline.png using Guid(58bc8d49e10d1bc40813d8974b8b3a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89b9e6fb176a75b8bade516bfbc66cca') in 0.0547262 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SH.png
+  artifactKey: Guid(6a7a5028b4a7c47c2979b56a6e766629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SH.png using Guid(6a7a5028b4a7c47c2979b56a6e766629) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a6f0ab4cf38b3cf0c93270ab4a40e6d') in 0.0662751 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Templates/Warning@2x.png
+  artifactKey: Guid(e5ff8342d8093485eb3bab00f9ffd50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Templates/Warning@2x.png using Guid(e5ff8342d8093485eb3bab00f9ffd50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af6518c4aedff8554b661e58996a8359') in 0.2238187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BJ.png
+  artifactKey: Guid(ce8badfc0b3474baca424d0c9e737fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BJ.png using Guid(ce8badfc0b3474baca424d0c9e737fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f1fc857e5c13e38d1197993a86c15adf') in 0.0698829 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/CaptionView/SignOut@2x.png
+  artifactKey: Guid(58f536b394bae4b47b82f33d08bc511c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/CaptionView/SignOut@2x.png using Guid(58f536b394bae4b47b82f33d08bc511c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '556aaf29afb845284828e29abdec5491') in 0.059568 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/UI/btn1.png
+  artifactKey: Guid(642c3d80d61824fd99ebb3290eacd3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/btn1.png using Guid(642c3d80d61824fd99ebb3290eacd3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a847333416d270f97a465a5cb1c33b9f') in 0.0520333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets/InlineIcons.png
+  artifactKey: Guid(215687feeab0b7445b4a1cd86c82c2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets/InlineIcons.png using Guid(215687feeab0b7445b4a1cd86c82c2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e46484d1907d62474d47fad50b18bd0') in 1.4166997 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 207
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/RW.png
+  artifactKey: Guid(53fb2422d5c9442279341dabc254badb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/RW.png using Guid(53fb2422d5c9442279341dabc254badb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15a2efe3c3a79f1a802fa2cf67927c4a') in 0.0613489 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/VRTemplateAssets/Materials/UI/Handle.mat
+  artifactKey: Guid(5d9a96601b525ff40b25403df61ff736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/UI/Handle.mat using Guid(5d9a96601b525ff40b25403df61ff736) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51035c7fabed19eb24fa2afbb8a7a276') in 0.0500043 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/VRTemplateAssets/Sprites/UI/Circle_60x60 Outline.png
+  artifactKey: Guid(7edfa9a28dcc4584ba5194e74c74f93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Sprites/UI/Circle_60x60 Outline.png using Guid(7edfa9a28dcc4584ba5194e74c74f93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82cdb1402e8047ec74b7370b98370959') in 0.0520263 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/VRTemplateAssets/Materials/Environment/Chrome.mat
+  artifactKey: Guid(5d46bb438eef41d449bb7588f4a77e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Environment/Chrome.mat using Guid(5d46bb438eef41d449bb7588f4a77e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '313328d6f8558a29c5534024c51d6357') in 0.4146964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Hands Interaction Demo/HandsDemoSceneAssets/Materials/Controls_Black.mat
+  artifactKey: Guid(f95c205049f12cc4cb5bd57dbded286c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Hands Interaction Demo/HandsDemoSceneAssets/Materials/Controls_Black.mat using Guid(f95c205049f12cc4cb5bd57dbded286c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2716da3bb67e0798efb0a6dde4f34a4b') in 0.0475948 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Templates/Cancel@2x.png
+  artifactKey: Guid(1e99e24700fb74481993b589c4729282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Templates/Cancel@2x.png using Guid(1e99e24700fb74481993b589c4729282) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b18e67a98e0c24b94eb1e5288cf8bbc1') in 0.0436003 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Font/NotoSansKR-Light.ttf
+  artifactKey: Guid(54ec43064f66c2c4893ca832e68b1d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/NotoSansKR-Light.ttf using Guid(54ec43064f66c2c4893ca832e68b1d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '66e1ec0d050e9248c76292f689d912d9') in 0.0367836 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SR.png
+  artifactKey: Guid(d2b503f8697d545bca14b333d5fa8e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SR.png using Guid(d2b503f8697d545bca14b333d5fa8e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '017fbd1bd12318842221fce15fca130b') in 0.0596202 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SM.png
+  artifactKey: Guid(d21cfe5beae024b2895fed5524072b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SM.png using Guid(d21cfe5beae024b2895fed5524072b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '025ab2464a37e6babee92ca8fc087224') in 0.0640641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/RO.png
+  artifactKey: Guid(91b2bf2ae64c248ab939510335f5eff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/RO.png using Guid(91b2bf2ae64c248ab939510335f5eff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f9ed171aea554e8fdbe9a024013e865') in 0.2554724 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SN.png
+  artifactKey: Guid(9ff6091e06cd34318806522b35008c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SN.png using Guid(9ff6091e06cd34318806522b35008c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59dce5d879b56579f058aee06021cf14') in 0.0544226 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Accounts/AccountChangePasswordView@2x.png
+  artifactKey: Guid(e86b2b25e78ff4e619893a5857c6231e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Accounts/AccountChangePasswordView@2x.png using Guid(e86b2b25e78ff4e619893a5857c6231e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd34da7bdaac549e79a3d32e755e77d62') in 0.0477772 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Font/NotoSansKR-ExtraBold.ttf
+  artifactKey: Guid(1854469512b7f5d4f8cd3062d97c43bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/NotoSansKR-ExtraBold.ttf using Guid(1854469512b7f5d4f8cd3062d97c43bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fda6edfb669dbcac8cf801263afd7076') in 0.0379385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/CaptionView/SignIn@2x.png
+  artifactKey: Guid(b0e30318a2d4c45d4ac74f1b49904ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/CaptionView/SignIn@2x.png using Guid(b0e30318a2d4c45d4ac74f1b49904ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd61df1454e05a74ae7ebf5845f7a623') in 0.0460437 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Homes/ProductsView.png
+  artifactKey: Guid(bcc1c2e3dc9714b409197574a3329835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Hubs/Homes/ProductsView.png using Guid(bcc1c2e3dc9714b409197574a3329835) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '39b404d55c2d7eceae9e5a0c15454dac') in 0.0321165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BT.png
+  artifactKey: Guid(96fc4b5442c4648ac9e142c86d93927f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BT.png using Guid(96fc4b5442c4648ac9e142c86d93927f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15eb4f0010c6a28a2438dd1eb27525ae') in 0.0451812 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/VRTemplateAssets/Materials/Primitive/Green.mat
+  artifactKey: Guid(c4fad0f5843a8fc4f8488ab522a78684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Primitive/Green.mat using Guid(c4fad0f5843a8fc4f8488ab522a78684) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbbdf2aefa29dc918c274a887f10a85a') in 0.0564407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Sprites/Asset.png
+  artifactKey: Guid(17d565bb4a7744b41b7e4dc7e3a09e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Sprites/Asset.png using Guid(17d565bb4a7744b41b7e4dc7e3a09e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4ac312dc0907979fd40729f182336ba') in 0.0513484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Materials/Concrete Light Blue.mat
+  artifactKey: Guid(830d28b607e09a2479e2005c2eb5c75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Materials/Concrete Light Blue.mat using Guid(830d28b607e09a2479e2005c2eb5c75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27dc07f3ab796fb892d1448607181f8f') in 0.0628868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/VRTemplateAssets/Materials/Locomotion/Angle Indicator.mat
+  artifactKey: Guid(8949fdebf89b61548af583f0a1ef05ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Locomotion/Angle Indicator.mat using Guid(8949fdebf89b61548af583f0a1ef05ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bacb82c1455aba3989bd0e641188e2f6') in 0.7667649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/VRTemplateAssets/Sprites/UI/Round Radius 10 Top.png
+  artifactKey: Guid(de0113b98aad70a419960e61a7d8d6ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Sprites/UI/Round Radius 10 Top.png using Guid(de0113b98aad70a419960e61a7d8d6ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6088bc14945e28bce8014c116598baa0') in 0.0339328 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SL.png
+  artifactKey: Guid(61f9ca1bd7c5440d3a130c1e0fe67d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SL.png using Guid(61f9ca1bd7c5440d3a130c1e0fe67d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8678c1cf5f9be96c3a748a9887ea3511') in 0.0371398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Templates/Confirm.png
+  artifactKey: Guid(35ae5d67e196c48618920c5addf970ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Templates/Confirm.png using Guid(35ae5d67e196c48618920c5addf970ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78c3aed63b508fbfaed374d1d7aa4ee3') in 0.040513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Hands Interaction Demo/HandsDemoSceneAssets/Materials/ChessPiece.mat
+  artifactKey: Guid(40808a1b89c64184e9466aaec1fd1ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Hands Interaction Demo/HandsDemoSceneAssets/Materials/ChessPiece.mat using Guid(40808a1b89c64184e9466aaec1fd1ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07799bbcb6ae14e1334a0f28537d230e') in 0.0364977 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/VRTemplateAssets/Materials/Locomotion/FlatBlue.mat
+  artifactKey: Guid(29048254ac014fd46a1a8684451bffd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Materials/Locomotion/FlatBlue.mat using Guid(29048254ac014fd46a1a8684451bffd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a70dab82fbccf395bc71eb344060babc') in 0.0518539 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BE.png
+  artifactKey: Guid(1bc8a6a66c41d40279730d772eeeca44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/BE.png using Guid(1bc8a6a66c41d40279730d772eeeca44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b608246ee5592c2fac8b20b304fbae5f') in 0.0496069 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/AE.png
+  artifactKey: Guid(a327634c9ef7d47019773e83fc35f85f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/AE.png using Guid(a327634c9ef7d47019773e83fc35f85f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae5e113f2624c8aeb9b0a9c33814532b') in 0.0620999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/VRTemplateAssets/Sprites/Icons/Checkmark.png
+  artifactKey: Guid(4aafc51823472ec4ea8ab57045fb659a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Sprites/Icons/Checkmark.png using Guid(4aafc51823472ec4ea8ab57045fb659a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61c3f8b57fff4b40453e2fe3b7326b9b') in 0.0193302 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Font/NotoSansKR-Regular.ttf
+  artifactKey: Guid(a5af99e381ce2b34096fb736e502a929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/NotoSansKR-Regular.ttf using Guid(a5af99e381ce2b34096fb736e502a929) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7474dc888fb8f55bd062a792b1255ad') in 0.031563 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SG.png
+  artifactKey: Guid(fe74cce4926064bd1bc2c4b81add3a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Hub/Views/Controls/HubCountryBox/SG.png using Guid(fe74cce4926064bd1bc2c4b81add3a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3273d44829a237e3a1ba0a04727b545f') in 0.0340875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/VRTemplateAssets/Models/Anchor/AnchorBase.fbx
+  artifactKey: Guid(83053866027bda94da06cb09ab527394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTemplateAssets/Models/Anchor/AnchorBase.fbx using Guid(83053866027bda94da06cb09ab527394) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea800228d71a87a04d0b2ab307ee8f02') in 0.0648251 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
