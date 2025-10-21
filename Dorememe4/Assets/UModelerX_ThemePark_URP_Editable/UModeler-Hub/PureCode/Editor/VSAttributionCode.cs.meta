@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 40830096186f24b67885efb5197803eb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330120
+  packageName: Theme Park(UModeler X)
+  packageVersion: 1.0
+  assetPath: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/PureCode/Editor/VSAttributionCode.cs
+  uploadId: 794124

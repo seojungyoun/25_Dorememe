@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e9f4b66d60a3c8345b3b0140ac28c9fd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330120
+  packageName: Theme Park(UModeler X)
+  packageVersion: 1.0
+  assetPath: Assets/UModelerX_ThemePark_URP_Editable/Materials/MT_SkyBox_00.mat
+  uploadId: 794124
