@@ -15,7 +15,7 @@ C:/Users/silvi/OneDrive/ë°”íƒ• í™”ë©´/Project/25_Dorememe/Dorememe4
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-58273
+65158
 -job-worker-count
 3
 -background-job-worker-count
@@ -59,12 +59,12 @@ C:/Users/silvi/OneDrive/ë°”íƒ• í™”ë©´/Project/25_Dorememe/Dorememe4
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [58716]  Target information:
+Player connection [63540]  Target information:
 
-Player connection [58716]  * "[IP] 192.168.45.226 [Port] 0 [Flags] 2 [Guid] 975920892 [EditorId] 975920892 [Version] 1048832 [Id] WindowsEditor(7,¹Ú¼­Á¤) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [63540]  * "[IP] 192.168.45.226 [Port] 0 [Flags] 2 [Guid] 2369744138 [EditorId] 2369744138 [Version] 1048832 [Id] WindowsEditor(7,¹Ú¼­Á¤) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [58716] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [58716] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [63540] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [63540] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,9 +75,9 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 3131.57 ms, found 18 plugins.
+Refreshing native plugins compatible for Editor in 494.90 ms, found 18 plugins.
 Unity memory allocator detected: MetaXRAudio native memory allocations will be tracked.
-Preloading 3 native plugins for Editor in 52.39 ms.
+Preloading 3 native plugins for Editor in 33.03 ms.
 Initialize engine version: 6000.0.29f1 (9fafe5c9db65)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/silvi/OneDrive/ë°”íƒ• í™”ë©´/Project/25_Dorememe/Dorememe4/Assets
@@ -94,47 +94,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56672
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.599326 seconds.
-- Loaded All Assemblies, in 33.797 seconds
+Registered in 0.029705 seconds.
+- Loaded All Assemblies, in  2.605 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 433 ms
+Android Extension - Scanning For ADB Devices 1272 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.034 seconds
-Domain Reload Profiling: 34823ms
-	BeginReloadAssembly (28134ms)
+- Finished resetting the current domain, in  3.715 seconds
+Domain Reload Profiling: 6302ms
+	BeginReloadAssembly (1291ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (1141ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (676ms)
-	LoadAllAssembliesAndSetupDomain (3817ms)
-		LoadAssemblies (28124ms)
+		CreateAndSetChildDomain (8ms)
+	RebuildCommonClasses (193ms)
+	RebuildNativeTypeToScriptingClass (72ms)
+	initialDomainReloadingComplete (292ms)
+	LoadAllAssembliesAndSetupDomain (737ms)
+		LoadAssemblies (1248ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (3809ms)
-			TypeCache.Refresh (3807ms)
-				TypeCache.ScanAssembly (3097ms)
-			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (1035ms)
+		AnalyzeDomain (723ms)
+			TypeCache.Refresh (714ms)
+				TypeCache.ScanAssembly (642ms)
+			BuildScriptInfoCaches (4ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (3717ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (964ms)
+		SetupLoadedEditorAssemblies (3365ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (570ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (10ms)
-			ProcessInitializeOnLoadAttributes (254ms)
-			ProcessInitializeOnLoadMethodAttributes (122ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			InitializePlatformSupportModulesInManaged (1713ms)
+			SetLoadedEditorAssemblies (16ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (1190ms)
+			ProcessInitializeOnLoadMethodAttributes (375ms)
+			AfterProcessingInitializeOnLoad (32ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -142,13 +142,13 @@ Domain Reload Profiling: 34823ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 52.763 seconds
+- Loaded All Assemblies, in  4.996 seconds
 Script 'CharacterController' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 139.64 ms, found 18 plugins.
+Refreshing native plugins compatible for Editor in 244.44 ms, found 18 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
@@ -158,7 +158,7 @@ Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 162.82 ms, found 18 plugins.
+Refreshing native plugins compatible for Editor in 235.77 ms, found 18 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -189,88 +189,48 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in 10.293 seconds
-Domain Reload Profiling: 63022ms
-	BeginReloadAssembly (330ms)
+- Finished resetting the current domain, in  9.750 seconds
+Domain Reload Profiling: 14662ms
+	BeginReloadAssembly (491ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (17ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (68ms)
-	RebuildCommonClasses (53ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (52268ms)
-		LoadAssemblies (49816ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (108ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (129ms)
+	LoadAllAssembliesAndSetupDomain (4149ms)
+		LoadAssemblies (2658ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (2653ms)
-			TypeCache.Refresh (2309ms)
-				TypeCache.ScanAssembly (2261ms)
-			BuildScriptInfoCaches (292ms)
-			ResolveRequiredComponents (46ms)
-	FinalizeReload (10294ms)
+		AnalyzeDomain (1809ms)
+			TypeCache.Refresh (1061ms)
+				TypeCache.ScanAssembly (989ms)
+			BuildScriptInfoCaches (534ms)
+			ResolveRequiredComponents (202ms)
+	FinalizeReload (9752ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (9207ms)
+		SetupLoadedEditorAssemblies (8611ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
-			SetLoadedEditorAssemblies (15ms)
-			BeforeProcessingInitializeOnLoad (458ms)
-			ProcessInitializeOnLoadAttributes (7964ms)
-			ProcessInitializeOnLoadMethodAttributes (706ms)
-			AfterProcessingInitializeOnLoad (25ms)
-			EditorAssembliesLoaded (2ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			SetLoadedEditorAssemblies (20ms)
+			BeforeProcessingInitializeOnLoad (492ms)
+			ProcessInitializeOnLoadAttributes (7264ms)
+			ProcessInitializeOnLoadMethodAttributes (757ms)
+			AfterProcessingInitializeOnLoad (35ms)
+			EditorAssembliesLoaded (5ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.30 seconds
-Refreshing native plugins compatible for Editor in 127.64 ms, found 18 plugins.
-Preloading 3 native plugins for Editor in 0.73 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 233.76 ms, found 18 plugins.
+Preloading 3 native plugins for Editor in 0.75 ms.
 Unloading 311 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 8724 unused Assets / (7.2 MB). Loaded Objects now: 9523.
-Memory consumption went from 219.9 MB to 212.6 MB.
-Total: 44.814100 ms (FindLiveObjects: 2.289200 ms CreateObjectMapping: 1.103700 ms MarkObjects: 32.523000 ms  DeleteObjects: 8.894900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 173392.706567 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3379a4090e48b831ccd1b69e8d09a40d') in 1.3589419 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/Font/SFPRODISPLAYREGULAR SDF.asset
-  artifactKey: Guid(dc4809a109e9f2240b009953f15814fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Font/SFPRODISPLAYREGULAR SDF.asset using Guid(dc4809a109e9f2240b009953f15814fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ece4f9f63bb21b3c7237a879602d4ff') in 0.3932676 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000085 seconds.
-  path: Assets/Font/NotoSansKR-Regular SDF.asset
-  artifactKey: Guid(f1bc2faad22620a4ab4feb69febb1e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Font/NotoSansKR-Regular SDF.asset using Guid(f1bc2faad22620a4ab4feb69febb1e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51e3f115cfac2abd1adfbe77f3f21493') in 0.2202102 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/Font/SFPRODISPLAYBOLD SDF.asset
-  artifactKey: Guid(59be8c06154e44241abbacfb3eb2ef5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Font/SFPRODISPLAYBOLD SDF.asset using Guid(59be8c06154e44241abbacfb3eb2ef5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c34a97d79d29b120485d50f2527188cd') in 0.2775702 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000095 seconds.
-  path: Assets/Font/NotoSansKR-Medium SDF.asset
-  artifactKey: Guid(b0e6f24e990d3f24b8631a09dac0417b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Font/NotoSansKR-Medium SDF.asset using Guid(b0e6f24e990d3f24b8631a09dac0417b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2318408b228736b2ebb89dece286095b') in 1.5949055 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+Unloading 8725 unused Assets / (7.3 MB). Loaded Objects now: 9524.
+Memory consumption went from 219.8 MB to 212.6 MB.
+Total: 62.695500 ms (FindLiveObjects: 1.819900 ms CreateObjectMapping: 2.297100 ms MarkObjects: 48.620100 ms  DeleteObjects: 9.952400 ms)
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

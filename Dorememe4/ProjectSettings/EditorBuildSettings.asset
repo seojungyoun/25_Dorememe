@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 1
-    path: Assets/01 Scence/Intro.unity
+    path: Assets/01 Scence/Season Select.unity
     guid: 7a4091363d8c4934b821d38d965a4cd0
   - enabled: 1
     path: Assets/01 Scence/Summer.unity
