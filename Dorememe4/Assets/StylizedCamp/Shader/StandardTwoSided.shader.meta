@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 81a4aeaa273acfd4db9ee2a66a23b1ec
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 329151
+  packageName: "Camping Pack \u2013 Stylized Low Poly"
+  packageVersion: 1.0
+  assetPath: Assets/StylizedCamp/Shader/StandardTwoSided.shader
+  uploadId: 779154
