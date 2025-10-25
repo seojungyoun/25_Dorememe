@@ -15,7 +15,7 @@ C:/Users/Ellen/Desktop/Project/25_Dorememe/Dorememe4
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61993
+50421
 -job-worker-count
 3
 -background-job-worker-count
@@ -59,12 +59,12 @@ C:/Users/Ellen/Desktop/Project/25_Dorememe/Dorememe4
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2344]  Target information:
+Player connection [19592]  Target information:
 
-Player connection [2344]  * "[IP] 192.168.45.15 [Port] 0 [Flags] 2 [Guid] 1378525756 [EditorId] 1378525756 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6IHTGVK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [19592]  * "[IP] 192.168.45.15 [Port] 0 [Flags] 2 [Guid] 3914179083 [EditorId] 3914179083 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6IHTGVK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [2344] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [2344] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19592] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [19592] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,9 +75,9 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 21.65 ms, found 20 plugins.
+Refreshing native plugins compatible for Editor in 1883.20 ms, found 20 plugins.
 Unity memory allocator detected: MetaXRAudio native memory allocations will be tracked.
-Preloading 3 native plugins for Editor in 3.05 ms.
+Preloading 3 native plugins for Editor in 2.58 ms.
 Initialize engine version: 6000.0.29f1 (9fafe5c9db65)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/Ellen/Desktop/Project/25_Dorememe/Dorememe4/Assets
@@ -98,47 +98,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56424
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56664
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.003748 seconds.
-- Loaded All Assemblies, in  0.441 seconds
+Registered in 0.118737 seconds.
+- Loaded All Assemblies, in  3.559 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 206 ms
+Android Extension - Scanning For ADB Devices 251 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.593 seconds
-Domain Reload Profiling: 1032ms
-	BeginReloadAssembly (145ms)
+- Finished resetting the current domain, in  0.659 seconds
+Domain Reload Profiling: 4216ms
+	BeginReloadAssembly (2592ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (53ms)
-	LoadAllAssembliesAndSetupDomain (185ms)
-		LoadAssemblies (143ms)
+	RebuildCommonClasses (194ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (171ms)
+	LoadAllAssembliesAndSetupDomain (585ms)
+		LoadAssemblies (2589ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (180ms)
-			TypeCache.Refresh (179ms)
-				TypeCache.ScanAssembly (163ms)
+		AnalyzeDomain (582ms)
+			TypeCache.Refresh (580ms)
+				TypeCache.ScanAssembly (511ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (594ms)
+	FinalizeReload (659ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (525ms)
+		SetupLoadedEditorAssemblies (595ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (304ms)
+			InitializePlatformSupportModulesInManaged (357ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (141ms)
-			ProcessInitializeOnLoadMethodAttributes (66ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (148ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -146,20 +146,24 @@ Domain Reload Profiling: 1032ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.087 seconds
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  7.624 seconds
 Script 'CharacterController' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 15.94 ms, found 20 plugins.
+Refreshing native plugins compatible for Editor in 16.27 ms, found 20 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 17.71 ms, found 20 plugins.
+Refreshing native plugins compatible for Editor in 16.37 ms, found 20 plugins.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    29    0    29    0     0    114      0 --:--:-- --:--:-- --:--:--   115
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -190,508 +194,362 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.672 seconds
-Domain Reload Profiling: 3751ms
-	BeginReloadAssembly (178ms)
+- Finished resetting the current domain, in  3.354 seconds
+Domain Reload Profiling: 10955ms
+	BeginReloadAssembly (185ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (808ms)
-		LoadAssemblies (439ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (7310ms)
+		LoadAssemblies (6803ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (475ms)
-			TypeCache.Refresh (306ms)
-				TypeCache.ScanAssembly (280ms)
-			BuildScriptInfoCaches (137ms)
-			ResolveRequiredComponents (28ms)
-	FinalizeReload (2672ms)
+		AnalyzeDomain (624ms)
+			TypeCache.Refresh (449ms)
+				TypeCache.ScanAssembly (423ms)
+			BuildScriptInfoCaches (142ms)
+			ResolveRequiredComponents (29ms)
+	FinalizeReload (3354ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2362ms)
+		SetupLoadedEditorAssemblies (2960ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (13ms)
 			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (148ms)
-			ProcessInitializeOnLoadAttributes (1970ms)
-			ProcessInitializeOnLoadMethodAttributes (216ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (158ms)
+			ProcessInitializeOnLoadAttributes (2423ms)
+			ProcessInitializeOnLoadMethodAttributes (348ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 16.81 ms, found 20 plugins.
-Preloading 3 native plugins for Editor in 0.15 ms.
-Unloading 450 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9079 unused Assets / (11.1 MB). Loaded Objects now: 9992.
-Memory consumption went from 264.7 MB to 253.6 MB.
-Total: 31.193700 ms (FindLiveObjects: 1.459200 ms CreateObjectMapping: 2.179400 ms MarkObjects: 21.173200 ms  DeleteObjects: 6.381100 ms)
-
-========================================================================
-Received Prepare
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Refreshing native plugins compatible for Editor in 18.17 ms, found 20 plugins.
-Preloading 3 native plugins for Editor in 0.13 ms.
-Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 8989 unused Assets / (11.1 MB). Loaded Objects now: 9988.
-Memory consumption went from 190.0 MB to 178.9 MB.
-Total: 26.995900 ms (FindLiveObjects: 1.387400 ms CreateObjectMapping: 1.735800 ms MarkObjects: 18.471500 ms  DeleteObjects: 5.400100 ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 18.08 ms, found 20 plugins.
+Preloading 3 native plugins for Editor in 0.16 ms.
+Unloading 459 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9138 unused Assets / (10.9 MB). Loaded Objects now: 10031.
+Memory consumption went from 257.4 MB to 246.5 MB.
+Total: 27.263400 ms (FindLiveObjects: 1.106900 ms CreateObjectMapping: 1.691400 ms MarkObjects: 19.038100 ms  DeleteObjects: 5.425900 ms)
 
-Prepare: number of updated asset objects reloaded= 126
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-NullReferenceException: Object reference not set to an instance of an object
-  at Tripolygon.UModeler.Hub.HubAnalytics.OnRelease (System.Boolean isReloading) [0x00019] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Analytics.AnalyticsBase.Release (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Hub.HubAnalyticsService.OnRelease (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.UI.ApplicationServiceBase.Application_Released (System.Object sender, Tripolygon.UModeler.UI.ApplicationReleasedEventArgs e) [0x00007] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at (wrapper delegate-invoke) System.EventHandler`1[Tripolygon.UModeler.UI.ApplicationReleasedEventArgs].invoke_void_object_TEventArgs(object,Tripolygon.UModeler.UI.ApplicationReleasedEventArgs)
-  at Tripolygon.UModeler.UI.Application.Release (System.Boolean isReloading) [0x0005f] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at Tripolygon.UModeler.Editor.UI.UnityEditorApplication+<>c.<.cctor>b__6_1 () [0x00029] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x00017] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
-
-- Loaded All Assemblies, in  0.976 seconds
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 16.54 ms, found 20 plugins.
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 15.73 ms, found 20 plugins.
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus\Runtime\OculusLoader.cs:307 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus\Runtime\OculusLoader.cs:292 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <ed969b0e627d471da4848289f9c322df>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <ed969b0e627d471da4848289f9c322df>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <ed969b0e627d471da4848289f9c322df>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.118 seconds
-Domain Reload Profiling: 3089ms
-	BeginReloadAssembly (253ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (79ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (641ms)
-		LoadAssemblies (407ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (336ms)
-			TypeCache.Refresh (20ms)
-				TypeCache.ScanAssembly (4ms)
-			BuildScriptInfoCaches (282ms)
-			ResolveRequiredComponents (30ms)
-	FinalizeReload (2118ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1772ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (148ms)
-			ProcessInitializeOnLoadAttributes (1422ms)
-			ProcessInitializeOnLoadMethodAttributes (174ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Refreshing native plugins compatible for Editor in 16.72 ms, found 20 plugins.
-Preloading 3 native plugins for Editor in 0.13 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9115 unused Assets / (11.7 MB). Loaded Objects now: 10033.
-Memory consumption went from 283.3 MB to 271.6 MB.
-Total: 27.257800 ms (FindLiveObjects: 1.172400 ms CreateObjectMapping: 1.848500 ms MarkObjects: 18.377600 ms  DeleteObjects: 5.858400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Refreshing native plugins compatible for Editor in 18.03 ms, found 20 plugins.
-Preloading 3 native plugins for Editor in 0.14 ms.
-Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9004 unused Assets / (11.0 MB). Loaded Objects now: 10017.
-Memory consumption went from 204.5 MB to 193.6 MB.
-Total: 27.083600 ms (FindLiveObjects: 1.102500 ms CreateObjectMapping: 1.797500 ms MarkObjects: 18.800300 ms  DeleteObjects: 5.382500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 14461.796180 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/3.2.1/visionOS
-  artifactKey: Guid(6f2e0e06c0cec7c4aa31b46ca1adf0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/visionOS using Guid(6f2e0e06c0cec7c4aa31b46ca1adf0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ad2f3a6705806142aa92d5644108e64') in 0.0579679 seconds
+  Time since last request: 41638.111343 seconds.
+  path: Assets/01 Scence/Demo 3.unity
+  artifactKey: Guid(4bad05916ca5632468560858a134036f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01 Scence/Demo 3.unity using Guid(4bad05916ca5632468560858a134036f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86c3ffdb262ff15270e2009fda337955') in 0.0124439 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.999583 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Legacy XR Input Readers
-  artifactKey: Guid(9cf7cabcd78f88a45b2ff7ff35d2aefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Legacy XR Input Readers using Guid(9cf7cabcd78f88a45b2ff7ff35d2aefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fcc0a9914a5299d7455aacdd17bd1f97') in 0.000595 seconds
+  Time since last request: 0.036075 seconds.
+  path: Assets/01 Scence/Fall.unity
+  artifactKey: Guid(89cb13e6c16bc194ca8a1507229d6c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01 Scence/Fall.unity using Guid(89cb13e6c16bc194ca8a1507229d6c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4cb3f07d6583b0f0cb46604adf0c4aa5') in 0.0006797 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-NullReferenceException: Object reference not set to an instance of an object
-  at Tripolygon.UModeler.Hub.HubAnalytics.OnRelease (System.Boolean isReloading) [0x00019] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Analytics.AnalyticsBase.Release (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Hub.HubAnalyticsService.OnRelease (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.UI.ApplicationServiceBase.Application_Released (System.Object sender, Tripolygon.UModeler.UI.ApplicationReleasedEventArgs e) [0x00007] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at (wrapper delegate-invoke) System.EventHandler`1[Tripolygon.UModeler.UI.ApplicationReleasedEventArgs].invoke_void_object_TEventArgs(object,Tripolygon.UModeler.UI.ApplicationReleasedEventArgs)
-  at Tripolygon.UModeler.UI.Application.Release (System.Boolean isReloading) [0x0005f] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at Tripolygon.UModeler.Editor.UI.UnityEditorApplication+<>c.<.cctor>b__6_1 () [0x00029] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x00017] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
+Received Import Request.
+  Time since last request: 9.785705 seconds.
+  path: Assets/01 Scence/Fall.unity
+  artifactKey: Guid(4bad05916ca5632468560858a134036f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01 Scence/Fall.unity using Guid(4bad05916ca5632468560858a134036f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f83a04e7c396f0fb07b7882f8016a0d6') in 0.000594 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-- Loaded All Assemblies, in  0.993 seconds
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 16.67 ms, found 20 plugins.
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 16.17 ms, found 20 plugins.
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus\Runtime\OculusLoader.cs:307 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus\Runtime\OculusLoader.cs:292 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <ed969b0e627d471da4848289f9c322df>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <ed969b0e627d471da4848289f9c322df>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <ed969b0e627d471da4848289f9c322df>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.133 seconds
-Domain Reload Profiling: 3123ms
-	BeginReloadAssembly (254ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (85ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (661ms)
-		LoadAssemblies (404ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (353ms)
-			TypeCache.Refresh (18ms)
-				TypeCache.ScanAssembly (3ms)
-			BuildScriptInfoCaches (298ms)
-			ResolveRequiredComponents (33ms)
-	FinalizeReload (2133ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1796ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (157ms)
-			ProcessInitializeOnLoadAttributes (1403ms)
-			ProcessInitializeOnLoadMethodAttributes (203ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Refreshing native plugins compatible for Editor in 15.28 ms, found 20 plugins.
-Preloading 3 native plugins for Editor in 0.14 ms.
-Unloading 80 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9126 unused Assets / (11.3 MB). Loaded Objects now: 10052.
-Memory consumption went from 284.1 MB to 272.8 MB.
-Total: 25.385400 ms (FindLiveObjects: 0.975900 ms CreateObjectMapping: 1.656400 ms MarkObjects: 17.640900 ms  DeleteObjects: 5.111300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Refreshing native plugins compatible for Editor in 17.48 ms, found 20 plugins.
-Preloading 3 native plugins for Editor in 0.14 ms.
-Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9011 unused Assets / (11.1 MB). Loaded Objects now: 10028.
-Memory consumption went from 205.2 MB to 194.1 MB.
-Total: 27.555700 ms (FindLiveObjects: 1.117900 ms CreateObjectMapping: 1.908500 ms MarkObjects: 18.745700 ms  DeleteObjects: 5.782700 ms)
+Received Import Request.
+  Time since last request: 7.303772 seconds.
+  path: Assets/01 Scence/Spring.unity
+  artifactKey: Guid(12878ebda3d0a324a82a0aec6d620e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01 Scence/Spring.unity using Guid(12878ebda3d0a324a82a0aec6d620e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12e7adbaa9eee9f2571d31aacd996aab') in 0.0007506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-NullReferenceException: Object reference not set to an instance of an object
-  at Tripolygon.UModeler.Hub.HubAnalytics.OnRelease (System.Boolean isReloading) [0x00019] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Analytics.AnalyticsBase.Release (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Hub.HubAnalyticsService.OnRelease (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.UI.ApplicationServiceBase.Application_Released (System.Object sender, Tripolygon.UModeler.UI.ApplicationReleasedEventArgs e) [0x00007] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at (wrapper delegate-invoke) System.EventHandler`1[Tripolygon.UModeler.UI.ApplicationReleasedEventArgs].invoke_void_object_TEventArgs(object,Tripolygon.UModeler.UI.ApplicationReleasedEventArgs)
-  at Tripolygon.UModeler.UI.Application.Release (System.Boolean isReloading) [0x0005f] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at Tripolygon.UModeler.Editor.UI.UnityEditorApplication+<>c.<.cctor>b__6_1 () [0x00029] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x00017] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
+Received Import Request.
+  Time since last request: 15.669996 seconds.
+  path: Assets/01 Scence/Winter.unity
+  artifactKey: Guid(358d26f7b27dd9649a8ec41e1c274937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01 Scence/Winter.unity using Guid(358d26f7b27dd9649a8ec41e1c274937) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cdc018366a04a07613698d2777aede19') in 0.0005197 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-- Loaded All Assemblies, in  1.207 seconds
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Compilation Pipeline: Could not read file Packages/com.unity.transport/Editor/Unity.Networking.Editor.asmdef
-Fatal Error! Compilation Pipeline: Could not read file Packages/com.unity.transport/Editor/Unity.Networking.Editor.asmdef
-Crash!!!
-SymInit: Symbol-SearchPath: 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/Mono;.;C:\Users\Ellen\Desktop\Project\25_Dorememe\Dorememe4;C:\Users\Ellen\Desktop\Project\25_Dorememe\Dorememe4\Library\BurstCache\JIT;C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor;C:\WINDOWS;C:\WINDOWS\system32;', symOptions: 534, UserName: 'Ellen'
-OS-Version: 10.0.0
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\Unity.exe:Unity.exe (00007FF69AA50000), size: 299008 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6000.0.29.45029
-C:\WINDOWS\SYSTEM32\ntdll.dll:ntdll.dll (00007FFE55F90000), size: 2064384 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.6093
-C:\WINDOWS\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFE545C0000), size: 794624 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5915
-C:\WINDOWS\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFE53A40000), size: 3104768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.6033
-C:\WINDOWS\SYSTEM32\apphelp.dll:apphelp.dll (00007FFE4F610000), size: 606208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\System32\USER32.dll:USER32.dll (00007FFE53FB0000), size: 1691648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5737
-C:\WINDOWS\System32\win32u.dll:win32u.dll (00007FFE53620000), size: 139264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.6093
-C:\WINDOWS\System32\GDI32.dll:GDI32.dll (00007FFE559B0000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5737
-C:\WINDOWS\System32\gdi32full.dll:gdi32full.dll (00007FFE53D40000), size: 1150976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.6093
-C:\WINDOWS\System32\msvcp_win.dll:msvcp_win.dll (00007FFE53790000), size: 643072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\System32\ucrtbase.dll:ucrtbase.dll (00007FFE53EB0000), size: 1048576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\System32\IMM32.DLL:IMM32.DLL (00007FFE54F00000), size: 192512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5737
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\Unity.dll:Unity.dll (00007FFDCE310000), size: 87056384 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6000.0.29.45029
-C:\WINDOWS\System32\CRYPT32.dll:CRYPT32.dll (00007FFE53830000), size: 1429504 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFE54E40000), size: 724992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.6093
-C:\WINDOWS\System32\msvcrt.dll:msvcrt.dll (00007FFE55860000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.19041.3636
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\libfbxsdk.dll:libfbxsdk.dll (00007FFDCDB60000), size: 8019968 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.7.0
-C:\WINDOWS\System32\sechost.dll:sechost.dll (00007FFE54520000), size: 651264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5915
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\s3tcompress.dll:s3tcompress.dll (00007FFE424D0000), size: 180224 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\RPCRT4.dll:RPCRT4.dll (00007FFE559E0000), size: 1191936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5915
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\ispc_texcomp.dll:ispc_texcomp.dll (00007FFE03190000), size: 1826816 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\etccompress.dll:etccompress.dll (00007FFDCD680000), size: 5070848 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\compress_bc7e.dll:compress_bc7e.dll (00007FFDFE0A0000), size: 1433600 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\bcrypt.dll:bcrypt.dll (00007FFE53760000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5369
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\FreeImage.dll:FreeImage.dll (0000000180000000), size: 5783552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.18.0.0
-C:\WINDOWS\System32\WS2_32.dll:WS2_32.dll (00007FFE55BA0000), size: 438272 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFE4F570000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.0.2201.24001
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FFDF6180000), size: 1187840 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\ole32.dll:ole32.dll (00007FFE554E0000), size: 1224704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5915
-C:\WINDOWS\System32\combase.dll:combase.dll (00007FFE541B0000), size: 3485696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.6093
-C:\WINDOWS\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFE06010000), size: 577536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.42.34433.0
-C:\WINDOWS\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFE55010000), size: 4653056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\System32\cfgmgr32.dll:cfgmgr32.dll (00007FFE53E60000), size: 319488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3996
-C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFE1F230000), size: 122880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.42.34433.0
-C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFE45AC0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.42.34433.0
-C:\WINDOWS\System32\SHELL32.dll:SHELL32.dll (00007FFE546D0000), size: 7790592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.6033
-C:\WINDOWS\System32\SHLWAPI.dll:SHLWAPI.dll (00007FFE54150000), size: 372736 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5915
-C:\WINDOWS\SYSTEM32\d3d11.dll:d3d11.dll (00007FFE513F0000), size: 2506752 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\SYSTEM32\d3d12.dll:d3d12.dll (00007FFE1AC40000), size: 151552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFE55610000), size: 839680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\System32\WINTRUST.dll:WINTRUST.dll (00007FFE53650000), size: 471040 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5965
-C:\WINDOWS\SYSTEM32\dxgi.dll:dxgi.dll (00007FFE51FD0000), size: 1007616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\SYSTEM32\dwmapi.dll:dwmapi.dll (00007FFE503B0000), size: 192512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\SYSTEM32\HID.DLL:HID.DLL (00007FFE51E50000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFE529C0000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFDFDAC0000), size: 1212416 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFE4D3B0000), size: 1089536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\SYSTEM32\WINMM.dll:WINMM.dll (00007FFE4B190000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\GLU32.dll:GLU32.dll (00007FFE0ABC0000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\NativeProxyHelper.dll:NativeProxyHelper.dll (00007FFDE07E0000), size: 1789952 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\SketchUpAPI.dll:SketchUpAPI.dll (00007FFDCCDE0000), size: 8990720 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.0.0.0
-C:\WINDOWS\SYSTEM32\VERSION.dll:VERSION.dll (00007FFE4D2D0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\WSOCK32.dll:WSOCK32.dll (00007FFE4D7D0000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1
-C:\WINDOWS\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (00007FFE51E90000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3758
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FFE03070000), size: 499712 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.0.0.0
-C:\WINDOWS\SYSTEM32\Secur32.dll:Secur32.dll (00007FFE3D730000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FFE53500000), size: 204800 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5965
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\OpenRL.dll:OpenRL.dll (00000228FF290000), size: 12779520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.0.2907
-C:\WINDOWS\SYSTEM32\MSVCR100.dll:MSVCR100.dll (0000000075B20000), size: 860160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
-C:\WINDOWS\SYSTEM32\MSVCP100.dll:MSVCP100.dll (0000000075A80000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\embree.dll:embree.dll (00007FFDCBDF0000), size: 16711680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.14.0.0
-C:\WINDOWS\SYSTEM32\MSWSOCK.DLL:MSWSOCK.DLL (00007FFE52CE0000), size: 434176 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5915
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\tbb.dll:tbb.dll (00007FFE05340000), size: 303104 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.2022.1111
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\OpenRL_pthread.dll:OpenRL_pthread.dll (00000228FEDD0000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.9.0.0
-C:\WINDOWS\SYSTEM32\MSASN1.dll:MSASN1.dll (00007FFE531E0000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\System32\bcryptprimitives.dll:bcryptprimitives.dll (00007FFE536D0000), size: 532480 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5007
-C:\WINDOWS\system32\uxtheme.dll:uxtheme.dll (00007FFE50120000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\SYSTEM32\windows.storage.dll:windows.storage.dll (00007FFE516A0000), size: 8011776 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.6033
-C:\WINDOWS\SYSTEM32\Wldp.dll:Wldp.dll (00007FFE52FE0000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\System32\SHCORE.dll:SHCORE.dll (00007FFE55900000), size: 708608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\SYSTEM32\profapi.dll:profapi.dll (00007FFE53550000), size: 147456 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.6033
-C:\WINDOWS\system32\IconCodecService.dll:IconCodecService.dll (00007FFE4FB40000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1
-C:\WINDOWS\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FFE4FED0000), size: 1794048 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.6093
-C:\WINDOWS\System32\clbcatq.dll:clbcatq.dll (00007FFE55CF0000), size: 692224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.10941.16384
-C:\WINDOWS\System32\netprofm.dll:netprofm.dll (00007FFE4FE30000), size: 258048 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.4355
-C:\WINDOWS\System32\npmproxy.dll:npmproxy.dll (00007FFE4CB70000), size: 65536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.4239
-C:\WINDOWS\System32\NSI.dll:NSI.dll (00007FFE54510000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFE4E4C0000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFE4E4A0000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFE52A00000), size: 827392 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5369
-C:\WINDOWS\system32\napinsp.dll:napinsp.dll (00007FFE36E80000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\system32\pnrpnsp.dll:pnrpnsp.dll (00007FFE2F3E0000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\system32\wshbth.dll:wshbth.dll (00007FFE2B560000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5848
-C:\WINDOWS\system32\NLAapi.dll:NLAapi.dll (00007FFE4F350000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.4123
-C:\WINDOWS\System32\winrnr.dll:winrnr.dll (00007FFE2EC70000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFE4BDF0000), size: 524288 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5915
-C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFE4BD90000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\AMDUnityPlugin.DLL:AMDUnityPlugin.DLL (00007FFDF5910000), size: 8814592 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\NVUnityPlugin.DLL:NVUnityPlugin.DLL (00007FFE2D7E0000), size: 1609728 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\Data\Tools\astcenc-avx2.dll:astcenc-avx2.dll (00007FFE45BB0000), size: 364544 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\MMDevApi.dll:MMDevApi.dll (00007FFE4E410000), size: 544768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5915
-C:\WINDOWS\System32\DEVOBJ.dll:DEVOBJ.dll (00007FFE533B0000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\Users\Ellen\Desktop\Project\25_Dorememe\Dorememe4\Library\PackageCache\com.unity.xr.oculus\Runtime\x64\AudioPluginOculusSpatializer.dll:AudioPluginOculusSpatializer.dll (00007FFE03470000), size: 2899968 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Users\Ellen\Desktop\Project\25_Dorememe\Dorememe4\Library\PackageCache\com.meta.xr.sdk.audio\Runtime\Plugins\x86_64\MetaXRAudioUnity.dll:MetaXRAudioUnity.dll (00007FFDF5690000), size: 2621440 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFE511E0000), size: 2101248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5848
-C:\Users\Ellen\Desktop\Project\25_Dorememe\Dorememe4\Library\PackageCache\com.meta.xr.sdk.voice\Lib\Telemetry\Plugins\SDKTelemetry.dll:SDKTelemetry.dll (00007FFDEE9F0000), size: 8654848 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL:CRYPTBASE.DLL (00007FFE52EF0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispsi.inf_amd64_671c0a23616db704\nvldumdx.dll:nvldumdx.dll (00007FFE43240000), size: 802816 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 32.0.15.8157
-C:\WINDOWS\SYSTEM32\cryptnet.dll:cryptnet.dll (00007FFE4D010000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\drvstore.dll:drvstore.dll (00007FFE4CE80000), size: 1339392 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\System32\imagehlp.dll:imagehlp.dll (00007FFE54690000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FFE52ED0000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5856
-C:\WINDOWS\system32\rsaenh.dll:rsaenh.dll (00007FFE52600000), size: 229376 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.6093
-C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispsi.inf_amd64_671c0a23616db704\nvgpucomp64.dll:nvgpucomp64.dll (00007FFE3DD10000), size: 64569344 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 32.0.15.8157
-C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispsi.inf_amd64_671c0a23616db704\Display.NvContainer\NvMessageBus.dll:NvMessageBus.dll (00007FFE472A0000), size: 3551232 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.15.3538.9611
-C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispsi.inf_amd64_671c0a23616db704\NvMemMapStoragex.dll:NvMemMapStoragex.dll (00007FFE3C760000), size: 909312 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\SYSTEM32\POWRPROF.dll:POWRPROF.dll (00007FFE53190000), size: 307200 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\UMPDC.dll:UMPDC.dll (00007FFE53080000), size: 73728 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispsi.inf_amd64_671c0a23616db704\nvwgf2umx.dll:nvwgf2umx.dll (00007FFE31600000), size: 92491776 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 32.0.15.8157
-C:\WINDOWS\system32\nvspcap64.dll:nvspcap64.dll (00007FFE026A0000), size: 1339392 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 11.0.5.266
-C:\WINDOWS\SYSTEM32\ntmarta.dll:ntmarta.dll (00007FFE52850000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\dxcore.dll:dxcore.dll (00007FFE44600000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispsi.inf_amd64_671c0a23616db704\nvppex.dll:nvppex.dll (00007FFE2A9A0000), size: 1798144 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 32.0.15.8157
-C:\WINDOWS\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFE4C820000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.4474
-C:\WINDOWS\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFE4BE90000), size: 589824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFE4AB90000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.4474
-C:\WINDOWS\system32\wbem\fastprox.dll:fastprox.dll (00007FFE4AE10000), size: 1097728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\WINDOWS\SYSTEM32\amsi.dll:amsi.dll (00007FFE47790000), size: 126976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.4355
-C:\WINDOWS\SYSTEM32\USERENV.dll:USERENV.dll (00007FFE534D0000), size: 188416 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\Program Files\Windows Defender\MpOav.dll:MpOav.dll (00007FFE47740000), size: 278528 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 4.18.1909.6
-C:\WINDOWS\SYSTEM32\opencl.dll:opencl.dll (00007FFE2D9B0000), size: 483328 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.0.6.0
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\radeonrays.dll:radeonrays.dll (00007FFE2CC60000), size: 344064 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\Data\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll:mono-2.0-bdwgc.dll (00007FFDEDFA0000), size: 10756096 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\SYSTEM32\PROPSYS.dll:PROPSYS.dll (00007FFE4D4C0000), size: 999424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.19041.5794
-C:\WINDOWS\SYSTEM32\edputil.dll:edputil.dll (00007FFE2B460000), size: 147456 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.4355
-C:\Windows\System32\Windows.StateRepositoryPS.dll:Windows.StateRepositoryPS.dll (00007FFE2F280000), size: 1335296 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.6093
-C:\WINDOWS\SYSTEM32\urlmon.dll:urlmon.dll (00007FFE45E30000), size: 2031616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 11.0.19041.6033
-C:\WINDOWS\SYSTEM32\iertutil.dll:iertutil.dll (00007FFE44BE0000), size: 2879488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 11.0.19041.6033
-C:\WINDOWS\SYSTEM32\netutils.dll:netutils.dll (00007FFE52AD0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\srvcli.dll:srvcli.dll (00007FFE45CF0000), size: 163840 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\virtdisk.dll:virtdisk.dll (00007FFE4F540000), size: 77824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\FLTLIB.DLL:FLTLIB.DLL (00007FFE3D720000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\Windows\System32\wintypes.dll:wintypes.dll (00007FFE4F750000), size: 1404928 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\Windows\System32\appresolver.dll:appresolver.dll (00007FFE2E440000), size: 606208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\Windows\System32\Bcp47Langs.dll:Bcp47Langs.dll (00007FFE22870000), size: 372736 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5794
-C:\Windows\System32\SLC.dll:SLC.dll (00007FFE52130000), size: 167936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\Windows\System32\sppc.dll:sppc.dll (00007FFE52100000), size: 151552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\Windows\System32\OneCoreCommonProxyStub.dll:OneCoreCommonProxyStub.dll (00007FFE2E010000), size: 520192 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.4597
-C:\Windows\System32\OneCoreUAPCommonProxyStub.dll:OneCoreUAPCommonProxyStub.dll (00007FFE477B0000), size: 8208384 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.5915
-C:\Users\Ellen\Desktop\Project\25_Dorememe\Dorememe4\Library\PackageCache\com.meta.xr.sdk.core\Plugins\Win64OpenXR\OVRPlugin.dll:OVRPlugin.dll (00007FFDEC3A0000), size: 8359936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.110.0.0
-C:\WINDOWS\SYSTEM32\WINNSI.DLL:WINNSI.DLL (00007FFE4E820000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.3636
-C:\WINDOWS\SYSTEM32\gpapi.dll:gpapi.dll (00007FFE51E60000), size: 143360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.4355
+========================================================================
+Received Import Request.
+  Time since last request: 8.710764 seconds.
+  path: Assets/01 Scence/summer.unity
+  artifactKey: Guid(7e70f2558dc3bbd40843024c19550b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01 Scence/summer.unity using Guid(7e70f2558dc3bbd40843024c19550b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '353283fbcf0eaa933b213641c0b52c25') in 0.0005311 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-========== OUTPUTTING STACK TRACE ==================
+========================================================================
+Received Import Request.
+  Time since last request: 99.582414 seconds.
+  path: Assets/Material/1 (1).png
+  artifactKey: Guid(917b4b87609e4734692ba56dc5b47450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/1 (1).png using Guid(917b4b87609e4734692ba56dc5b47450) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bff9e0377e480110e2b54345be0abe73') in 0.1538188 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-0x00007FFE53A65339 (KERNELBASE) RaiseException
-0x00007FFDCFEAAC35 (Unity) EditorMonoConsole::LogToConsoleImplementation
-0x00007FFDCFEAB8FA (Unity) EditorMonoConsole::LogToConsoleImplementation
-0x00007FFDD0B5B9DD (Unity) DebugStringToFilePostprocessedStacktrace
-0x00007FFDD0B5AD78 (Unity) DebugStringToFile
-0x00007FFDD046057C (Unity) RegisterAssemblyDefinition
-0x00007FFDD088E936 (Unity) ProcessAssemblyAssets
-0x00007FFDD088F646 (Unity) UpdateScriptCompilationPipelineCaches
-0x00007FFDD07A6034 (Unity) AssetImportWorkerClient::RegisterTransientArtifacts
-0x00007FFDD07A62BA (Unity) AssetImportWorkerClient::ReloadScriptingDomain
-0x00007FFDD077FD7C (Unity) <lambda_94302c41bc55323db1fed16712a08587>::operator()
-0x00007FFDD0863C2E (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
-0x00007FFDD08514BA (Unity) asio::detail::win_iocp_io_context::do_one
-0x00007FFDD0852824 (Unity) asio::detail::win_iocp_io_context::run
-0x00007FFDD086224C (Unity) IOService::Run
-0x00007FFDD07AA336 (Unity) RunAssetImportWorkerClientV2
-0x00007FFDD07AA3FB (Unity) RunAssetImporterV2
-0x00007FFDCFFB6048 (Unity) Application::InitializeProject
-0x00007FFDD05BBD15 (Unity) UnityMain
-0x00007FF69AA52FBA (Unity) __scrt_common_main_seh
-0x00007FFE545D7374 (KERNEL32) BaseThreadInitThunk
-0x00007FFE55FDCC91 (ntdll) RtlUserThreadStart
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Material/Right hand.png
+  artifactKey: Guid(630704cc356fcfb419955b345adc0cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Right hand.png using Guid(630704cc356fcfb419955b345adc0cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a3d02e4ce279ac7a98c34f84842c12c') in 0.0254122 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========== END OF STACKTRACE ===========
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Material/Left hand.png
+  artifactKey: Guid(d81b6c6b6c683cd41b75f602349ffb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Left hand.png using Guid(d81b6c6b6c683cd41b75f602349ffb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f144379c0aae6fc2d39d7fc8a1650491') in 0.0228832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
- * C:/Users/Ellen/AppData/Local/Temp/Unity/Editor/Crashes
+========================================================================
+Received Import Request.
+  Time since last request: 5.277560 seconds.
+  path: Assets/VRPen/PenMaterial.mat
+  artifactKey: Guid(2941333e74caa614fabd9972e2e19ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRPen/PenMaterial.mat using Guid(2941333e74caa614fabd9972e2e19ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1abae1097301262c71d2dbc12f37f84') in 0.4490746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.318384 seconds.
+  path: Assets/VRPenScribbles/2025-11-10--16-58-00.asset
+  artifactKey: Guid(ea5fcc97b169c6c479f9d5d9b60b37f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRPenScribbles/2025-11-10--16-58-00.asset using Guid(ea5fcc97b169c6c479f9d5d9b60b37f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b399e440740eb300764dae1046c1c086') in 0.0020354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/VRPenScribbles/2025-11-10--17-28-42.asset
+  artifactKey: Guid(5dbcbbae276e7af459a1602b20fd8944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRPenScribbles/2025-11-10--17-28-42.asset using Guid(5dbcbbae276e7af459a1602b20fd8944) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b18015acab6f76b657a64d030ea200ec') in 0.0011355 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/VRPenScribbles/2025-11-10--17-39-46.asset
+  artifactKey: Guid(83b1d7361d5ebac4d9c876bc3f9b12f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRPenScribbles/2025-11-10--17-39-46.asset using Guid(83b1d7361d5ebac4d9c876bc3f9b12f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c8b09cc7acdcf627a6aaeff6bae6513c') in 0.001122 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/VRPenScribbles/2025-11-10--17-16-37.asset
+  artifactKey: Guid(e2778ba22a5bab846a65ea52bcd340d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRPenScribbles/2025-11-10--17-16-37.asset using Guid(e2778ba22a5bab846a65ea52bcd340d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1bf07038b4a5179dd3ed77e2f0caf87') in 0.0011342 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.607296 seconds.
+  path: Assets/SummerItems/Prefabs/Camera.prefab
+  artifactKey: Guid(8a9a0a7ee2d174143a6d23ae34315cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SummerItems/Prefabs/Camera.prefab using Guid(8a9a0a7ee2d174143a6d23ae34315cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b4f38a51d509962582891bfc0543633') in 0.0896812 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/StylizedCamp/Materials/M_StylizedCamp_Grass.mat
+  artifactKey: Guid(175e1feafb00400469c4fa170816df09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Materials/M_StylizedCamp_Grass.mat using Guid(175e1feafb00400469c4fa170816df09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd263104406f348423a065e0f23b2c18') in 0.0189007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/StylizedCamp/Materials/M_StylizedCamp_mat.mat
+  artifactKey: Guid(e6deffebbc0a978409f91a14b08dfaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Materials/M_StylizedCamp_mat.mat using Guid(e6deffebbc0a978409f91a14b08dfaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f778fa31dfa3c3cebf66a4419a1dcbc') in 0.0157986 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/StylizedCamp/Materials/M_StylizedCamp_Emission.mat
+  artifactKey: Guid(b6e687f4c3ed6e640b29d00ea775b2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Materials/M_StylizedCamp_Emission.mat using Guid(b6e687f4c3ed6e640b29d00ea775b2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88cf678c57787ae239fbabe51964a98b') in 0.0101619 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/StylizedCamp/Materials/M_StylizedCamp_mat_twosided.mat
+  artifactKey: Guid(4515af06c91709741bad266d1e0304ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Materials/M_StylizedCamp_mat_twosided.mat using Guid(4515af06c91709741bad266d1e0304ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '60423517ac781391e65556c2c490d494') in 0.0110221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/StylizedCamp/Materials/M_StylizedCamp_Ground.mat
+  artifactKey: Guid(6a1e2cd458039334e8218d9ff2fd4b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Materials/M_StylizedCamp_Ground.mat using Guid(6a1e2cd458039334e8218d9ff2fd4b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3fa455e2174919e4e99d62964b466795') in 0.0181345 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.754197 seconds.
+  path: Assets/StylizedCamp/Prefab/SM_CampfireCookingPole.prefab
+  artifactKey: Guid(b8522682f20bad04697682aff6e62a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Prefab/SM_CampfireCookingPole.prefab using Guid(b8522682f20bad04697682aff6e62a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ac16fa128e9ed27f2ac2c08b56c5702') in 0.0123059 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/StylizedCamp/Textures/T_StylizedCamp.tga
+  artifactKey: Guid(8559ee2e777872b48a11e0a96d63294c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Textures/T_StylizedCamp.tga using Guid(8559ee2e777872b48a11e0a96d63294c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2252f6c31d645be6a17690d5bac8cd46') in 0.007638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/StylizedCamp/Mesh/SM_CampingStove.fbx
+  artifactKey: Guid(091c7fc9841c5574ca1ff277bccc4bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Mesh/SM_CampingStove.fbx using Guid(091c7fc9841c5574ca1ff277bccc4bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e02ce891d6135e416cf7757ef67abd06') in 0.133362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.333843 seconds.
+  path: Assets/StylizedCamp/Textures/T_StylizedCamp_Grass.tga
+  artifactKey: Guid(78005894df825bd42b3d1ef0abc94cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Textures/T_StylizedCamp_Grass.tga using Guid(78005894df825bd42b3d1ef0abc94cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63f6aa5288da43468134d41843888267') in 0.0124127 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.553735 seconds.
+  path: Assets/StylizedCamp/Prefab/SM_Backpack_B.prefab
+  artifactKey: Guid(17f5ba4d2a389d249b045d80f02820bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Prefab/SM_Backpack_B.prefab using Guid(17f5ba4d2a389d249b045d80f02820bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95cba1818daa00f3a42e49314875835d') in 0.0126174 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/StylizedCamp/Prefab/SM_Cot.prefab
+  artifactKey: Guid(6408fd3c68522734da23e3506f6e30dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Prefab/SM_Cot.prefab using Guid(6408fd3c68522734da23e3506f6e30dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4d0f2daa8c4ad91c1584833f42947d5') in 0.0117366 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/StylizedCamp/Prefab/SM_Flashlight.prefab
+  artifactKey: Guid(7dd6452f9b5e75646bf8cdfeff7c9f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Prefab/SM_Flashlight.prefab using Guid(7dd6452f9b5e75646bf8cdfeff7c9f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc96fc76d60afed3f99726e4a9cb605e') in 0.0077715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/StylizedCamp/Prefab/SM_Chair_A.prefab
+  artifactKey: Guid(58c8a96be0472204a88748fa96053729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Prefab/SM_Chair_A.prefab using Guid(58c8a96be0472204a88748fa96053729) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a84ba13cbbd3c406edf419d2a0314376') in 0.0082864 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/StylizedCamp/Prefab/SM_Bench.prefab
+  artifactKey: Guid(4c0a727f764ffea489605baee0fe6e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Prefab/SM_Bench.prefab using Guid(4c0a727f764ffea489605baee0fe6e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e5539073ca15875e3225c2828eb7ff71') in 0.0081552 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/StylizedCamp/Prefab/SM_BackpackingStove.prefab
+  artifactKey: Guid(4e2c51d8bbc2a754e8f23650f9cacf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Prefab/SM_BackpackingStove.prefab using Guid(4e2c51d8bbc2a754e8f23650f9cacf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ddfe34658b77dd0d0b39437a3202367c') in 0.0083158 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/StylizedCamp/Prefab/SM_Chair_B.prefab
+  artifactKey: Guid(83de29f93eab7a64186872a49d50c885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Prefab/SM_Chair_B.prefab using Guid(83de29f93eab7a64186872a49d50c885) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3b24fc909c95fbd0b0c3efcdbc46590') in 0.0102234 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/StylizedCamp/Prefab/SM_CoolerBox.prefab
+  artifactKey: Guid(48c54803d208f9b40b08dc71d43e7b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Prefab/SM_CoolerBox.prefab using Guid(48c54803d208f9b40b08dc71d43e7b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8df1c92c79d11484cbc07bfbf5ded251') in 0.0081385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.502772 seconds.
+  path: Assets/StylizedCamp/Mesh/SM_BackpackingStove.fbx
+  artifactKey: Guid(2485da31c6c8cd949830f86a3af3fe3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Mesh/SM_BackpackingStove.fbx using Guid(2485da31c6c8cd949830f86a3af3fe3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '58bbb5dc341419705b6af8ef0eb521e8') in 0.0183886 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/StylizedCamp/Mesh/SM_Cap.fbx
+  artifactKey: Guid(809706564bb37cd4ebdb46e7738639fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Mesh/SM_Cap.fbx using Guid(809706564bb37cd4ebdb46e7738639fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '40e7e7c6ecbbe9f8e8332e614c7390e4') in 0.0160387 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/StylizedCamp/Mesh/SM_Chair_B.fbx
+  artifactKey: Guid(da9a81e5851dc2d4a8ba8b4c3265ae34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Mesh/SM_Chair_B.fbx using Guid(da9a81e5851dc2d4a8ba8b4c3265ae34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7efc6a706b889b282319c0699ede11e0') in 0.0158904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/StylizedCamp/Mesh/SM_Bonfire_A.fbx
+  artifactKey: Guid(81951e3aa9a96a74683d3d7ae6dc741d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Mesh/SM_Bonfire_A.fbx using Guid(81951e3aa9a96a74683d3d7ae6dc741d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35816c26c289a648ffc9edf84b533ad5') in 0.0130519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/StylizedCamp/Mesh/SM_Chair_A.fbx
+  artifactKey: Guid(f2c0e7bfa538d0f4abff0b66479f9f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Mesh/SM_Chair_A.fbx using Guid(f2c0e7bfa538d0f4abff0b66479f9f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a1181dbface7920190c739759afc0f29') in 0.0122125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/StylizedCamp/Mesh/SM_Grass_B.fbx
+  artifactKey: Guid(cf5c95d2a1dc62b4b907c66c952525c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Mesh/SM_Grass_B.fbx using Guid(cf5c95d2a1dc62b4b907c66c952525c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74b5755ccce0720cf34c0dde70af68a6') in 0.0126218 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/StylizedCamp/Mesh/SM_Grass_A.fbx
+  artifactKey: Guid(6c8aeb2a9a2732c459e9dc782aa1aba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedCamp/Mesh/SM_Grass_A.fbx using Guid(6c8aeb2a9a2732c459e9dc782aa1aba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b5f1e48259b5e48e0939a062b827c67') in 0.012971 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

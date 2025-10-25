@@ -3536,3 +3536,623 @@
 [2025-10-25 오전 4:16:38] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubService
 [2025-10-25 오전 4:16:38] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
 [2025-10-25 오전 4:16:38] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:40:31] [Debug] ActualHost
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:40:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:40:33] [Debug] [Application] Initialize: isReloading=False
+[2025-10-25 오전 9:40:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:40:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:40:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:40:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:40:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:40:33] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 9:40:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:40:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:40:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:40:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:40:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:40:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:43:10] [Debug] [HubAnalytics] OnAppStart
+[2025-10-25 오전 9:43:13] [Debug] [HubAnalytics] PosthogClient.BatchAsync: Sending Queue Items={"api_key":"phc_DQ6tsN03HRXTr9hNBfi3DierOY5Y0SisUxgxjuAmZG5","batch":[{"event":"app start","properties":{"$set":{"sdk_region_id":"ko-KR","sdk_region_name":"South Korea","sdk_language":"Korean","sdk_os_architecture":"X64","sdk_time_zone":"Korea Standard Time","product_version":"1.1.6","platform_account_id":"anonymous","platform_account_name":"JTDEm1Sp78QCr/NG5XKtuWndHPGCszySM5CHtPyxH297vOWejZuM6Escz2Zqc1/ug0BQrexwhyxl/8JnWc2ZXh3lIj2Kx1FJ+duQZXtl+lfjtNwRcwUxDBcMFviwafzsbIN3OGC4gGCJGRWz+gSrgygOayL0uw3laT1DuEPK0cogy/oKjJNK0RQhX6H4bJyCoUEGfdd09bvMCH0Skgo+i5kJJCmzdU0c0NgXzUvfg1uzEqFk47onVoGNo1ZNp1IugMbCluwg6d72ldQ6P8Nj4GXQlUetvJqdcoNvrfQLjD7x3kC8DeFXYJRddg8lEmz3/2JXqTjcXyH6fxGN1GWx7w=="},"$os":"WINDOWS","$os_name":"WINDOWS","$session_id":"ff3c35bc-959b-4270-89cc-3b623e175c72_34e8d849-a030-4d3a-b84a-aad11d3a01af","distinct_id":"b436f785064ea140538673dd9b84f3f59c821871","product_name":"UModeler Hub","product_version":"1.1.6","platform_name":"Unity","platform_version":"6000.0.29f1","screen_width":1920,"screen_height":1080,"viewport_width":640,"viewport_height":480,"unity_systeminfo_language":"Korean","unity_systeminfo_os":"Windows 10  (10.0.19045) 64bit","unity_systeminfo_graphicsDeviceType":"Direct3D11","unity_systeminfo_graphicsDeviceVendor":"NVIDIA","unity_systeminfo_graphicsDeviceName":"NVIDIA GeForce RTX 2060","unity_systeminfo_deviceType":"Desktop","unity_systeminfo_processorType":"Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz"},"timestamp":"2025-10-25T00:43:10.3293658Z"}]}
+[2025-10-25 오전 9:43:14] [Debug] [HubAnalytics] PosthogClient.BatchAsync: Sent 1 queue item(s).
+[2025-10-25 오전 9:43:20] [Debug] [Application] Release: isReloading=True
+[2025-10-25 오전 9:43:20] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:43:20] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:43:20] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:43:20] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:43:20] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:43:20] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: False
+[2025-10-25 오전 9:43:20] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:43:20] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:43:20] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:43:20] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:43:20] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:43:20] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:43:24] [Debug] ActualHost
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:43:24] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:43:25] [Debug] [Application] Initialize: isReloading=True
+[2025-10-25 오전 9:43:25] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:43:25] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:43:25] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:43:25] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:43:25] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:43:25] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 9:43:25] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:43:25] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:43:25] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:43:25] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:43:25] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:43:25] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:43:29] [Debug] [Application] Release: isReloading=False
+[2025-10-25 오전 9:43:29] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:43:29] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:43:29] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:43:29] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:43:29] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:43:29] [Debug] [HubAnalytics] OnAppEnd
+[2025-10-25 오전 9:43:29] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: False
+[2025-10-25 오전 9:43:29] [Debug] [HubAnalytics] PosthogClient.BatchAsync: Sending Queue Items={"api_key":"phc_DQ6tsN03HRXTr9hNBfi3DierOY5Y0SisUxgxjuAmZG5","batch":[{"event":"app end","properties":{"$set":{"sdk_region_id":"ko-KR","sdk_region_name":"South Korea","sdk_language":"Korean","sdk_os_architecture":"X64","sdk_time_zone":"Korea Standard Time","product_version":"1.1.6"},"$os":"WINDOWS","$os_name":"WINDOWS","$session_id":"ab51599e-20e4-4c2f-82ca-7eec8410789d_1befb64f-e849-43b1-ba34-98ac954196a1","distinct_id":"b436f785064ea140538673dd9b84f3f59c821871","product_name":"UModeler Hub","product_version":"1.1.6","platform_name":"Unity","platform_version":"6000.0.29f1","screen_width":1920,"screen_height":1080,"viewport_width":600,"viewport_height":322,"unity_systeminfo_language":"Korean","unity_systeminfo_os":"Windows 10  (10.0.19045) 64bit","unity_systeminfo_graphicsDeviceType":"Direct3D11","unity_systeminfo_graphicsDeviceVendor":"NVIDIA","unity_systeminfo_graphicsDeviceName":"NVIDIA GeForce RTX 2060","unity_systeminfo_deviceType":"Desktop","unity_systeminfo_processorType":"Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz"},"timestamp":"2025-10-25T00:43:29.1818307Z"}]}
+[2025-10-25 오전 9:43:29] [Debug] [HubAnalytics] PosthogClient.BatchAsync: Sent 1 queue item(s).
+[2025-10-25 오전 9:43:29] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:43:29] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:43:29] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:43:29] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:43:29] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:43:29] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:43:42] [Debug] ActualHost
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:43:42] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:43:43] [Debug] [Application] Initialize: isReloading=False
+[2025-10-25 오전 9:43:43] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:43:43] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:43:43] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:43:43] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:43:43] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:43:43] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 9:43:43] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:43:43] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:43:43] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:43:44] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:43:44] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:43:44] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:43:45] [Debug] [HubAnalytics] OnAppStart
+[2025-10-25 오전 9:43:50] [Debug] [Application] Release: isReloading=True
+[2025-10-25 오전 9:43:50] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:43:50] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:43:50] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:43:50] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:43:50] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:43:50] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: False
+[2025-10-25 오전 9:43:50] [Debug] [HubAnalytics] PosthogClient.BatchAsync: Sending Queue Items={"api_key":"phc_DQ6tsN03HRXTr9hNBfi3DierOY5Y0SisUxgxjuAmZG5","batch":[{"event":"app start","properties":{"$set":{"sdk_region_id":"ko-KR","sdk_region_name":"South Korea","sdk_language":"Korean","sdk_os_architecture":"X64","sdk_time_zone":"Korea Standard Time","product_version":"1.1.6","platform_account_id":"anonymous","platform_account_name":"QO/g5/xxPavnMZJfcKFPeyOFh7wRnapbA4k+6nL2Un7FAFFcyGcA/D/GJOp9nLARkgCOzvXSIeEKoje0ZQ/bRmyKpaAm0B5sw8jC9iqitcsvZVK4o0OSgVF0/Kr2eSkLX5KLn8XUi9HzcdEvHwrV0phsNNgqEycDOzMFK1CkqLAxrSQLToc0Ax84xu1gJf4hhoohGzG7rYm40crrAMO0ICwGIXsadqeL76VT+R/uXA2YRP38k/hWy++bTzR79VXVABcyGB+t7ckqHX3D+BrQhx7zY56isYC8zKdOWvd1vVV0EvNicAI+Gvp1j9cw+NZ2vOMIUbpydBWStEkvQ0hUbA=="},"$os":"WINDOWS","$os_name":"WINDOWS","$session_id":"c68315a8-89ae-43d0-ac2d-a526fed9be4f_d4554fbe-5f97-4d24-be3f-3f8229d795d8","distinct_id":"b436f785064ea140538673dd9b84f3f59c821871","product_name":"UModeler Hub","product_version":"1.1.6","platform_name":"Unity","platform_version":"6000.0.29f1","screen_width":1920,"screen_height":1080,"viewport_width":640,"viewport_height":480,"unity_systeminfo_language":"Korean","unity_systeminfo_os":"Windows 10  (10.0.19045) 64bit","unity_systeminfo_graphicsDeviceType":"Direct3D11","unity_systeminfo_graphicsDeviceVendor":"NVIDIA","unity_systeminfo_graphicsDeviceName":"NVIDIA GeForce RTX 2060","unity_systeminfo_deviceType":"Desktop","unity_systeminfo_processorType":"Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz"},"timestamp":"2025-10-25T00:43:45.2506662Z"}]}
+[2025-10-25 오전 9:43:50] [Debug] [HubAnalytics] PosthogClient.BatchAsync: Sent 1 queue item(s).
+[2025-10-25 오전 9:43:50] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:43:50] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:43:50] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:43:50] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:43:50] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:43:50] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:43:53] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:43:53] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:43:53] [Debug] ActualHost
+[2025-10-25 오전 9:43:53] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:43:53] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 9:43:53] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 9:43:53] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:43:54] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 9:43:54] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 9:43:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 9:43:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:43:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:43:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:43:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:43:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:43:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:43:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:43:55] [Debug] [Application] Initialize: isReloading=True
+[2025-10-25 오전 9:43:55] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:43:55] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:43:55] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:43:55] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:43:55] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:43:55] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 9:43:55] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:43:55] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:43:55] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:43:55] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:43:55] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:43:55] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:44:47] [Debug] ActualHost
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Initialize: isReloading=False
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:44:47] [Debug] ActualHost
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:44:47] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Initialize: isReloading=False
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:44:48] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 9:44:48] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:44:48] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:59:12] [Debug] [Application] Release: isReloading=True
+[2025-10-25 오전 9:59:12] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:59:12] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:59:12] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:59:12] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:59:12] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:59:12] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: False
+[2025-10-25 오전 9:59:12] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:59:12] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:59:12] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:59:12] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:59:12] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:59:12] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:59:16] [Debug] ActualHost
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:59:16] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:59:18] [Debug] [Application] Initialize: isReloading=True
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:59:18] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:59:18] [Debug] [Application] Release: isReloading=True
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:59:18] [Debug] [Application] Release: isReloading=True
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:59:18] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:59:21] [Debug] ActualHost
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:59:22] [Debug] [Application] Initialize: isReloading=True
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:59:22] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:59:21] [Debug] ActualHost
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:59:21] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 9:59:22] [Debug] [Application] Initialize: isReloading=False
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 9:59:22] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 9:59:22] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 10:03:13] [Debug] [Application] Release: isReloading=False
+[2025-10-25 오전 10:03:13] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 10:03:13] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 10:03:13] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 10:03:13] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 10:03:13] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 10:03:13] [Debug] [HubAnalytics] OnAppEnd
+[2025-10-25 오전 10:03:13] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: False
+[2025-10-25 오전 10:03:13] [Debug] [HubAnalytics] PosthogClient.BatchAsync: Sending Queue Items={"api_key":"phc_DQ6tsN03HRXTr9hNBfi3DierOY5Y0SisUxgxjuAmZG5","batch":[{"event":"app end","properties":{"$set":{"sdk_region_id":"ko-KR","sdk_region_name":"South Korea","sdk_language":"Korean","sdk_os_architecture":"X64","sdk_time_zone":"Korea Standard Time","product_version":"1.1.6"},"$os":"WINDOWS","$os_name":"WINDOWS","$session_id":"904bae0d-2182-4844-9272-76f38a1292b4_bb31b818-3acd-48d1-ac12-81fe1e962a86","distinct_id":"b436f785064ea140538673dd9b84f3f59c821871","product_name":"UModeler Hub","product_version":"1.1.6","platform_name":"Unity","platform_version":"6000.0.29f1","screen_width":1920,"screen_height":1080,"viewport_width":988,"viewport_height":456,"unity_systeminfo_language":"Korean","unity_systeminfo_os":"Windows 10  (10.0.19045) 64bit","unity_systeminfo_graphicsDeviceType":"Direct3D11","unity_systeminfo_graphicsDeviceVendor":"NVIDIA","unity_systeminfo_graphicsDeviceName":"NVIDIA GeForce RTX 2060","unity_systeminfo_deviceType":"Desktop","unity_systeminfo_processorType":"Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz"},"timestamp":"2025-10-25T01:03:13.3896677Z"}]}
+[2025-10-25 오전 10:03:13] [Debug] [HubAnalytics] PosthogClient.BatchAsync: Sent 1 queue item(s).
+[2025-10-25 오전 10:03:13] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 10:03:13] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 10:03:13] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 10:03:13] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 10:03:13] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 10:03:13] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 10:03:31] [Debug] ActualHost
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 10:03:31] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 10:03:32] [Debug] [Application] Initialize: isReloading=False
+[2025-10-25 오전 10:03:32] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 10:03:32] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 10:03:32] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 10:03:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 10:03:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 10:03:33] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 10:03:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 10:03:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 10:03:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 10:03:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 10:03:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 10:03:33] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 10:03:38] [Debug] [HubAnalytics] OnAppStart
+[2025-10-25 오전 10:03:40] [Debug] [Application] Release: isReloading=True
+[2025-10-25 오전 10:03:40] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 10:03:40] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 10:03:40] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 10:03:40] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 10:03:40] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 10:03:40] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: False
+[2025-10-25 오전 10:03:40] [Debug] [HubAnalytics] PosthogClient.BatchAsync: Sending Queue Items={"api_key":"phc_DQ6tsN03HRXTr9hNBfi3DierOY5Y0SisUxgxjuAmZG5","batch":[{"event":"app start","properties":{"$set":{"sdk_region_id":"ko-KR","sdk_region_name":"South Korea","sdk_language":"Korean","sdk_os_architecture":"X64","sdk_time_zone":"Korea Standard Time","product_version":"1.1.6","platform_account_id":"anonymous","platform_account_name":"SSOC9O5agI5U6F3kdy+Zh5vMgc0cEpamt+3kxhsH0P3Ch/n++uX4PLzDoWfVXoZ1SPrsNNwyXug8MxqLb0oBCaGWs2ctDkWynXqGp9998KgQdRaukYjqKHRywud9fXCEvN+lTaumqRmXkQAGQ210k/0AO1Zs9sokg3DRh5l1wT2Pa91sm4fwbhT4dQBUobD9uVZrLbZxiLeWWSZtzoy5IQxjsJLVXGCxSbdiQLF3kGyofNb+XR8png/SZEzflYWJwYZrls7nXPb4v/AIsWq0vsyDKflk1TcecCWlRKlBjx7K0/ed5gQntZZI9t3FQjHKM05ER2ezmHL62aPTmzm+mQ=="},"$os":"WINDOWS","$os_name":"WINDOWS","$session_id":"f12c4ca7-91d4-4809-b98e-9e2555172e60_de67a3f1-2643-40da-9f42-74572d70b216","distinct_id":"b436f785064ea140538673dd9b84f3f59c821871","product_name":"UModeler Hub","product_version":"1.1.6","platform_name":"Unity","platform_version":"6000.0.29f1","screen_width":1920,"screen_height":1080,"viewport_width":1481,"viewport_height":438,"unity_systeminfo_language":"Korean","unity_systeminfo_os":"Windows 10  (10.0.19045) 64bit","unity_systeminfo_graphicsDeviceType":"Direct3D11","unity_systeminfo_graphicsDeviceVendor":"NVIDIA","unity_systeminfo_graphicsDeviceName":"NVIDIA GeForce RTX 2060","unity_systeminfo_deviceType":"Desktop","unity_systeminfo_processorType":"Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz"},"timestamp":"2025-10-25T01:03:38.2262579Z"}]}
+[2025-10-25 오전 10:03:41] [Debug] [HubAnalytics] PosthogClient.BatchAsync: Sent 1 queue item(s).
+[2025-10-25 오전 10:03:41] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 10:03:41] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 10:03:41] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 10:03:41] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 10:03:41] [Debug] [Application] Service Release: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 10:03:41] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 10:03:44] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 10:03:44] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 10:03:44] [Debug] ActualHost
+[2025-10-25 오전 10:03:44] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 10:03:44] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 10:03:44] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 10:03:44] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 10:03:44] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 10:03:44] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 10:03:44] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 10:03:44] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 10:03:45] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 10:03:45] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 10:03:45] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 10:03:45] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 10:03:45] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 10:03:45] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 10:03:46] [Debug] [Application] Initialize: isReloading=True
+[2025-10-25 오전 10:03:46] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 10:03:46] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 10:03:46] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 10:03:46] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 10:03:46] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 10:03:46] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 10:03:46] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 10:03:46] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 10:03:46] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 10:03:46] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 10:03:46] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 10:03:46] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 11:18:28] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 11:18:28] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 11:18:29] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 11:18:28] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 11:18:29] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 11:18:28] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 11:18:29] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 11:18:28] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 11:18:29] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 11:18:28] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 11:18:29] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 11:18:28] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 11:18:29] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 11:18:28] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 11:18:29] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 11:18:28] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 11:18:30] [Debug] [Application] Initialize: isReloading=False
+[2025-10-25 오전 11:18:30] [Debug] [Application] Initialize: isReloading=False
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 11:18:30] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 11:18:30] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 11:18:30] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 11:21:02] [Debug] ActualHost
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 11:21:02] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 11:21:03] [Debug] [Application] Initialize: isReloading=False
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 11:21:03] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 11:21:03] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 11:21:03] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 11:22:49] [Debug] ActualHost
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 11:22:50] [Debug] [Application] Initialize: isReloading=False
+[2025-10-25 오전 11:22:50] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 11:22:50] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 11:22:50] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 11:22:50] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 11:22:50] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 11:22:50] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 11:22:50] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 11:22:50] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 11:22:50] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 11:22:50] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 11:22:50] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 11:22:50] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 11:22:49] [Debug] ActualHost
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오전 11:22:49] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 11:22:50] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오전 11:22:50] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오전 11:22:50] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오전 11:22:50] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 11:22:50] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 11:22:50] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 11:22:50] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 11:22:50] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 11:22:50] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 11:22:50] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오전 11:22:51] [Debug] [Application] Initialize: isReloading=False
+[2025-10-25 오전 11:22:51] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오전 11:22:51] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오전 11:22:51] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오전 11:22:51] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오전 11:22:51] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오전 11:22:51] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오전 11:22:51] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오전 11:22:51] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오전 11:22:51] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오전 11:22:51] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오전 11:22:51] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오전 11:22:51] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubAuthentication = Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationCache = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오후 6:42:54] [Debug] ActualHost
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubService = Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.Authentication.IAuthenticationApiProvider = Tripolygon.UModeler.Editor.AuthenticationApiProviderService
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.UI.IObjectHierarchyService = Tripolygon.UModeler.Editor.UI.UnityEditorObjectHierarchyService
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.UI.IApplicationUtilityService = Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.Editor.UI.ApplicationSettings = Tripolygon.UModeler.Editor.UI.ApplicationSettings
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.UI.ITextureProvider = Tripolygon.UModeler.Editor.UI.UnityEditorTextureProvider
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.Resources.IResourcesApiProvider = Tripolygon.UModeler.Hub.ResourcesApiProviderService
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.HubFlashService = Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.IHubAnalyticsService = Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.VSAttributionService = Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier = Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.INoticeService = Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오후 6:42:54] [Debug] [Application] service: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService = Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오후 6:42:56] [Debug] [Application] Initialize: isReloading=False
+[2025-10-25 오후 6:42:56] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAuthentication
+[2025-10-25 오후 6:42:56] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationCache
+[2025-10-25 오후 6:42:56] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubService
+[2025-10-25 오후 6:42:56] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Editor.UI.UnityEditorApplicationUtilityService
+[2025-10-25 오후 6:42:56] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubFlashService
+[2025-10-25 오후 6:42:56] [Debug] [HubAnalytics] PosthogClient.SetAutoFlush: Value Changed: True
+[2025-10-25 오후 6:42:56] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.HubAnalyticsService
+[2025-10-25 오후 6:42:56] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.VSAttributionService
+[2025-10-25 오후 6:42:56] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오후 6:42:56] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오후 6:42:56] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오후 6:42:56] [Debug] [Application] Service Initialize: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오후 6:42:58] [Debug] [Application] Release: isReloading=False
+[2025-10-25 오후 6:42:58] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Views.SceneViews.HubSceneViewService
+[2025-10-25 오후 6:42:58] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Noticies.NoticeService
+[2025-10-25 오후 6:42:58] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateProductNotifier
+[2025-10-25 오후 6:42:58] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.Notifications.UpdateHubNotifier
+[2025-10-25 오후 6:42:58] [Debug] [Application] Service Release: Tripolygon.UModeler.Hub.VSAttributionService

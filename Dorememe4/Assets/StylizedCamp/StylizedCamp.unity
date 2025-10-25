@@ -1154,6 +1154,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7835439948246183056, guid: 31d189e1676d425488866facaf2aa7d8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4515af06c91709741bad266d1e0304ac, type: 2}
     - target: {fileID: 8628315717922573637, guid: 31d189e1676d425488866facaf2aa7d8, type: 3}
       propertyPath: m_Name
       value: SM_Backpack_A
@@ -1581,6 +1585,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1036004476479024012, guid: 17f5ba4d2a389d249b045d80f02820bd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4515af06c91709741bad266d1e0304ac, type: 2}
+    - target: {fileID: 1036004476479024012, guid: 17f5ba4d2a389d249b045d80f02820bd, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4515af06c91709741bad266d1e0304ac, type: 2}
     - target: {fileID: 1540333211724319321, guid: 17f5ba4d2a389d249b045d80f02820bd, type: 3}
       propertyPath: m_Name
       value: SM_Backpack_B
@@ -1703,6 +1715,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7203841434217445133, guid: fc46360d505951a47984345512d601cd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4515af06c91709741bad266d1e0304ac, type: 2}
     - target: {fileID: 8336729439079140450, guid: fc46360d505951a47984345512d601cd, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -2618,6 +2634,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7707122322913895016, guid: 58c8a96be0472204a88748fa96053729, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4515af06c91709741bad266d1e0304ac, type: 2}
     - target: {fileID: 8211696661222359997, guid: 58c8a96be0472204a88748fa96053729, type: 3}
       propertyPath: m_Name
       value: SM_Chair_A
@@ -3097,6 +3117,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2070465255033338550, guid: 3614797238568d449a10eb542a4f9857, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4515af06c91709741bad266d1e0304ac, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
