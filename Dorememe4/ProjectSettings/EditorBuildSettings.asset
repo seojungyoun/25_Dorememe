@@ -20,6 +20,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/01 Scence/Summer.unity
     guid: d2001d2d36adfd14da9563dcf0bf1324
+  - enabled: 1
+    path: Assets/01 Scence/Spring.unity
+    guid: 12878ebda3d0a324a82a0aec6d620e26
+  - enabled: 1
+    path: Assets/01 Scence/Fall.unity
+    guid: 4bad05916ca5632468560858a134036f
+  - enabled: 1
+    path: Assets/01 Scence/Winter.unity
+    guid: 358d26f7b27dd9649a8ec41e1c274937
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
