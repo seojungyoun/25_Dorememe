@@ -12,16 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6a912b0d1a84c47b1e18b177fbcacf, type: 3}
   m_Name: 2025-11-10--17-28-42
   m_EditorClassIdentifier: 
-  Strokes:
-  - Color: {r: 0, g: 0, b: 1, a: 1}
-    Points:
-    - {x: 0.066471025, y: 1.2317247, z: 0.5182229}
-    - {x: 0.066471025, y: 1.2317247, z: 0.5182229}
-    - {x: 0.16330433, y: 1.2581881, z: 0.5083}
-    - {x: 0.06284997, y: 1.2550894, z: 0.48940033}
-    - {x: 0.06284997, y: 1.2550894, z: 0.48940033}
-    BrushSize: 0.02
-    BrushAlpha: 1
+  Strokes: []
   Bounds:
-    m_Center: {x: 0.11307715, y: 1.2449565, z: 0.5038116}
-    m_Extent: {x: 0.05022718, y: 0.013231754, z: 0.014411315}
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}

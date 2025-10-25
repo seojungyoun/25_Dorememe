@@ -5,7 +5,7 @@ import pretty_midi
 from load_model import load_model
 from generate import generate_until_seconds, tokens_to_midi
 from midi2wav import midi_to_wav
-from musicgen_melody import init_musicgen, prefix_to_text, stylize_melody
+# from musicgen_melody import init_musicgen, prefix_to_text, stylize_melody
 
 DATA_JSONL = "./data/melody_tok.jsonl"
 VOCAB_JSON = "./data/melody_voc.json"
