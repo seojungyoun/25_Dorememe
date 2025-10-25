@@ -306,12 +306,16 @@ MonoBehaviour:
   _paintDelay: 0.5
   _material: {fileID: 2100000, guid: 2941333e74caa614fabd9972e2e19ea4, type: 2}
   _brushSize: 0.02
+  _brushAlpha: 1
   _colors:
   - {r: 0, g: 0, b: 1, a: 1}
   - {r: 0, g: 1, b: 1, a: 1}
   - {r: 0, g: 1, b: 0, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  ServerUrl: http://127.0.0.1:5000/api/upload_data
+  JobStatusUrl: http://127.0.0.1:5000/api/status
+  MusicAudioSource: {fileID: 0}
   Scribble: {fileID: 11400000, guid: 007b39f13bad5af45bd1af5840cb7db0, type: 2}
 --- !u!4 &55120443
 Transform:
