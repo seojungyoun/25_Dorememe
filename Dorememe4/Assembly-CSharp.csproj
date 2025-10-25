@@ -114,6 +114,7 @@
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\RendererFeatures\DepthBlit\DepthBlitFeature.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\SharedAssets\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP RenderGraph Samples\GlobalGbuffers\GlobalGbuffersRendererFeature.cs" />
+    <Compile Include="Assets\02 Scripts\StartButtonController.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\ActionToAxisXRInput.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP RenderGraph Samples\UnsafePass\UnsafePassRenderFeature.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP RenderGraph Samples\TextureReference w. FrameData\TextureRefRendererFeature.cs" />

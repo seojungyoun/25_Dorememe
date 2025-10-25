@@ -11238,6 +11238,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16943e000be00470481df45a4f6aecd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttons: []
+  targetColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
+  scaleMultiplier: 1.05
+  effectDuration: 0.3
 --- !u!4 &1621360226
 Transform:
   m_ObjectHideFlags: 0
