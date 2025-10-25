@@ -79,7 +79,6 @@
     <Compile Include="Assets\VRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
     <Compile Include="Assets\02 Scripts\ButtonDebug.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\RendererFeatures\DistortTunnel\DistortTunnelPass_CopyColor.cs" />
-    <Compile Include="Assets\02 Scripts\BrushSizeSlider.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\RendererFeatures\DistortTunnel\DistortTunnelRendererFeature.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\AutomaticTrackingModeChangerXRInput.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\LensFlares\Scripts\ScreenSpacePlacement.cs" />
@@ -95,6 +94,7 @@
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\ActionToVisibilityXRInputHand.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Intercept Feature\InterceptMessageHandler.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP RenderGraph Samples\FramebufferFetch\FrameBufferFetchRenderFeature.cs" />
+    <Compile Include="Assets\02 Scripts\BrushSizeController.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\RendererFeatures\DistortTunnel\DistortTunnelPass_Distort.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\DestroyObject.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
@@ -114,6 +114,7 @@
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\RendererFeatures\DepthBlit\DepthBlitFeature.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\SharedAssets\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP RenderGraph Samples\GlobalGbuffers\GlobalGbuffersRendererFeature.cs" />
+    <Compile Include="Assets\02 Scripts\BrushTransparencyController.cs" />
     <Compile Include="Assets\02 Scripts\StartButtonController.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\ActionToAxisXRInput.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP RenderGraph Samples\UnsafePass\UnsafePassRenderFeature.cs" />
