@@ -1,15 +1,26 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class StartButtonController : MonoBehaviour
 {
-    public GameObject startCanvas;       // ½ÃÀÛÇÏ±â ¹öÆ° ÀÖ´Â Äµ¹ö½º
-    public GameObject seasonSelectCanvas; // °èÀı ¼±ÅÃ Äµ¹ö½º
+    [Header("Canvas")]
+    public GameObject introCanvas;   // Canvas_Start
+    public GameObject seasonCanvas;  // Canvas_Season (ê³„ì ˆ ì„ íƒ ë²„íŠ¼ì´ ìˆëŠ” ìº”ë²„ìŠ¤)
 
-    public void OnClickStart()
+    [Header("VR Pen Root")]
+    public GameObject vrPenRoot;     // VR Pen ì „ì²´ ì˜¤ë¸Œì íŠ¸
+
+    public void OnStartButtonClick()
     {
-        // ½ÃÀÛ Äµ¹ö½º ²ô±â
-        startCanvas.SetActive(false);
-        // °èÀı ¼±ÅÃ Äµ¹ö½º ÄÑ±â
-        seasonSelectCanvas.SetActive(true);
+        // 1Intro í™”ë©´ ë„ê¸°
+        if (introCanvas != null)
+            introCanvas.SetActive(false);
+
+        // 2ê³„ì ˆ ì„ íƒ í™”ë©´ ì¼œê¸°
+        if (seasonCanvas != null)
+            seasonCanvas.SetActive(true);
+
+        // 3ï¸ VR Pen ë¹„í™œì„±í™” (ë“œë¡œì‰ ë¶ˆê°€)
+        if (vrPenRoot != null)
+            vrPenRoot.SetActive(false);
     }
 }
