@@ -13219,7 +13219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c225f8797873b848abffd2d67995d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 0}
+  panel: {fileID: 2042671873}
   delay: 3
   fadeDuration: 1
 --- !u!4 &1725966000
