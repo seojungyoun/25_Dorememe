@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -16,6 +16,24 @@ using UnityEditor;
 
 namespace VRPenNamespace
 {
+    // ==========================================================
+    // 1. JSON íŒŒì‹±ì„ ìœ„í•œ í´ë˜ìŠ¤ ì •ì˜ (ìƒˆë¡œ ì¶”ê°€ë¨)
+    // ==========================================================
+    [Serializable]
+    public class JobIdResponse
+    {
+        public string job_id;
+        public string status;
+    }
+
+    [Serializable]
+    public class StatusResponse
+    {
+        public string status;
+        public string music_url;
+        public string error;
+    }
+
     [ExecuteAlways]
     public partial class VRPen : MonoBehaviour
     {
@@ -40,12 +58,12 @@ namespace VRPenNamespace
 
         private global::VRPenNamespace.IVrPenInput _input;
 
-        // ¼­¹ö Åë½Å ¹× ¿Àµğ¿À Àç»ı º¯¼ö
-        public string ServerUrl = "http://your-server-ip:port/api/upload_data"; // µå·ÎÀ× µ¥ÀÌÅÍ(CSV)¸¦ ¾÷·ÎµåÇÒ ¼­¹ö ÁÖ¼Ò
-        public string JobStatusUrl = "http://your-server-ip:port/api/status/"; // À½¾Ç »ı¼º ÀÛ¾÷ »óÅÂ¸¦ È®ÀÎÇÒ ¼­¹ö ÁÖ¼Ò
-        public AudioSource MusicAudioSource; // ´Ù¿î·ÎµåÇÑ À½¾ÇÀ» Àç»ıÇÒ AudioSource ÄÄÆ÷³ÍÆ®
-        private const float PollingInterval = 5f; // ¼­¹ö »óÅÂ¸¦ È®ÀÎÇÏ´Â ÁÖ±â (5ÃÊ)
-        private string currentJobId = null; // ¼­¹ö¿¡¼­ ¹ŞÀº ºñµ¿±â ÀÛ¾÷(À½¾Ç »ı¼º) ID
+        // ì„œë²„ í†µì‹  ë° ì˜¤ë””ì˜¤ ì¬ìƒ ë³€ìˆ˜
+        public string ServerUrl = "http://127.0.0.1:5000/api/upload_data";
+        public string JobStatusUrl = "http://127.0.0.1:5000/api/status"; // â— ìˆ˜ì •: ë ìŠ¬ë˜ì‹œ ì œê±° (URL ì¡°í•© ì•ˆì •í™”)
+        public AudioSource MusicAudioSource;
+        private const float PollingInterval = 5f;
+        private string currentJobId = null;
 
         void Start()
         {
@@ -245,38 +263,61 @@ namespace VRPenNamespace
         [Button]
         public void Done()
         {
-            ExportCSV(); // 1. µå·ÎÀ× µ¥ÀÌÅÍ¸¦ CSV ÆÄÀÏ·Î ³»º¸³»±â
-            StartCoroutine(UploadCSVAndStartPolling()); // 2. CSV ¾÷·Îµå ¹× ¼­¹ö ÀÛ¾÷ »óÅÂ Æú¸µ ½ÃÀÛ
+            ExportCSV(); // CSV Export
+            StartCoroutine(UploadCSVAndStartPolling()); // CSV ì—…ë¡œë“œ ë° í´ë§ ì‹œì‘
             Debug.Log("CSV Exported and starting upload...");
         }
 
-        private IEnumerator UploadCSVAndStartPolling() // CSV¸¦ ¼­¹ö¿¡ ¾÷·ÎµåÇÏ°í Job ID¸¦ ¹ŞÀ½
+        private IEnumerator UploadCSVAndStartPolling() // CSV ì—…ë¡œë“œ ë° ì„œë²„ ì‘ì—… í´ë§ ì‹œì‘
         {
-            string name = Scribble != null ? Scribble.name : "Untitled";
-            string exportDir = Path.Combine(Application.persistentDataPath, "ScribbleExports");
-            string fileName = $"{name}_Data_{DateTime.Now:HH-mm-ss}.csv";
-            string filePath = Path.Combine(exportDir, fileName);
-
-            if (!File.Exists(filePath))
+            // ... (íŒŒì¼ ì €ì¥ ë° ì—…ë¡œë“œ ë¡œì§ì€ ë™ì¼) ...
+            string projectRoot = Path.GetDirectoryName(Application.dataPath);
+            const string exportFolderName = "MusicGenerator_Server";
+            const string subFolderName = "ExportCSV";
+            string exportDir = Path.Combine(projectRoot, exportFolderName, subFolderName);
+            const string baseName = "SketchCSV";
+            string filePath = Path.Combine(exportDir, $"{baseName}.csv");
+            string latestFilePath = filePath;
+            if (File.Exists(filePath))
             {
-                Debug.LogError("CSV file not found: " + filePath);
+                int maxIndex = 0;
+                int tempIndex = 1;
+                while (true)
+                {
+                    string tempPath = Path.Combine(exportDir, $"{baseName}({tempIndex}).csv");
+                    if (!File.Exists(tempPath))
+                        break;
+                    maxIndex = tempIndex;
+                    tempIndex++;
+                }
+                if (maxIndex > 0)
+                {
+                    latestFilePath = Path.Combine(exportDir, $"{baseName}({maxIndex}).csv");
+                }
+                else
+                {
+                    latestFilePath = filePath;
+                }
+            }
+            string finalFilePath = latestFilePath;
+            if (!File.Exists(finalFilePath))
+            {
+                Debug.LogError("CSV file not found: " + finalFilePath);
                 yield break;
             }
-
-            byte[] fileData = File.ReadAllBytes(filePath);
-
-            UnityWebRequest request = new UnityWebRequest(ServerUrl, "POST"); // POST ¿äÃ» ÁØºñ (¾÷·Îµå)
+            byte[] fileData = File.ReadAllBytes(finalFilePath);
+            UnityWebRequest request = new UnityWebRequest(ServerUrl, "POST");
             request.uploadHandler = new UploadHandlerRaw(fileData);
             request.downloadHandler = new DownloadHandlerBuffer();
-
+            string fileName = Path.GetFileName(finalFilePath);
             request.SetRequestHeader("Content-Type", "text/csv");
             request.SetRequestHeader("X-File-Name", fileName);
 
-            yield return request.SendWebRequest(); // ¼­¹ö·Î ¾÷·Îµå ¿äÃ» Àü¼Û
+            yield return request.SendWebRequest(); // ì—…ë¡œë“œ ìš”ì²­
 
             if (request.result != UnityWebRequest.Result.Success)
             {
-                Debug.LogError("File Upload Failed: " + request.error);
+                Debug.LogError("File Upload Failed: " + request.error + " | Server Response: " + request.downloadHandler.text);
                 yield break;
             }
 
@@ -284,13 +325,12 @@ namespace VRPenNamespace
 
             try
             {
-                // Note: Replace this with proper JsonUtility parsing in a real project
-                currentJobId = ExtractJobIdFromJson(responseText); // ¼­¹ö ÀÀ´ä¿¡¼­ ÀÛ¾÷ ID ÃßÃâ
+                currentJobId = ExtractJobIdFromJson(responseText); // Job ID ì¶”ì¶œ
                 Debug.Log("Upload Success. Job ID received: " + currentJobId);
 
                 if (!string.IsNullOrEmpty(currentJobId))
                 {
-                    StartCoroutine(PollForMusicStatus(currentJobId)); // Job ID·Î »óÅÂ Æú¸µ ÄÚ·çÆ¾ ½ÃÀÛ
+                    StartCoroutine(PollForMusicStatus(currentJobId)); // ìƒíƒœ í´ë§ ì‹œì‘
                 }
             }
             catch (Exception e)
@@ -299,44 +339,65 @@ namespace VRPenNamespace
             }
         }
 
-        private IEnumerator PollForMusicStatus(string jobId) // ÁÖ±âÀûÀ¸·Î ¼­¹ö¿¡ À½¾Ç »ı¼º »óÅÂ¸¦ ¹®ÀÇÇÔ
+        private IEnumerator PollForMusicStatus(string jobId) // ì£¼ê¸°ì ìœ¼ë¡œ ì„œë²„ì— ìƒíƒœ ë¬¸ì˜
         {
             while (true)
             {
-                yield return new WaitForSeconds(PollingInterval); // 5ÃÊ ´ë±â
+                yield return new WaitForSeconds(PollingInterval); // 5ì´ˆ ëŒ€ê¸°
 
-                string url = JobStatusUrl + jobId;
-                UnityWebRequest statusRequest = UnityWebRequest.Get(url); // »óÅÂ È®ÀÎ GET ¿äÃ»
+                string url = JobStatusUrl + "/" + jobId;
+
+                UnityWebRequest statusRequest = UnityWebRequest.Get(url); // ìƒíƒœ í™•ì¸ GET ìš”ì²­
 
                 yield return statusRequest.SendWebRequest();
 
                 if (statusRequest.result != UnityWebRequest.Result.Success)
                 {
-                    Debug.LogWarning("Status check failed. Retrying... | Error: " + statusRequest.error);
+                    // ì˜¤ë¥˜ ì‹œ ì‘ë‹µ í…ìŠ¤íŠ¸ì™€ í•¨ê»˜ ì¶œë ¥
+                    Debug.LogWarning("Status check failed. Retrying... | Error: " + statusRequest.error
+                                         + " | Response: " + statusRequest.downloadHandler.text);
                     continue;
                 }
 
                 string response = statusRequest.downloadHandler.text;
 
-                if (response.Contains("completed") && response.Contains("http")) // ÀÛ¾÷ ¿Ï·á ¹× À½¾Ç URLÀÌ Æ÷ÇÔµÇ¾î ÀÖ´ÂÁö È®ÀÎ
-                {
-                    string musicUrl = ExtractMusicUrlFromJson(response); // À½¾Ç ´Ù¿î·Îµå URL ÃßÃâ
+                // â— ë””ë²„ê¹…: ì„œë²„ ì‘ë‹µ JSON ì „ë¬¸ ì¶œë ¥
+                Debug.Log($"[Server Response] Job ID: {jobId}, Status JSON: {response}");
 
-                    Debug.Log("Music generation completed! Starting download.");
+                // â— ìµœì¢… ìˆ˜ì •: "status":"completed" ëŒ€ì‹  "music_url" í•„ë“œì˜ ì¡´ì¬ ì—¬ë¶€ë§Œ í™•ì¸í•©ë‹ˆë‹¤.
+                // ì´ í•„ë“œê°€ ì¡´ì¬í•œë‹¤ëŠ” ê²ƒì€ ì„œë²„ê°€ ìŒì•… ìƒì„±ì„ ì„±ê³µì ìœ¼ë¡œ ì™„ë£Œí–ˆìŒì„ ì˜ë¯¸í•©ë‹ˆë‹¤.
+                if (response.Contains("music_url") && !response.Contains("\"error\":"))
+                {
+                    string musicUrl = ExtractMusicUrlFromJson(response);
+
+                    if (!string.IsNullOrEmpty(musicUrl))
+                    {
+                        // ì´ ë¡œê·¸ê°€ ì¶œë ¥ë˜ë©´ ë‹¤ìš´ë¡œë“œ ë‹¨ê³„ë¡œ ì§„ì… ì„±ê³µ!
+                        Debug.Log("Music generation completed! Starting download.");
+                        StopAllCoroutines();
+
+                        // AudioType.WAVë¥¼ ì‚¬ìš©í•˜ë„ë¡ ì´ë¯¸ ìˆ˜ì •ë˜ì—ˆìŒì„ ê°€ì •í•©ë‹ˆë‹¤.
+                        StartCoroutine(DownloadAndPlayMusic(musicUrl));
+                        yield break;
+                    }
+                }
+
+                // ì„œë²„ì—ì„œ ëª…ì‹œì ìœ¼ë¡œ ì‹¤íŒ¨ ìƒíƒœë¥¼ ë°›ì€ ê²½ìš° (ë¬´í•œ í´ë§ ì¢…ë£Œ)
+                else if (response.Contains("\"status\":\"failed\""))
+                {
+                    Debug.LogError("Music generation failed on server: " + response);
                     StopAllCoroutines();
-                    StartCoroutine(DownloadAndPlayMusic(musicUrl)); // À½¾Ç ´Ù¿î·Îµå ¹× Àç»ı ½ÃÀÛ
                     yield break;
                 }
-                else
-                {
-                    Debug.Log("Music generation in progress..."); // ¾ÆÁ÷ ÀÛ¾÷ Áß
-                }
+
+                // ì™„ë£Œë‚˜ ì‹¤íŒ¨ê°€ ì•„ë‹ˆë©´ ê³„ì† ì§„í–‰ ì¤‘
+                Debug.Log("Music generation in progress...");
             }
         }
 
-        private IEnumerator DownloadAndPlayMusic(string url) // À½¾Ç ÆÄÀÏÀ» ´Ù¿î·ÎµåÇÏ°í Àç»ıÇÔ
+        private IEnumerator DownloadAndPlayMusic(string url) // ìŒì•… íŒŒì¼ì„ ë‹¤ìš´ë¡œë“œí•˜ê³  ì¬ìƒ
         {
-            UnityWebRequest audioRequest = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.MPEG); // ¿Àµğ¿À Å¬¸³ ´Ù¿î·Îµå ¿äÃ»
+            UnityWebRequest audioRequest = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.WAV); // ì˜¤ë””ì˜¤ í´ë¦½ ë‹¤ìš´ë¡œë“œ ìš”ì²­
 
             yield return audioRequest.SendWebRequest();
 
@@ -346,12 +407,12 @@ namespace VRPenNamespace
                 yield break;
             }
 
-            AudioClip clip = DownloadHandlerAudioClip.GetContent(audioRequest); // ´Ù¿î·ÎµåµÈ µ¥ÀÌÅÍ¸¦ AudioClipÀ¸·Î º¯È¯
+            AudioClip clip = DownloadHandlerAudioClip.GetContent(audioRequest); // AudioClipìœ¼ë¡œ ë³€í™˜
 
             if (MusicAudioSource != null && clip != null)
             {
                 MusicAudioSource.clip = clip;
-                MusicAudioSource.Play(); // À½¾Ç Àç»ı
+                MusicAudioSource.Play(); // ìŒì•… ì¬ìƒ
                 Debug.Log("Music played successfully!");
             }
             else
@@ -360,20 +421,48 @@ namespace VRPenNamespace
             }
         }
 
+        // â— í•µì‹¬ ìˆ˜ì •: Job IDë¥¼ ì‹¤ì œ íŒŒì‹±í•˜ëŠ” ë¡œì§ìœ¼ë¡œ êµì²´
         private string ExtractJobIdFromJson(string json)
         {
-            // Placeholder: Replace with actual JsonUtility parsing in a real project
-            // ¼­¹ö ÀÀ´ä¿¡¼­ job_id¸¦ ½ÇÁ¦ ÆÄ½ÌÇÏ´Â ·ÎÁ÷ÀÌ ÇÊ¿äÇÔ
-            if (json.Contains("job_id"))
-                return "job-" + DateTime.Now.Ticks.ToString();
-            return null;
+            try
+            {
+                JobIdResponse response = JsonUtility.FromJson<JobIdResponse>(json);
+
+                if (!string.IsNullOrEmpty(response.job_id))
+                {
+                    return response.job_id; // ì„œë²„ê°€ ë°œê¸‰í•œ ì‹¤ì œ UUIDë¥¼ ë°˜í™˜
+                }
+
+                Debug.LogError("Failed to extract 'job_id'. Status: " + response.status + " | JSON: " + json);
+                return null;
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"JSON Parsing Error (JobId): {e.Message}. Response: {json}");
+                return null;
+            }
         }
 
+        // â— í•µì‹¬ ìˆ˜ì •: Music URLì„ ì‹¤ì œ íŒŒì‹±í•˜ëŠ” ë¡œì§ìœ¼ë¡œ êµì²´
         private string ExtractMusicUrlFromJson(string json)
         {
-            // Placeholder: Replace with actual JsonUtility parsing in a real project
-            // ¼­¹ö ÀÀ´ä¿¡¼­ À½¾Ç URLÀ» ½ÇÁ¦ ÆÄ½ÌÇÏ´Â ·ÎÁ÷ÀÌ ÇÊ¿äÇÔ
-            return "http://your-server-ip:port/music/generated_track.mp3";
+            try
+            {
+                StatusResponse response = JsonUtility.FromJson<StatusResponse>(json);
+
+                if (!string.IsNullOrEmpty(response.music_url))
+                {
+                    return response.music_url; // ìŒì•… URL ë°˜í™˜
+                }
+
+                Debug.LogWarning("Music URL not found in status response. Status: " + response.status + " Error: " + response.error);
+                return null;
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"JSON Parsing Error (MusicUrl): {e.Message}. Response: {json}");
+                return null;
+            }
         }
 
 #if UNITY_EDITOR
@@ -445,8 +534,10 @@ comment object: " + Scribble.name);
             var faces = new List<(int, int, int, int)>();
 
             int indexShift = 0;
+            // _core._strokeMeshesì˜ êµ¬ì¡°ì²´ê°€ VRPen.csì— ì—†ìœ¼ë¯€ë¡œ ì„ì‹œ íƒ€ì…ìºìŠ¤íŒ… ê°€ì •
             foreach (var stroke in _core._strokeMeshes)
             {
+                // StrokeMesh êµ¬ì¡°ì²´ì˜ êµ¬ì²´ì ì¸ ë©¤ë²„ëŠ” VRPen.csì— ì—†ìœ¼ë¯€ë¡œ ì›ë˜ ì½”ë“œë¥¼ ìœ ì§€
                 for (int i = 0; i < stroke.vertex.Count; i++)
                 {
                     vertices.Add((stroke.colors[i], stroke.vertex[i]));
@@ -496,7 +587,7 @@ end_header");
 #endif
 
         [Button]
-        public void ExportCSV() // µå·ÎÀ× µ¥ÀÌÅÍ¸¦ CSV Çü½ÄÀ¸·Î ÆÄÀÏ¿¡ ÀúÀå
+        public void ExportCSV() // ë“œë¡œì‰ ë°ì´í„°ë¥¼ CSV í˜•ì‹ìœ¼ë¡œ íŒŒì¼ì— ì €ì¥
         {
             if (_core == null || _core._strokeMeshes == null || _core._strokeMeshes.Count == 0)
             {
@@ -505,24 +596,15 @@ end_header");
             }
 
             var sb = new StringBuilder();
-            sb.AppendLine("VRPen Export Data");
-            sb.AppendLine($"Export Time,{DateTime.Now:yyyy-MM-dd HH:mm:ss}");
-            sb.AppendLine();
 
-            sb.AppendLine("Color Usage Summary (R,G,B),Count");
-            var colorGroups = _core._strokeMeshes
-                .GroupBy(s => s.Stroke.Color)
-                .Select(g => new { Color = g.Key, Count = g.Count() });
+            // 1. í—¤ë” ë¼ì¸ ì¶”ê°€
+            sb.AppendLine("StrokeIndex,ColorR,ColorG,ColorB,Count,ColorA,BrushSize,Start_X,Start_Y,Start_Z,End_X,End_Y,End_Z,TotalUndoCount");
 
-            foreach (var g in colorGroups)
-            {
-                sb.AppendLine($"{g.Color.r:F3},{g.Color.g:F3},{g.Color.b:F3},{g.Count}");
-            }
+            // 2. ìƒ‰ìƒë³„ ëˆ„ì  ì¹´ìš´íŠ¸ë¥¼ ìœ„í•œ ë”•ì…”ë„ˆë¦¬
+            var colorCounts = new Dictionary<Color, int>();
+            int totalUndoCount = _core.UndoCount;
 
-            sb.AppendLine();
-
-            sb.AppendLine("Stroke Index,Color R,Color G,Color B,Alpha,Luminance,Brush Size,Start X,Start Y,Start Z,End X,End Y,End Z");
-
+            // 3. ìŠ¤íŠ¸ë¡œí¬ ë°ì´í„° ê¸°ë¡
             for (int i = 0; i < _core._strokeMeshes.Count; i++)
             {
                 var strokeMesh = _core._strokeMeshes[i];
@@ -530,32 +612,61 @@ end_header");
                 if (stroke == null || stroke.Points.Count == 0) continue;
 
                 Color c = stroke.Color;
-                float luminance = 0.2126f * c.r + 0.7152f * c.g + 0.0722f * c.b;
+
+                // ë™ì¼ ìƒ‰ìƒ ëˆ„ì  ì¹´ìš´íŠ¸
+                if (!colorCounts.ContainsKey(c))
+                {
+                    colorCounts[c] = 0;
+                }
+                colorCounts[c]++;
+                int currentCount = colorCounts[c];
+
                 Vector3 start = stroke.Points.First();
                 Vector3 end = stroke.Points.Last();
 
-                sb.AppendLine($"{i + 1},{c.r:F3},{c.g:F3},{c.b:F3},{stroke.BrushAlpha:F3},{luminance:F3},{stroke.BrushSize:F4},{start.x:F4},{start.y:F4},{start.z:F4},{end.x:F4},{end.y:F4},{end.z:F4}");
+                sb.AppendLine(
+                    $"{i}," + // StrokeIndex
+                    $"{c.r:F4},{c.g:F4},{c.b:F4}," + // Color R, G, B
+                    $"{currentCount}," + // Count
+                    $"{c.a:F4}," + // ColorA
+                    $"{stroke.BrushSize:F4}," + // BrushSize
+                    $"{start.x:F4},{start.y:F4},{start.z:F4}," + // Start_X, Y, Z
+                    $"{end.x:F4},{end.y:F4},{end.z:F4}," + // End_X, Y, Z
+                    $"{totalUndoCount}" // TotalUndoCount
+                );
             }
 
-            sb.AppendLine();
+            // 4. íŒŒì¼ ì €ì¥ ë¡œì§ (í”„ë¡œì íŠ¸ ë£¨íŠ¸ì˜ MusicGenerator_Server/ExportCSV ê²½ë¡œì— ì €ì¥)
 
-            sb.AppendLine($"Undo Count,{_core.UndoCount}");
+            // Assets í´ë” ê²½ë¡œì—ì„œ í•œ ë‹¨ê³„ ìƒìœ„ë¡œ ì´ë™í•˜ì—¬ í”„ë¡œì íŠ¸ ë£¨íŠ¸ í´ë” ì–»ê¸°
+            string projectRoot = Path.GetDirectoryName(Application.dataPath);
 
-            string exportDir = Path.Combine(Application.persistentDataPath, "ScribbleExports");
+            // í”„ë¡œì íŠ¸ ë£¨íŠ¸ í´ë”ì—ì„œ MusicGenerator_Server/ExportCSV í´ë”ë¥¼ ì§€ì •
+            const string exportFolderName = "MusicGenerator_Server";
+            const string subFolderName = "ExportCSV";
+
+            // ìµœì¢… ì €ì¥ ê²½ë¡œ: .../í”„ë¡œì íŠ¸ì´ë¦„/MusicGenerator_Server/ExportCSV
+            string exportDir = Path.Combine(projectRoot, exportFolderName, subFolderName);
+
             Directory.CreateDirectory(exportDir);
 
-            string name = Scribble != null ? Scribble.name : "Untitled";
-            string filePath = Path.Combine(exportDir, $"{name}_Data_{DateTime.Now:HH-mm-ss}.csv");
+            const string baseName = "SketchCSV";
+
+            string filePath = Path.Combine(exportDir, $"{baseName}.csv");
+            int index = 1;
+
+            // ì´ë¦„ ì¶©ëŒ ì‹œ ìˆœë²ˆ ë¶€ì—¬ (SketchCSV, SketchCSV(1), ...)
+            while (File.Exists(filePath))
+            {
+                filePath = Path.Combine(exportDir, $"{baseName}({index}).csv");
+                index++;
+            }
 
             try
             {
                 File.WriteAllText(filePath, sb.ToString(), Encoding.UTF8);
 
-#if UNITY_EDITOR
-                UnityEditor.AssetDatabase.Refresh();
-#endif
-
-                Debug.Log($"CSV Exported: {filePath}");
+                Debug.Log($"CSV Exported to custom path: {filePath}");
             }
             catch (Exception e)
             {

@@ -162,7 +162,7 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   ServerUrl: http://127.0.0.1:5000/api/upload_data
-  JobStatusUrl: http://127.0.0.1:5000/api/status/
+  JobStatusUrl: http://127.0.0.1:5000/api/status
   MusicAudioSource: {fileID: 1744334641}
   Scribble: {fileID: 11400000, guid: 5dbcbbae276e7af459a1602b20fd8944, type: 2}
 --- !u!114 &6484134
