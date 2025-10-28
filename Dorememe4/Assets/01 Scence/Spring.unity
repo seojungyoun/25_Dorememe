@@ -265,6 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6795536}
   - component: {fileID: 6795535}
+  - component: {fileID: 6795537}
   m_Layer: 0
   m_Name: Music Manager
   m_TagString: Untagged
@@ -384,6 +385,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6795537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6795534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8661799a273714392a33a63a978da4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UploadUrl: http://127.0.0.1:5000/api/upload_data
+  JobStatusUrl: http://127.0.0.1:5000/api/status
+  PollingInterval: 5
 --- !u!1 &8070751
 GameObject:
   m_ObjectHideFlags: 0
@@ -12978,8 +12994,8 @@ MonoBehaviour:
   - {r: 0, g: 1, b: 0, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  ServerUrl: http://127.0.0.1:5000/api/upload_data
-  JobStatusUrl: http://127.0.0.1:5000/api/status
+  ServerUrl: http://localhost:5000/api/upload_data
+  JobStatusUrl: http://localhost:5000/api/status
   MusicAudioSource: {fileID: 6795535}
   Scribble: {fileID: 11400000, guid: 5dbcbbae276e7af459a1602b20fd8944, type: 2}
 --- !u!4 &1237088736

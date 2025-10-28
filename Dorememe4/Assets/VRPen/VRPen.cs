@@ -17,7 +17,7 @@ using UnityEditor;
 namespace VRPenNamespace
 {
     // ==========================================================
-    // 1. JSON 파싱을 위한 클래스 정의 (새로 추가됨)
+    // 1. JSON 파싱을 위한 클래스 정의
     // ==========================================================
     [Serializable]
     public class JobIdResponse
@@ -30,7 +30,8 @@ namespace VRPenNamespace
     public class StatusResponse
     {
         public string status;
-        public string music_url;
+        public string music_url;      // 최종 음악 URL (completed)
+        public string music_url_1st;  // 1차 음악 URL (1st_ready)
         public string error;
     }
 
@@ -59,17 +60,18 @@ namespace VRPenNamespace
         private global::VRPenNamespace.IVrPenInput _input;
 
         // 서버 통신 및 오디오 재생 변수
-        public string ServerUrl = "http://127.0.0.1:5000/api/upload_data";
-        public string JobStatusUrl = "http://127.0.0.1:5000/api/status"; // ❗ 수정: 끝 슬래시 제거 (URL 조합 안정화)
+        public string ServerUrl = "http://localhost:5000/api/upload_data"; // ❗ localhost 통일
+        public string JobStatusUrl = "http://localhost:5000/api/status"; // ❗ localhost 통일
         public AudioSource MusicAudioSource;
         private const float PollingInterval = 5f;
         private string currentJobId = null;
+        private bool is1stMusicPlaying = false;
 
         void Start()
         {
             InitCore();
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR // Start() 내부 에디터 전용 블록 시작
             EditorApplication.playModeStateChanged += PlayModeStateChanged;
 
             void PlayModeStateChanged(PlayModeStateChange obj)
@@ -82,7 +84,7 @@ namespace VRPenNamespace
             }
 
             if (Scribble != null) Load();
-#endif
+#endif // Start() 내부 에디터 전용 블록 끝
         }
 
         private void ChangeColor()
@@ -339,13 +341,17 @@ namespace VRPenNamespace
             }
         }
 
+        // VRPen.cs 파일 내부 PollForMusicStatus 코루틴 수정
+
         private IEnumerator PollForMusicStatus(string jobId) // 주기적으로 서버에 상태 문의
         {
             while (true)
             {
                 yield return new WaitForSeconds(PollingInterval); // 5초 대기
 
-                string url = JobStatusUrl + "/" + jobId;
+                // URL 조합: JobStatusUrl의 끝 슬래시를 제거하고 Job ID를 붙입니다.
+                string baseUrl = JobStatusUrl.TrimEnd('/');
+                string url = baseUrl + "/" + jobId;
 
                 UnityWebRequest statusRequest = UnityWebRequest.Get(url); // 상태 확인 GET 요청
 
@@ -364,40 +370,68 @@ namespace VRPenNamespace
                 // ❗ 디버깅: 서버 응답 JSON 전문 출력
                 Debug.Log($"[Server Response] Job ID: {jobId}, Status JSON: {response}");
 
-                // ❗ 최종 수정: "status":"completed" 대신 "music_url" 필드의 존재 여부만 확인합니다.
-                // 이 필드가 존재한다는 것은 서버가 음악 생성을 성공적으로 완료했음을 의미합니다.
-                if (response.Contains("music_url") && !response.Contains("\"error\":"))
+                // ❗ JSON 객체로 파싱
+                StatusResponse statusObject = JsonUtility.FromJson<StatusResponse>(response);
+
+                // 2. 1차 음악 준비 상태 확인
+                if (statusObject != null && statusObject.status == "1st_ready")
                 {
-                    string musicUrl = ExtractMusicUrlFromJson(response);
+                    string musicUrl1st = statusObject.music_url_1st; // 파싱된 객체에서 URL을 가져옴
+
+                    // 🚨 최종 디버깅 로그: URL 값이 비어있는지 확인
+                    Debug.Log($"[Client Check] Status is 1st_ready. URL value: {musicUrl1st}");
+
+                    if (!string.IsNullOrEmpty(musicUrl1st))
+                    {
+                        if (!is1stMusicPlaying)
+                        {
+                            Debug.Log($"1ST MUSIC DOWNLOAD STARTING. URL: {musicUrl1st}");
+                            is1stMusicPlaying = true;
+                            StartCoroutine(DownloadAndPlayMusic(musicUrl1st, loop: true));
+                        }
+                    }
+                }
+
+                // 1. 최종 완료 상태 확인
+                else if (statusObject != null && statusObject.status == "completed")
+                {
+                    string musicUrl = statusObject.music_url; // 파싱된 객체에서 URL을 가져옴
 
                     if (!string.IsNullOrEmpty(musicUrl))
                     {
-                        // 이 로그가 출력되면 다운로드 단계로 진입 성공!
-                        Debug.Log("Music generation completed! Starting download.");
+                        Debug.Log("Music generation fully completed! Starting FINAL download.");
                         StopAllCoroutines();
 
-                        // AudioType.WAV를 사용하도록 이미 수정되었음을 가정합니다.
-                        StartCoroutine(DownloadAndPlayMusic(musicUrl));
+                        // 1차 음악이 재생 중이었다면 멈추고 최종 음악 재생
+                        if (is1stMusicPlaying && MusicAudioSource != null)
+                        {
+                            MusicAudioSource.Stop();
+                            is1stMusicPlaying = false;
+                        }
+
+                        StartCoroutine(DownloadAndPlayMusic(musicUrl, loop: false));
                         yield break;
                     }
                 }
 
-                // 서버에서 명시적으로 실패 상태를 받은 경우 (무한 폴링 종료)
-                else if (response.Contains("\"status\":\"failed\""))
+                // 3. 서버에서 명시적으로 실패 상태를 받은 경우
+                else if (statusObject != null && statusObject.status == "failed")
                 {
                     Debug.LogError("Music generation failed on server: " + response);
                     StopAllCoroutines();
                     yield break;
                 }
 
-                // 완료나 실패가 아니면 계속 진행 중
+                // 4. 완료나 실패가 아니면 계속 진행 중
                 Debug.Log("Music generation in progress...");
             }
         }
 
-        private IEnumerator DownloadAndPlayMusic(string url) // 음악 파일을 다운로드하고 재생
+        // ❗ DownloadAndPlayMusic 함수 수정: 루프 옵션 추가 및 AudioType.UNKNOWN 사용
+        private IEnumerator DownloadAndPlayMusic(string url, bool loop)
         {
-            UnityWebRequest audioRequest = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.WAV); // 오디오 클립 다운로드 요청
+            // AudioType.WAV 대신 UNKNOWN을 사용하여 Unity가 포맷을 자동 감지하게 합니다.
+            UnityWebRequest audioRequest = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.UNKNOWN);
 
             yield return audioRequest.SendWebRequest();
 
@@ -407,32 +441,31 @@ namespace VRPenNamespace
                 yield break;
             }
 
-            AudioClip clip = DownloadHandlerAudioClip.GetContent(audioRequest); // AudioClip으로 변환
+            AudioClip clip = DownloadHandlerAudioClip.GetContent(audioRequest);
 
             if (MusicAudioSource != null && clip != null)
             {
                 MusicAudioSource.clip = clip;
-                MusicAudioSource.Play(); // 음악 재생
-                Debug.Log("Music played successfully!");
+                MusicAudioSource.loop = loop;
+                MusicAudioSource.Play();
+                Debug.Log($"Music loaded and playing (Loop: {loop})! CLIP LENGTH: {clip.length}s");
             }
             else
             {
-                Debug.LogError("AudioSource or AudioClip is null.");
+                Debug.LogError("AudioSource or AudioClip is null. Downloaded WAV may be corrupted or format incompatible.");
             }
         }
 
-        // ❗ 핵심 수정: Job ID를 실제 파싱하는 로직으로 교체
+        // Job ID를 실제 파싱하는 로직으로 교체
         private string ExtractJobIdFromJson(string json)
         {
             try
             {
                 JobIdResponse response = JsonUtility.FromJson<JobIdResponse>(json);
-
                 if (!string.IsNullOrEmpty(response.job_id))
                 {
-                    return response.job_id; // 서버가 발급한 실제 UUID를 반환
+                    return response.job_id;
                 }
-
                 Debug.LogError("Failed to extract 'job_id'. Status: " + response.status + " | JSON: " + json);
                 return null;
             }
@@ -443,7 +476,27 @@ namespace VRPenNamespace
             }
         }
 
-        // ❗ 핵심 수정: Music URL을 실제 파싱하는 로직으로 교체
+        // 1차 음악 URL 추출 함수
+        private string ExtractMusicUrl1stFromJson(string json)
+        {
+            try
+            {
+                StatusResponse response = JsonUtility.FromJson<StatusResponse>(json);
+
+                if (!string.IsNullOrEmpty(response.music_url_1st))
+                {
+                    return response.music_url_1st;
+                }
+                return null;
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"JSON Parsing Error (MusicUrl1st): {e.Message}. Response: {json}");
+                return null;
+            }
+        }
+
+        // 최종 음악 URL 추출 함수
         private string ExtractMusicUrlFromJson(string json)
         {
             try
@@ -452,7 +505,7 @@ namespace VRPenNamespace
 
                 if (!string.IsNullOrEmpty(response.music_url))
                 {
-                    return response.music_url; // 음악 URL 반환
+                    return response.music_url;
                 }
 
                 Debug.LogWarning("Music URL not found in status response. Status: " + response.status + " Error: " + response.error);
@@ -465,7 +518,7 @@ namespace VRPenNamespace
             }
         }
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR // 에디터 전용 블록 시작
         [Button]
         private void Save()
         {
@@ -584,10 +637,9 @@ end_header");
             Directory.CreateDirectory("Scribbles");
             File.WriteAllText($"Scribbles/{Scribble.name}.ply", sb.ToString());
         }
-#endif
 
         [Button]
-        public void ExportCSV() // 드로잉 데이터를 CSV 형식으로 파일에 저장
+        public void ExportCSV()
         {
             if (_core == null || _core._strokeMeshes == null || _core._strokeMeshes.Count == 0)
             {
@@ -730,6 +782,7 @@ end_header");
             public float BrushSize;
             public float BrushAlpha;
         }
+#endif // 에디터 전용 블록 끝
     }
 
     [AttributeUsage(AttributeTargets.Method, Inherited = false, AllowMultiple = false)]

@@ -75,18 +75,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MusicConfirmationController.cs",
-              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\MusicConfirmationController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\MusicConfirmationController.cs",
-              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\MusicConfirmationController.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\MusicConfirmationController.cs",
+              "DocumentIndex": 0,
+              "Title": "VRPen.cs",
+              "DocumentMoniker": "C:\\Users\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\VRPen.cs",
+              "RelativeDocumentMoniker": "Assets\\VRPen\\VRPen.cs",
+              "ToolTip": "C:\\Users\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\VRPen.cs",
+              "RelativeToolTip": "Assets\\VRPen\\VRPen.cs",
+              "ViewState": "AgIAAMQCAAAAAAAAAAAiwNYCAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T06:53:10.714Z"
+              "WhenOpened": "2025-10-11T07:53:00.179Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -101,16 +107,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VRPen.cs",
-              "DocumentMoniker": "C:\\Users\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\VRPen.cs",
-              "RelativeDocumentMoniker": "Assets\\VRPen\\VRPen.cs",
-              "ToolTip": "C:\\Users\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\VRPen.cs",
-              "RelativeToolTip": "Assets\\VRPen\\VRPen.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAnwCwAAABHAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MusicConfirmationController.cs",
+              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\MusicConfirmationController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\MusicConfirmationController.cs",
+              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\MusicConfirmationController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\MusicConfirmationController.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T07:53:00.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T06:53:10.714Z"
             },
             {
               "$type": "Document",
@@ -147,10 +151,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-25T16:17:40.893Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
