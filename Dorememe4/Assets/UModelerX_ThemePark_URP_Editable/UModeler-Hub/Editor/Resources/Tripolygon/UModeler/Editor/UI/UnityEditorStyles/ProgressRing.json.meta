@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3b689fb59a3184edabfd96d188ee64ff
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330120
+  packageName: Theme Park(UModeler X)
+  packageVersion: 1.0
+  assetPath: Assets/UModelerX_ThemePark_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Editor/UI/UnityEditorStyles/ProgressRing.json
+  uploadId: 794124

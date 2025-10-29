@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e93a6b2719bfd0e4b99ed213594d48c3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330120
+  packageName: Theme Park(UModeler X)
+  packageVersion: 1.0
+  assetPath: Assets/UModelerX_ThemePark_URP_Editable/Anim/GyroDrop_Ready.anim
+  uploadId: 794124

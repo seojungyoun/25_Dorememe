@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0cd32b9045bfdd4438941f5a0b81ec9e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 8404be70184654265930450def6a9037, type: 3}
+  generateWrapperCode: 0
+  wrapperCodePath: 
+  wrapperClassName: 
+  wrapperCodeNamespace: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 294171
+  packageName: VR Pen
+  packageVersion: 1.0
+  assetPath: Assets/VRPen/XR.inputactions
+  uploadId: 713294

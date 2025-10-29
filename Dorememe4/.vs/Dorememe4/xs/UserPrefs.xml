@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/02 Scripts/SceneChange_summer.cs">
+    <Files>
+      <File FileName="Assets/02 Scripts/SceneChange_summer.cs" Line="9" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Dorememe4" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="02 Scripts" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f5e6224c-e016-4eca-8369-2c185d9b7650" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
