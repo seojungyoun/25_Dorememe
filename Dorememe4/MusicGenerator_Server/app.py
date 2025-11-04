@@ -14,6 +14,7 @@ from pathlib import Path
 # -----------------------------------------------------
 # 1. 음악 생성 모듈 임포트
 # -----------------------------------------------------
+# 🚨 주의: 이 모듈들은 실제 파일(load_model.py, generate.py, midi2wav.py)로 존재해야 합니다.
 try:
     from load_model import load_model 
     from generate import generate_until_seconds, tokens_to_midi
@@ -77,6 +78,7 @@ def load_generator_model():
 
     try:
         print(f"Worker: Attempting to load model from {CKPT_PATH} to {DEVICE}...")
+        # load_model() 함수 호출
         model, dataset = load_model(CKPT_PATH, DATA_JSONL, VOCAB_JSON, cfg, DEVICE)
         print("Worker: Model loaded successfully.")
         return model, dataset
@@ -105,7 +107,7 @@ def process_music_generation(job_id, safe_filename, prefix_tokens, target_sec, s
     try:
         load_generator_model()
         if model is None or dataset is None:
-             raise Exception("Model object is None after attempting load.")
+              raise Exception("Model object is None after attempting load.")
     except Exception as e:
         # 이 Worker 프로세스가 실패해도 shared_db에 상태를 남깁니다.
         shared_db[job_id] = {'status': 'failed', 'error': f'Worker Model Setup Failed: {str(e)}'}
@@ -134,12 +136,17 @@ def process_music_generation(job_id, safe_filename, prefix_tokens, target_sec, s
         midi_to_wav(output_midi_path_1st, output_wav_path_1st, SF2_PATH)
         os.remove(output_midi_path_1st)
         
-        # URL 생성 시 localhost 사용
+        # URL 생성 시 localhost 사용 (get_job_status에서 클라이언트 IP로 대체됨)
         music_url_1st = f'http://localhost:5000/music/{output_wav_filename_1st}'
         
         # 상태 업데이트: 1차 음악 완료
-        shared_db[job_id]['status'] = '1st_ready'
-        shared_db[job_id]['music_url_1st'] = music_url_1st
+        # DictProxy 객체 업데이트 방식 수정
+        current_status = dict(shared_db[job_id])
+        current_status.update({
+            'status': '1st_ready',
+            'music_url_1st': music_url_1st
+        })
+        shared_db[job_id] = current_status
         print(f"[{job_id}] 1st music ready. Status updated.")
 
     except Exception as e:
@@ -155,8 +162,6 @@ def process_music_generation(job_id, safe_filename, prefix_tokens, target_sec, s
     # ----------------------------------------------------------------------------------
     print(f"[{job_id}] 2. Starting final music generation (Target: {target_sec}s)...")
     try:
-        # time.sleep(1) 
-
         g = torch.Generator(device=DEVICE).manual_seed(SEED + 1)
         generated_tokens_final = generate_until_seconds(
             model, dataset, prefix_tokens=prefix_tokens, target_sec=target_sec, 
@@ -171,12 +176,16 @@ def process_music_generation(job_id, safe_filename, prefix_tokens, target_sec, s
         midi_to_wav(output_midi_path_final, output_wav_path_final, SF2_PATH)
         os.remove(output_midi_path_final)
 
-        # URL 생성 시 localhost 사용
+        # URL 생성 시 localhost 사용 (get_job_status에서 클라이언트 IP로 대체됨)
         music_url_final = f'http://localhost:5000/music/{output_wav_filename_final}'
         
         # 상태 업데이트: 최종 음악 완료
-        shared_db[job_id]['status'] = 'completed'
-        shared_db[job_id]['music_url'] = music_url_final
+        current_status = dict(shared_db[job_id])
+        current_status.update({
+            'status': 'completed',
+            'music_url': music_url_final
+        })
+        shared_db[job_id] = current_status
         print(f"[{job_id}] ✅ Final music completed. Status updated.")
         
     except Exception as e:
@@ -184,8 +193,12 @@ def process_music_generation(job_id, safe_filename, prefix_tokens, target_sec, s
         print(f"[{job_id}] CRITICAL: FINAL MUSIC GENERATION FAILED")
         traceback.print_exc()
         print("-------------------------------------------------------")
-        shared_db[job_id]['status'] = 'failed' 
-        shared_db[job_id]['error'] = f'Final Gen failed: {str(e)}'
+        current_status = dict(shared_db[job_id])
+        current_status.update({
+             'status': 'failed', 
+             'error': f'Final Gen failed: {str(e)}'
+        })
+        shared_db[job_id] = current_status
 
 
 # ==========================================================
@@ -238,10 +251,10 @@ def upload_data():
 
     # 4. Job ID를 즉시 반환하여 클라이언트가 폴링을 시작하게 함
     return jsonify({
-        'job_id': job_id, 
-        'status': 'started',
-        'message': 'Job started successfully. Polling required.'
-    }), 200
+    'job_id': job_id, 
+    'status': 'started',
+    'message': 'Job started successfully. Polling required.'
+})
 
 @app.route('/api/status/<job_id>', methods=['GET'])
 def get_job_status(job_id):
@@ -251,11 +264,26 @@ def get_job_status(job_id):
     if status_info is None:
         return jsonify({'status': 'error', 'message': 'Job ID not found.'}), 404
 
-    return jsonify(status_info)
+    # 🌟 URL 호스트 대체 로직
+    # 클라이언트가 요청한 호스트 정보 추출 (예: http://10.208.3.74:5000)
+    base_url = request.host_url.strip('/')
+    
+    # DictProxy를 dict로 변환하여 로컬에서 수정
+    status_dict = dict(status_info) 
+
+    if 'music_url_1st' in status_dict and status_dict['music_url_1st']:
+        # 하드코딩된 'http://localhost:5000'를 클라이언트가 접속한 'base_url'로 대체
+        status_dict['music_url_1st'] = status_dict['music_url_1st'].replace('http://localhost:5000', base_url)
+
+    if 'music_url' in status_dict and status_dict['music_url']:
+        status_dict['music_url'] = status_dict['music_url'].replace('http://localhost:5000', base_url)
+
+    return jsonify(status_dict)
 
 
 @app.route('/music/<path:filename>')
 def download_music(filename):
+    # Flask의 send_from_directory를 사용하여 파일 다운로드를 처리합니다.
     return send_from_directory(OUTPUT_FOLDER, filename)
 
 

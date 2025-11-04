@@ -1,53 +1,27 @@
+ï»¿// SceneChange.cs íŒŒì¼ ìˆ˜ì •
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Collections;
+using VRPenNamespace;
 
-public class SceneChange : MonoBehaviour
+namespace VRPenNamespace
 {
-    [System.Serializable]
-    public class ButtonData
+    public class SceneChange : MonoBehaviour
     {
-        public Button button;      // ¹öÆ° ¿ÀºêÁ§Æ®
-        public string sceneName;   // ÀÌµ¿ÇÒ ¾À ÀÌ¸§
-    }
-
-    public ButtonData[] buttons;           // ¹öÆ° + ¾À ¹è¿­
-    public Color targetColor = new Color(0.3f, 0.3f, 0.3f); // ¾îµÎ¿î È¸»ö
-    public float scaleMultiplier = 1.05f;  // »ìÂ¦ Ä¿Áö±â
-    public float effectDuration = 0.3f;    // ¾Ö´Ï¸ÞÀÌ¼Ç ½Ã°£
-
-    void Start()
-    {
-        // °¢ ¹öÆ° Å¬¸¯ ½Ã ÄÚ·çÆ¾ ½ÇÇà
-        foreach (var bd in buttons)
+        public static int SelectedSceneID_Global = -1;
+        public void OnSceneSelectButton(int sceneID)
         {
-            bd.button.onClick.AddListener(() => StartCoroutine(PlayEffectAndLoadScene(bd.button, bd.sceneName)));
+            SelectedSceneID_Global = sceneID;
+            Debug.Log($"Scene selected: {sceneID}. Loading default scene.");
         }
-    }
-
-    IEnumerator PlayEffectAndLoadScene(Button btn, string sceneName)
-    {
-        Vector3 originalScale = btn.transform.localScale;
-        Image btnImage = btn.GetComponent<Image>();
-        Color originalColor = btnImage.color;
-
-        float timer = 0f;
-        while (timer < effectDuration)
+        public void LoadSceneByName(string sceneName)
         {
-            timer += Time.deltaTime;
-            float t = timer / effectDuration;
-
-            // Å©±â º¯È­
-            btn.transform.localScale = Vector3.Lerp(originalScale, originalScale * scaleMultiplier, t);
-
-            // »ö»ó º¯È­
-            btnImage.color = Color.Lerp(originalColor, targetColor, t);
-
-            yield return null;
+            if (string.IsNullOrEmpty(sceneName))
+            {
+                Debug.LogError("Scene name is empty. Cannot load scene.");
+                return;
+            }
+            Debug.Log($"Loading scene by name: {sceneName}");
+            SceneManager.LoadScene(sceneName);
         }
-
-        // ¾À ÀÌµ¿
-        SceneManager.LoadScene(sceneName);
     }
 }
