@@ -90,6 +90,7 @@
     <Compile Include="Assets\VRTemplateAssets\Scripts\BezierCurve.cs" />
     <Compile Include="Assets\02 Scripts\VRPenScribble.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\LaunchProjectile.cs" />
+    <Compile Include="Assets\02 Scripts\GuideController.cs" />
     <Compile Include="Assets\02 Scripts\SequentialButtonController.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\DisplayDeviceInfoFromActionXRInput.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\HandSubsystemManager.cs" />
