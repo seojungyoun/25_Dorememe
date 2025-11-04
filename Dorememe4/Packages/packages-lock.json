@@ -37,7 +37,7 @@
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.core": {
-      "version": "78.0.0",
+      "version": "81.0.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
@@ -53,7 +53,7 @@
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.interaction": {
-      "version": "78.0.0",
+      "version": "81.0.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -63,12 +63,12 @@
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.interaction.ovr": {
-      "version": "78.0.0",
+      "version": "81.0.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.meta.xr.sdk.core": "78.0.0",
-        "com.meta.xr.sdk.interaction": "78.0.0"
+        "com.meta.xr.sdk.core": "81.0.0",
+        "com.meta.xr.sdk.interaction": "81.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -481,15 +481,6 @@
         "com.unity.xr.management": "4.4.0",
         "com.unity.xr.arfoundation": "6.3.0",
         "com.unity.xr.compositionlayers": "2.1.1"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.xr.oculus": {
-      "version": "4.4.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.xr.management": "4.4.0"
       },
       "url": "https://packages.unity.com"
     },

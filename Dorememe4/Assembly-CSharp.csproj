@@ -77,6 +77,7 @@
     <Compile Include="Assets\VRTemplateAssets\Scripts\RayAttachModifier.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\PoseProvider_NameDevice.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
+    <Compile Include="Assets\02 Scripts\VRPenInputActions.cs" />
     <Compile Include="Assets\02 Scripts\ButtonDebug.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\RendererFeatures\DistortTunnel\DistortTunnelPass_CopyColor.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\RendererFeatures\DistortTunnel\DistortTunnelRendererFeature.cs" />
@@ -84,13 +85,16 @@
     <Compile Include="Assets\02 Scripts\MusicUploader.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\AutomaticTrackingModeChangerXRInput.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\LensFlares\Scripts\ScreenSpacePlacement.cs" />
+    <Compile Include="Assets\02 Scripts\VRPenEditor.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\BezierCurve.cs" />
+    <Compile Include="Assets\02 Scripts\VRPenScribble.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\LaunchProjectile.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\DisplayDeviceInfoFromActionXRInput.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\HandSubsystemManager.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Meshing Subsystem Feature\MeshingTeapotFeature.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP RenderGraph Samples\RendererList\RendererListRenderFeature.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\RendererFeatures\BlitToRTHandle\BlitToRTHandleRendererFeature.cs" />
+    <Compile Include="Assets\02 Scripts\VRPenCore.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\ActionToDeviceInfoXRInput.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\RendererFeatures\BlitToRTHandle\BlitToRTHandlePass.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\ActionToVisibilityXRInputHand.cs" />
@@ -103,6 +107,7 @@
     <Compile Include="Assets\02 Scripts\CSVUploader.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\RendererFeatures\DepthBlit\DepthBlitDepthOnlyPass.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP RenderGraph Samples\GbufferVisualization\GbufferVisualizationRendererFeature.cs" />
+    <Compile Include="Assets\02 Scripts\VRPen.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP RenderGraph Samples\Blit w. FrameData\BlitRendererFeature.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Intercept Feature\InterceptCreateSessionFeature.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP Package Samples\SharedAssets\Scripts\CheckAssignedRenderPipelineAsset.cs" />
@@ -128,6 +133,7 @@
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP RenderGraph Samples\BlitWithMaterial\BlitAndSwapColorRendererFeature.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\ActionToAxisXRInputHand.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP RenderGraph Samples\OutputTexture\OutputTextureRendererFeature.cs" />
+    <Compile Include="Assets\02 Scripts\IVrPenInput.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\StepManager.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\ActionToSliderXRInput.cs" />
     <Compile Include="Assets\02 Scripts\PanelAutoHide.cs" />
@@ -135,6 +141,7 @@
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\PoseProvider.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\AnchorVisuals.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.15.1\Controller XRInput\Scripts\MarkLateLatchNodeXRInput.cs" />
+    <Compile Include="Assets\02 Scripts\VRPenLegacyInput.cs" />
     <Compile Include="Assets\Samples\Universal RP\17.0.3\URP RenderGraph Samples\Compute\ComputeRendererFeature.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1249,20 +1256,20 @@
       <HintPath>Library\ScriptAssemblies\Oculus.Interaction.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Meta.XR.Editor.Id">
-      <HintPath>Library\ScriptAssemblies\Meta.XR.Editor.Id.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="meta.xr.mrutilitykit">
       <HintPath>Library\ScriptAssemblies\meta.xr.mrutilitykit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    <Reference Include="Meta.XR.Editor.Id">
+      <HintPath>Library\ScriptAssemblies\Meta.XR.Editor.Id.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
@@ -1311,10 +1318,6 @@
     </Reference>
     <Reference Include="Unity.XR.ARFoundation.InternalUtils">
       <HintPath>Library\ScriptAssemblies\Unity.XR.ARFoundation.InternalUtils.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.XR.Oculus">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PPv2URPConverters">
@@ -1457,10 +1460,6 @@
       <HintPath>Library\ScriptAssemblies\MetaXrSimulator.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.XR.Oculus.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -1545,12 +1544,12 @@
       <HintPath>Library\ScriptAssemblies\Meta.XR.MultiplayerBlocks.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Meta.Wit.Dictation.Editor">
       <HintPath>Library\ScriptAssemblies\Meta.Wit.Dictation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Meta.XR.BuildingBlocks.DepthAPI">
@@ -1633,12 +1632,16 @@
       <HintPath>Library\ScriptAssemblies\Meta.XR.Editor.StatusMenu.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+    <Reference Include="Oculus.Interaction.Samples.Editor.UISet">
+      <HintPath>Library\ScriptAssemblies\Oculus.Interaction.Samples.Editor.UISet.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Meta.WitAi.TTS">
@@ -1659,6 +1662,10 @@
     </Reference>
     <Reference Include="AssistantVoiceCommandCommon.Editor">
       <HintPath>Library\ScriptAssemblies\AssistantVoiceCommandCommon.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Meta.XR.Editor.RemoteContent">
+      <HintPath>Library\ScriptAssemblies\Meta.XR.Editor.RemoteContent.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Meta.XR.Editor.Callbacks">
@@ -1765,10 +1772,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="NewAssembly">
-      <HintPath>Library\ScriptAssemblies\NewAssembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
       <Private>False</Private>
@@ -1811,6 +1814,10 @@
     </Reference>
     <Reference Include="Unity.XR.ARFoundation.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.XR.ARFoundation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Meta.XR.Editor.EditorCoroutine">
+      <HintPath>Library\ScriptAssemblies\Meta.XR.Editor.EditorCoroutine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.XR.Interaction.Toolkit.Analytics.Editor">
@@ -1911,10 +1918,6 @@
       <Project>{CB5D5189-3DEB-99AF-76BB-532F6883F4C9}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.Hands</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.Editor.csproj">
-      <Project>{4C232FB2-B904-15AC-7439-7A8957694F8D}</Project>
-      <Name>Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.Samples.Editor.csproj">
       <Project>{E800872F-2893-E9B7-BE10-6425DC9ADE8A}</Project>
       <Name>Unity.XR.Management.Samples.Editor</Name>
@@ -1923,37 +1926,17 @@
       <Project>{EECCD907-D548-3401-AE1A-513E9E8F9BEA}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.WorldSpaceUI</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.csproj">
-      <Project>{A7A48087-F6EC-698C-A8F4-1232B41D2D10}</Project>
-      <Name>Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.csproj">
       <Project>{0CADD051-CE3F-7643-E906-3F9C51E71F6E}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj">
-      <Project>{49E1735E-DE1D-C4C4-8E55-056245A941B7}</Project>
-      <Name>Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.Samples.csproj">
       <Project>{722CEDB8-B4E8-4D8B-4D1D-32FA4F63FE89}</Project>
       <Name>Unity.XR.Management.Samples</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.VisionOS.csproj">
-      <Project>{533ACFB8-3F21-75D4-2289-C3C58E4069B2}</Project>
-      <Name>Unity.XR.Interaction.Toolkit.Samples.VisionOS</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.csproj">
       <Project>{D4DF41FE-F7FC-A516-8DF2-D2B936FB3B5D}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="VRPen.Editor.csproj">
-      <Project>{B6832809-9069-F94F-60EA-383E34F83EEB}</Project>
-      <Name>VRPen.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="VRPen.csproj">
-      <Project>{688203C3-D1BC-7504-26C6-4DDE4269D090}</Project>
-      <Name>VRPen</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.Hands.Editor.csproj">
       <Project>{DAE0AF4A-39D9-06F5-A807-CF9E50B7E390}</Project>
@@ -1962,10 +1945,6 @@
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.csproj">
       <Project>{D2E14461-549B-9242-FF39-2D8400F7B5DC}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.VisionOS.Editor.csproj">
-      <Project>{5092717B-1AEC-687C-9309-CF5F4ABC1ACB}</Project>
-      <Name>Unity.XR.Interaction.Toolkit.Samples.VisionOS.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj">
       <Project>{615D7946-0699-916E-FF1D-8EA521F73DC6}</Project>

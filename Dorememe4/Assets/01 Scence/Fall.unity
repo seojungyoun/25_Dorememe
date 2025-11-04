@@ -161,8 +161,8 @@ MonoBehaviour:
   - {r: 0, g: 1, b: 0, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  ServerUrl: http://127.0.0.1:5000/api/upload_data
-  JobStatusUrl: http://127.0.0.1:5000/api/status
+  ServerUrl: http://localhost:5000/api/upload_data
+  JobStatusUrl: http://localhost:5000/api/status
   MusicAudioSource: {fileID: 1744334641}
   Scribble: {fileID: 11400000, guid: 5dbcbbae276e7af459a1602b20fd8944, type: 2}
 --- !u!114 &6484134
@@ -9093,10 +9093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16943e000be00470481df45a4f6aecd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons: []
-  targetColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
-  scaleMultiplier: 1.05
-  effectDuration: 0.3
 --- !u!114 &868279699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11386,18 +11382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16943e000be00470481df45a4f6aecd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons:
-  - button: {fileID: 1241030860}
-    sceneName: Spring
-  - button: {fileID: 570469319}
-    sceneName: Summer
-  - button: {fileID: 473172367}
-    sceneName: Fall
-  - button: {fileID: 1013554197}
-    sceneName: winter
-  targetColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
-  scaleMultiplier: 1.05
-  effectDuration: 0.3
 --- !u!1 &1167594029
 GameObject:
   m_ObjectHideFlags: 0
@@ -11443,10 +11427,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16943e000be00470481df45a4f6aecd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons: []
-  targetColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
-  scaleMultiplier: 1.05
-  effectDuration: 0.3
 --- !u!114 &1167594032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16935,6 +16915,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 202364687, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670256624, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 942810691211101373, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1203842878}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig)
@@ -16983,10 +16975,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2766569358201078490, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5167925059111895691, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5563199296126487199, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6678509202150728127, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1203842878}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5167925059111895691, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}

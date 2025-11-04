@@ -1105,10 +1105,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="VRPen.csproj">
-      <Project>{688203C3-D1BC-7504-26C6-4DDE4269D090}</Project>
-      <Name>VRPen</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
