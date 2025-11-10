@@ -1458,10 +1458,6 @@
       <HintPath>Library\ScriptAssemblies\AssistantCoreSDKEditor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.XR.MetaOpenXR">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.MetaOpenXR.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="MetaXrSimulator.Editor">
       <HintPath>Library\ScriptAssemblies\MetaXrSimulator.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1520,6 +1516,10 @@
     </Reference>
     <Reference Include="Meta.XR.Audio.Editor">
       <HintPath>Library\ScriptAssemblies\Meta.XR.Audio.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.MetaOpenXR">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.MetaOpenXR.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Meta.XR.ImmersiveDebugger">

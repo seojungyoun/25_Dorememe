@@ -1371,10 +1371,6 @@
       <HintPath>Library\ScriptAssemblies\AssistantCoreSDKEditor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.XR.MetaOpenXR">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.MetaOpenXR.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="MetaXrSimulator.Editor">
       <HintPath>Library\ScriptAssemblies\MetaXrSimulator.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1433,6 +1429,10 @@
     </Reference>
     <Reference Include="Meta.XR.Audio.Editor">
       <HintPath>Library\ScriptAssemblies\Meta.XR.Audio.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.MetaOpenXR">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.MetaOpenXR.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Meta.XR.ImmersiveDebugger">
@@ -1841,6 +1841,10 @@
       <Project>{CB5D5189-3DEB-99AF-76BB-532F6883F4C9}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.Hands</Name>
     </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
+      <Project>{8A844AC7-8429-B3A1-B689-2B13AC39AF72}</Project>
+      <Name>Boxophobic.Utils.Scripts</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.Samples.Editor.csproj">
       <Project>{E800872F-2893-E9B7-BE10-6425DC9ADE8A}</Project>
       <Name>Unity.XR.Management.Samples.Editor</Name>
@@ -1861,9 +1865,17 @@
       <Project>{D4DF41FE-F7FC-A516-8DF2-D2B936FB3B5D}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
+      <Project>{1C7293D8-6479-D8DE-F769-DAEB2BFFCEAF}</Project>
+      <Name>Boxophobic.Utils.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.Hands.Editor.csproj">
       <Project>{DAE0AF4A-39D9-06F5-A807-CF9E50B7E390}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.Hands.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.SkyboxCubemapExtended.Editor.csproj">
+      <Project>{E78C8822-7604-DD46-3D0C-6A44D5460B9E}</Project>
+      <Name>Boxophobic.SkyboxCubemapExtended.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.csproj">
       <Project>{D2E14461-549B-9242-FF39-2D8400F7B5DC}</Project>
