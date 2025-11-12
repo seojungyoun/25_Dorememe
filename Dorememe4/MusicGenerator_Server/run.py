@@ -3,15 +3,15 @@ from pathlib import Path
 import torch
 import pretty_midi
 
-from features_to_prefix import read_csv_strict, build_prefix_tokens, session_to_prefix
+from features_to_prefix import read_csv_strict, get_season, build_prefix_tokens, session_to_features
 from load_model import load_model
 from generate import generate_until_seconds, tokens_to_midi
 from midi_to_wav import midi_to_wav
-# from musicgen_melody import init_musicgen, prefix_to_text, stylize_melody
+from musicgen_melody import init_musicgen, prefix_to_text, stylize_melody
 
 DATA_JSONL = "./data/melody_tok.jsonl"
 VOCAB_JSON = "./data/melody_voc.json"
-CKPT_PATH  = "./melModel_tf.pt"
+CKPT_PATH  = "./ckpt/melModel_tf.pt"
 
 INPUT_CSV = "./data/sample2.csv"
 TARGET_RAW_IDX = 0
@@ -42,7 +42,7 @@ cfg = Cfg()
 model, dataset = load_model(CKPT_PATH, DATA_JSONL, VOCAB_JSON, cfg, DEVICE)
 
 # Generate melody by prefix
-def generate(prefix_tokens, target_sec=20.0, temperature=1.0, top_p=0.95):
+def generate(prefix_tokens, target_sec=40.0, temperature=1.0, top_p=0.95):
     g = torch.Generator(device=DEVICE).manual_seed(SEED)
 
     toks = generate_until_seconds(
@@ -75,7 +75,12 @@ def get_run_dir(base_dir: str = "./runs") -> Path:
 
 if __name__ == "__main__":
     df = read_csv_strict(INPUT_CSV)
-    features = session_to_prefix(df)
+
+    season = get_season(df)
+    if season:
+        print(f"[info] Picked Season: {season}")
+
+    features = session_to_features(df, season)
     prefix = build_prefix_tokens(features)
 
     print("========== GENERATED PREFIX TOKENS ==========")
@@ -101,7 +106,7 @@ if __name__ == "__main__":
     print("Melody(WAV) saved:", base_wav)
 
     init_musicgen(device=DEVICE, use_fp16=True)
-    prompt = prefix_to_text(prefix)
+    prompt = prefix_to_text(prefix, include_tokens=True, season=season)
 
     print("========== PROMPT FOR MUSICGEN ==========")
     print(prompt)
