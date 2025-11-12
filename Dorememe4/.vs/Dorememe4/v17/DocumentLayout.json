@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|Assembly-CSharp.csproj|C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\assets\\02 scripts\\vrpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|Assembly-CSharp.csproj|solutionrelative:assets\\02 scripts\\vrpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|Assembly-CSharp.csproj|c:\\users\\ellen\\desktop\\project\\25_dorememe\\dorememe4\\assets\\02 scripts\\vrpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|Assembly-CSharp.csproj|solutionrelative:assets\\02 scripts\\vrpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Extensions\\MonoBehaviourStartExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,11 +113,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "XRInputModalityManager.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.unity.xr.interaction.toolkit\\Runtime\\Inputs\\XRInputModalityManager.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.interaction.toolkit\\Runtime\\Inputs\\XRInputModalityManager.cs",
@@ -125,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GuideController.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\GuideController.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\GuideController.cs",
@@ -137,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "guidePanel.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\guidePanel.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\guidePanel.cs",
@@ -148,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PointableCanvasModule.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs",
@@ -156,12 +160,41 @@
               "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs",
               "ViewState": "AgIAAKwCAAAAAAAAAAAAABcDAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T08:18:02.71Z",
+              "WhenOpened": "2025-10-11T08:18:02.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VRPen.cs",
+              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\VRPen.cs",
+              "RelativeDocumentMoniker": "Assets\\02 Scripts\\VRPen.cs",
+              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\VRPen.cs",
+              "RelativeToolTip": "Assets\\02 Scripts\\VRPen.cs",
+              "ViewState": "AgIAANECAAAAAAAAAAAAAPQCAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T14:06:43.646Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "MetaXRFeature.cs",
+              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
+              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAAAAYBAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T16:18:44.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MonoBehaviourStartExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Extensions\\MonoBehaviourStartExtensions.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Extensions\\MonoBehaviourStartExtensions.cs",
@@ -172,12 +205,8 @@
               "WhenOpened": "2025-11-11T08:06:13.972Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "OVRConfig.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.core\\Editor\\OVRConfig.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core\\Editor\\OVRConfig.cs",
@@ -189,20 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VRPen.cs",
-              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\VRPen.cs",
-              "RelativeDocumentMoniker": "Assets\\02 Scripts\\VRPen.cs",
-              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\VRPen.cs",
-              "RelativeToolTip": "Assets\\02 Scripts\\VRPen.cs",
-              "ViewState": "AgIAAD8BAAAAAAAAAAAowGABAAB/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:06:43.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "VRPenInputActions.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\VRPenInputActions.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\VRPenInputActions.cs",
@@ -214,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "VRPenCore.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\VRPenCore.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\VRPenCore.cs",
@@ -226,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "VRPen.cs",
               "DocumentMoniker": "C:\\Users\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\VRPen.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\VRPen.cs",
@@ -237,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "MusicController.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\MusicController.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\MusicController.cs",
@@ -248,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SceneChange.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\SceneChange.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\SceneChange.cs",
@@ -260,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "VRPenEditor.cs",
               "DocumentMoniker": "C:\\Users\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\Editor\\VRPenEditor.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\Editor\\VRPenEditor.cs",
@@ -271,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MusicConfirmationController.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\MusicConfirmationController.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\MusicConfirmationController.cs",
@@ -282,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "BrushSizeSlider.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\BrushSizeSlider.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\BrushSizeSlider.cs",
@@ -294,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "MusicUploader.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\MusicUploader.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\MusicUploader.cs",
@@ -306,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "VRPenCore.cs",
               "DocumentMoniker": "C:\\Users\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\VRPenCore.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\VRPenCore.cs",
@@ -318,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "StartButtonController.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\StartButtonController.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\StartButtonController.cs",
@@ -330,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "BrushSizeController.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\BrushSizeController.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\BrushSizeController.cs",
@@ -342,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "VRPenInputActions.cs",
               "DocumentMoniker": "C:\\Users\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\VRPenInputActions.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\VRPenInputActions.cs",
@@ -354,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "IVrPenInput.cs",
               "DocumentMoniker": "C:\\Users\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\IVrPenInput.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\DS\\Documents\\GitHub\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\IVrPenInput.cs",
@@ -366,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "BrushTransparencyController.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\BrushTransparencyController.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\BrushTransparencyController.cs",
@@ -378,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "PenShader.shader",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\PenShader.shader",
               "RelativeDocumentMoniker": "Assets\\VRPen\\PenShader.shader",
@@ -390,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "PanelAutoHide.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\PanelAutoHide.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\PanelAutoHide.cs",
@@ -402,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "CSVUploader.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\CSVUploader.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\CSVUploader.cs",
@@ -414,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ButtonDebug.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\ButtonDebug.cs",
               "RelativeDocumentMoniker": "Assets\\02 Scripts\\ButtonDebug.cs",

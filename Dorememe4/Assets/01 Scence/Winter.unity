@@ -2828,9 +2828,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: VRPenNamespace.VRPen, VRPen
-        m_MethodName: Done
+      - m_Target: {fileID: 1699689823}
+        m_TargetAssemblyTypeName: VRPenNamespace.VRPen, Assembly-CSharp
+        m_MethodName: OnYesButtonclicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -297,6 +297,11 @@ namespace VRPenNamespace
         [Button]
         public void Done()
         {
+            Debug.Log("Done button clicked. Waiting for user confirmation...");
+        }
+        public void OnYesButtonclicked()
+        {
+
             ExportCSV(); // CSV Export
             StartCoroutine(UploadCSVAndStartPolling()); // CSV 업로드 및 폴링 시작
             Debug.Log("CSV Exported and starting upload...");
