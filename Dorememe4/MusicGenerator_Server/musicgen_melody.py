@@ -1,4 +1,4 @@
-import os, re
+import os, re, random, time
 from pathlib import Path
 import numpy as np
 import torch
@@ -23,11 +23,13 @@ def init_musicgen(device: str | None = None, use_fp16: bool = True):
         ).to(device)
         MODEL.eval()
 
-def prefix_to_text(prefix, include_tokens=False, season=None):
+def prefix_to_text(prefix, include_tokens=False, season=None, variety=True):
     """
     prefix: ["KEY_7","MODE_MAJ","BPM_120","REG_MID","RHY_2","DENS_2","CHR_1"]
     returns: natural-language prompt string for MusicGen
     """
+    rng = random.Random(time.time_ns())
+
     if prefix is None:
         prefix = []
     if isinstance(prefix, str):
@@ -52,6 +54,7 @@ def prefix_to_text(prefix, include_tokens=False, season=None):
     # MODE
     mode = d.get("MODE", "MAJ")
     mode_name = "major" if mode == "MAJ" else "minor"
+    mode_desc = "major-key tonality" if mode == "MAJ" else "minor-key tonality"
 
     # BPM
     try:
@@ -59,17 +62,28 @@ def prefix_to_text(prefix, include_tokens=False, season=None):
     except ValueError:
         bpm = 120
 
+    if bpm == 60:
+        bpm_desc = "slow tempo"
+    elif bpm == 80:
+        bpm_desc = "slow to moderate tempo"
+    elif bpm == 100:
+        bpm_desc = "moderate tempo"
+    elif bpm == 120:
+        bpm_desc = "fast tempo"
+    else:
+        bpm_desc = "very fast tempo"
+
     # REG
     reg = d.get("REG", "MID")
-    reg_map = {"LOW": "lower register", "MID": "mid register", "HIGH": "high register"}
-    reg_txt = reg_map.get(reg, "mid register")
+    reg_map = {"LOW": "focused on lower register", "MID": "mid-range voicing", "HIGH": "upper register voicing"}
+    reg_txt = reg_map.get(reg, "mid-range voicing")
 
     # RHY
     try:
         rhy = max(0, min(2, int(d.get("RHY", 1))))
     except ValueError:
         rhy = 1
-    rhy_map = ["straight feel", "light syncopation", "strong syncopation"]
+    rhy_map = ["straight feel", "light syncopation", "marked syncopation"]
     rhy_txt = rhy_map[rhy]
 
     # DENS
@@ -77,7 +91,7 @@ def prefix_to_text(prefix, include_tokens=False, season=None):
         dens = max(0, min(2, int(d.get("DENS", 1))))
     except ValueError:
         dens = 1
-    dens_map = ["few notes, more space", "moderate note density", "many notes, constant motion"]
+    dens_map = ["sparse phrasing with space", "moderate note density", "busy lines with constant motion"]
     dens_txt = dens_map[dens]
 
     # CHR
@@ -85,38 +99,62 @@ def prefix_to_text(prefix, include_tokens=False, season=None):
         ch = max(0, min(2, int(d.get("CHR", 1))))
     except ValueError:
         ch = 1
-    chr_map = ["mostly diatonic lines", "some chromatic passing tones", "frequent chromatic runs"]
+    chr_map = ["mostly diatonic lines", "occasional chromatic passing tones", "frequent chromatic runs"]
     chr_txt = chr_map[ch]
+    
+    ##
+    style_txt = None
+    ##
 
     # Season
     season_txt = None
     if isinstance(season, str):
         s = season.strip().lower()
         season_map = {
-            "spring": "music suited for spring-like, bright and airy mood",
-            "summer": "music suited for summer-like, vibrant and open mood",
-            "autumn": "music suited for autumn-like, warm and mellow mood",
-            "winter": "music suited for winter-like, calm and crystalline mood"
+            "spring": "music suited for spring-like: bright, airy, hopeful mood", # 왈츠
+            "summer": "music suited for summer-like: vibrant, open, expansive mood", # 트로피칼
+            "autumn": "music suited for autumn-like: warm, mellow, reflective mood", # 재즈
+            "winter": "music suited for winter-like: calm, crystalline, sparse mood" # 크리스마스 캐롤
         }
         season_txt = season_map.get(s)
+        
+        style_map = {
+            "spring": "spring-inspired piano waltz feel in 3/4 time",
+            "summer": "summer-style tropical groove led by piano",
+            "autumn": "autumn-style jazz or ballad piano texture",
+            "winter": "winter-style Christmas carol feeling with piano focus"
+        }
+        style_txt = style_map.get(s)
+
+    if variety:
+        lead_piano_pool = [
+            "instrumental piece featuring piano",
+            "melody-driven instrumental",
+            "expressive piano performance",
+            "cinematic piano cue",
+            "lively piano groove"
+        ]
+        lead_piano = rng.choice(lead_piano_pool)
 
     # 최종 문장
     parts = [
-        f"solo piano",
-        f"{key_name} {mode_name}",
-        f"{bpm} bpm",
+        style_txt,
+        season_txt,
+        f"in {key_name} {mode_name}",
+        mode_desc,
+        f"around {bpm} bpm",
+        bpm_desc,
         f"{reg_txt}",
         f"{rhy_txt}",
         f"{dens_txt}",
         f"{chr_txt}",
         "melody-forward",
         "no vocals",
-        "avoid heavy accompaniment",
+        "light arrangement",
     ]
-    if season_txt:
-        parts.append(season_txt)
 
-    base = ", ".join(parts)
+    # base = ", ".join(parts) //parts 리스트를 ", ".join()으로 결합하기 전에, None 값을 모두 제거하여 유효한 문자열 항목만 남겨야 함
+    base = ", ".join([p for p in parts if p is not None])
 
     if include_tokens:
         tok = " ".join([
@@ -129,7 +167,7 @@ def prefix_to_text(prefix, include_tokens=False, season=None):
             f"CHR_{ch}"
         ])
         if isinstance (season, str) and season.strip():
-            tok += f"SEASON_{season.strip().upper()}"
+            tok += f" SEASON_{season.strip().upper()}"
         print(f"(tokens: {tok})")
 
     return base
@@ -143,7 +181,9 @@ def stylize_melody(
     use_fp16: bool = True,
     do_sample: bool = True,
     temperature: float = 1.05,
-    top_p: float = 0.95,
+    top_k: int = 250,
+    top_p: float = 0.92,
+    guidance_scale: float = 3.0,
     max_new_tokens: int = 512,
     ) -> str:
     init_musicgen(device=device, use_fp16=use_fp16)
@@ -153,6 +193,7 @@ def stylize_melody(
         audio = audio.mean(axis=1)
 
     audio = torch.as_tensor(audio, dtype=torch.float32)
+    audio = audio.to(DEVICE)
 
     inputs = PROCESSOR(
         audio=audio,
@@ -162,17 +203,28 @@ def stylize_melody(
         return_tensors="pt",
     ).to(DEVICE)
 
+    model_dtype = MODEL.dtype
+    for k, v in inputs.items():
+        if isinstance(v, torch.Tensor):
+            v = v.to(DEVICE)
+            if v.is_floating_point():
+                v = v.to(model_dtype)
+            inputs[k] = v
+
     with torch.no_grad():
         audio_values = MODEL.generate(
             **inputs,
             do_sample=do_sample,
             temperature=temperature,
+            top_k=top_k,
             top_p=top_p,
-            max_new_tokens=max_new_tokens # 약 10s
+            guidance_scale=guidance_scale,
+            max_new_tokens=max_new_tokens
         )
 
     out_sr = MODEL.config.audio_encoder.sampling_rate
     Path(out_wav_path).parent.mkdir(parents=True, exist_ok=True)
-    sf.write(out_wav_path, audio_values[0, 0].cpu().numpy(), out_sr)
+    audio_np = audio_values[0, 0].detach().cpu().float().numpy()
+    sf.write(out_wav_path, audio_np, out_sr)
     return out_wav_path
 

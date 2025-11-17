@@ -9,11 +9,11 @@ from generate import generate_until_seconds, tokens_to_midi
 from midi_to_wav import midi_to_wav
 from musicgen_melody import init_musicgen, prefix_to_text, stylize_melody
 
-DATA_JSONL = "./data/melody_tok.jsonl"
-VOCAB_JSON = "./data/melody_voc.json"
-CKPT_PATH  = "./ckpt/melModel_tf.pt"
+DATA_JSONL = "./melody_tok.jsonl"
+VOCAB_JSON = "./melody_voc.json"
+CKPT_PATH  = "./melModel_tf.pt"
 
-INPUT_CSV = "./data/sample2.csv"
+INPUT_CSV = "./ExportCSV/SketchCSV.csv"
 TARGET_RAW_IDX = 0
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"

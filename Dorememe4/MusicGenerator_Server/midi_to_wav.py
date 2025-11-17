@@ -16,6 +16,6 @@ def midi_to_wav(midi_path, wav_path, sf2_path, sample_rate=32000):
         str(sf2_path),
         str(midi_path),
     ]
-
+    
     subprocess.run(cmd, check=True)
     return wav_path
