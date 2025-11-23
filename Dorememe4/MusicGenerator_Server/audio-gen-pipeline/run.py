@@ -106,7 +106,7 @@ if __name__ == "__main__":
     print("Melody(WAV) saved:", base_wav)
 
     init_musicgen(device=DEVICE, use_fp16=True)
-    prompt = prefix_to_text(prefix, include_tokens=True, season=season, variety=True)
+    prompt = prefix_to_text(prefix, include_tokens=True, season=season)
 
     print("========== PROMPT FOR MUSICGEN ==========")
     print(prompt)
@@ -119,11 +119,9 @@ if __name__ == "__main__":
         device=DEVICE,
         use_fp16=True,
         do_sample=True,
-        temperature=1.1,
-        top_k=250,
-        top_p=0.92,
-        guidance_scale=4.0,
-        max_new_tokens=700
+        temperature=1.05,
+        top_p=0.95,
+        max_new_tokens=512
     )
     print("FINAL saved:", final_wav)
     print("Done.")

@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|Assembly-CSharp.csproj|c:\\users\\ellen\\desktop\\project\\25_dorememe\\dorememe4\\assets\\02 scripts\\sequentialbuttoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|Assembly-CSharp.csproj|solutionrelative:assets\\02 scripts\\sequentialbuttoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\ellen\\desktop\\project\\25_dorememe\\dorememe4\\assets\\02 scripts\\sequentialbuttoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\02 scripts\\sequentialbuttoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|Assembly-CSharp.csproj|c:\\users\\ellen\\desktop\\project\\25_dorememe\\dorememe4\\assets\\02 scripts\\vrpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|Assembly-CSharp.csproj|C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\assets\\02 scripts\\vrpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8688FDFD-9DF8-0B4F-3841-4EFF87D0EB2A}|Assembly-CSharp.csproj|solutionrelative:assets\\02 scripts\\vrpen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -133,10 +133,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "XRInputModalityManager.cs",
@@ -146,7 +142,77 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.xr.interaction.toolkit\\Runtime\\Inputs\\XRInputModalityManager.cs",
               "ViewState": "AgIAAOcCAAAAAAAAAAAAAAIDAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T15:40:51.613Z"
+              "WhenOpened": "2025-11-06T15:40:51.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PointableCanvasModule.cs",
+              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs",
+              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs",
+              "ViewState": "AgIAAKwCAAAAAAAAAAAAABcDAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T08:18:02.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MetaXRFeature.cs",
+              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
+              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAAAAYBAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T16:18:44.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MonoBehaviourStartExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Extensions\\MonoBehaviourStartExtensions.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Extensions\\MonoBehaviourStartExtensions.cs",
+              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Extensions\\MonoBehaviourStartExtensions.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Extensions\\MonoBehaviourStartExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T08:06:13.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OVRConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.core\\Editor\\OVRConfig.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core\\Editor\\OVRConfig.cs",
+              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.core\\Editor\\OVRConfig.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core\\Editor\\OVRConfig.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAUwFEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T06:26:39.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PenShader.shader",
+              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\PenShader.shader",
+              "RelativeDocumentMoniker": "Assets\\VRPen\\PenShader.shader",
+              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\PenShader.shader",
+              "RelativeToolTip": "Assets\\VRPen\\PenShader.shader",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAUwEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-10-12T04:42:33.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -173,18 +239,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PointableCanvasModule.cs",
-              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs",
-              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Unity\\PointableCanvasModule.cs",
-              "ViewState": "AgIAAKwCAAAAAAAAAAAAABcDAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T08:18:02.71Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "VRPen.cs",
               "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\02 Scripts\\VRPen.cs",
@@ -193,44 +247,7 @@
               "RelativeToolTip": "Assets\\02 Scripts\\VRPen.cs",
               "ViewState": "AgIAAM4CAAAAAAAAAABIwPQCAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:06:43.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MetaXRFeature.cs",
-              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
-              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
-              "ViewState": "AgIAAOMAAAAAAAAAAAAAAAYBAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T16:18:44.789Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MonoBehaviourStartExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Extensions\\MonoBehaviourStartExtensions.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Extensions\\MonoBehaviourStartExtensions.cs",
-              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Extensions\\MonoBehaviourStartExtensions.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.interaction\\Runtime\\Scripts\\Extensions\\MonoBehaviourStartExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T08:06:13.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "OVRConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.core\\Editor\\OVRConfig.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core\\Editor\\OVRConfig.cs",
-              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Library\\PackageCache\\com.meta.xr.sdk.core\\Editor\\OVRConfig.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core\\Editor\\OVRConfig.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAUwFEAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T06:26:39.264Z"
+              "WhenOpened": "2025-11-04T14:06:43.646Z"
             },
             {
               "$type": "Document",
@@ -407,18 +424,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-25T17:16:06.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "PenShader.shader",
-              "DocumentMoniker": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\PenShader.shader",
-              "RelativeDocumentMoniker": "Assets\\VRPen\\PenShader.shader",
-              "ToolTip": "C:\\Users\\Ellen\\Desktop\\Project\\25_Dorememe\\Dorememe4\\Assets\\VRPen\\PenShader.shader",
-              "RelativeToolTip": "Assets\\VRPen\\PenShader.shader",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAUwEQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-10-12T04:42:33.964Z"
             },
             {
               "$type": "Document",

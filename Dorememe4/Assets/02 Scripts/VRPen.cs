@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -7,7 +8,6 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Networking;
-using System.Collections;
 using VRPenNamespace;
 
 
@@ -17,10 +17,10 @@ using UnityEditor;
 
 namespace VRPenNamespace
 {
-    // ==========================================================
-    // 1. JSON 파싱을 위한 클래스 정의
-    // ==========================================================
-    [Serializable]
+    // ==========================================================
+    // 1. JSON 파싱을 위한 클래스 정의
+    // ==========================================================
+    [Serializable]
     public class JobIdResponse
     {
         public string job_id;
@@ -33,9 +33,10 @@ namespace VRPenNamespace
     public class StatusResponse
     {
         public string status;
-        public string music_url;      // 최종 음악 URL (completed)
-        public string music_url_1st;  // 1차 음악 URL (1st_ready)
-        public string error;
+        public string music_url;      // 최종 음악 URL (completed)
+        // public string music_url_1st; // 서버에서 제거됨
+        public string message;        // 서버 진행 상태 메시지
+        public string error;
     }
 
     [ExecuteAlways]
@@ -53,8 +54,8 @@ namespace VRPenNamespace
         [SerializeField]
         private Color[] _colors = new[]
         {
-      Color.blue, Color.cyan, Color.green, Color.red, Color.yellow,
-    };
+            Color.blue, Color.cyan, Color.green, Color.red, Color.yellow,
+        };
 
         private int _colorIndex;
         private Vector3 _lastPosition;
@@ -62,13 +63,12 @@ namespace VRPenNamespace
 
         private global::VRPenNamespace.IVrPenInput _input;
 
-        // 서버 통신 및 오디오 재생 변수
-        public string ServerUrl = "http://localhost:5000/api/upload_data"; 
-        public string JobStatusUrl = "http://localhost:5000/api/status"; 
-        public AudioSource MusicAudioSource;
-        private const float PollingInterval = 5f;
+        // 서버 통신 및 오디오 재생 변수
+        public string ServerUrl = "http://localhost:5000/api/upload_data";
+        public string JobStatusUrl = "http://localhost:5000/api/status";
+        public AudioSource MusicAudioSource;
+        private const float PollingInterval = 1f; // ⭐ 최적화: 폴링 간격을 1초로 단축 (변경 지점)
         private string currentJobId = null;
-        private bool is1stMusicPlaying = false;
 
         // 씬 선택 정보를 저장할 변수
         private int SelectedSceneID = 0;
@@ -77,10 +77,8 @@ namespace VRPenNamespace
         {
             InitCore();
 
-            // 새로 플레이 모드에 진입할 때 기존 스케치를 지우기
             if (Application.isPlaying)
             {
-                // Clear() 함수는 _core?.Clear()를 호출하여 현재 그려진 스케치를 모두 지웁니다.
                 Clear();
                 Debug.Log("VRPen: Existing sketch cleared on entering Play Mode.");
             }
@@ -94,14 +92,13 @@ namespace VRPenNamespace
             }
             catch (Exception e)
             {
-                // SceneChange 클래스를 찾을 수 없는 경우
                 Debug.LogWarning($"Could not access SceneChange.SelectedSceneID_Global (Error: {e.Message}). Using default ID 0. Check SceneChange.cs for namespace conflicts.");
                 SelectedSceneID = 0;
             }
 
 
 #if UNITY_EDITOR // Start() 내부 에디터 전용 블록 시작
-            EditorApplication.playModeStateChanged += PlayModeStateChanged;
+            EditorApplication.playModeStateChanged += PlayModeStateChanged;
 
             void PlayModeStateChanged(PlayModeStateChange obj)
             {
@@ -216,7 +213,7 @@ namespace VRPenNamespace
                 _core.SetLast(_brushPoint.position);
 
                 if (Time.time - _lastTime > _paintDelay
-                  && (_lastPosition - _brushPoint.position).magnitude > 0.001f)
+                    && (_lastPosition - _brushPoint.position).magnitude > 0.001f)
                 {
                     AddPoint();
                     return;
@@ -289,9 +286,9 @@ namespace VRPenNamespace
             if (Scribble != null)
             {
 #if UNITY_EDITOR
-                Save();
+                Save();
 #endif
-            }
+            }
         }
 
         [Button]
@@ -299,23 +296,25 @@ namespace VRPenNamespace
         {
             Debug.Log("Done button clicked. Waiting for user confirmation...");
         }
+
         public void OnYesButtonclicked()
         {
-
             ExportCSV(); // CSV Export
-            StartCoroutine(UploadCSVAndStartPolling()); // CSV 업로드 및 폴링 시작
-            Debug.Log("CSV Exported and starting upload...");
+            StartCoroutine(UploadCSVAndStartPolling()); // CSV 업로드 및 폴링 시작
+            Debug.Log("CSV Exported and starting upload...");
         }
 
         private IEnumerator UploadCSVAndStartPolling() // CSV 업로드 및 서버 작업 폴링 시작
-        {
-            string projectRoot = Path.GetDirectoryName(Application.dataPath);
+        {
+            string projectRoot = Path.GetDirectoryName(Application.dataPath);
             const string exportFolderName = "MusicGenerator_Server";
             const string subFolderName = "ExportCSV";
             string exportDir = Path.Combine(projectRoot, exportFolderName, subFolderName);
             const string baseName = "SketchCSV";
             string filePath = Path.Combine(exportDir, $"{baseName}.csv");
             string latestFilePath = filePath;
+
+            // 파일 경로 찾는 로직 (기존 유지)
             if (File.Exists(filePath))
             {
                 int maxIndex = 0;
@@ -338,11 +337,13 @@ namespace VRPenNamespace
                 }
             }
             string finalFilePath = latestFilePath;
+
             if (!File.Exists(finalFilePath))
             {
                 Debug.LogError("CSV file not found: " + finalFilePath);
                 yield break;
             }
+
             byte[] fileData = File.ReadAllBytes(finalFilePath);
             UnityWebRequest request = new UnityWebRequest(ServerUrl, "POST");
             request.uploadHandler = new UploadHandlerRaw(fileData);
@@ -353,7 +354,7 @@ namespace VRPenNamespace
 
             yield return request.SendWebRequest(); // 업로드 요청
 
-            if (request.result != UnityWebRequest.Result.Success)
+            if (request.result != UnityWebRequest.Result.Success)
             {
                 Debug.LogError("File Upload Failed: " + request.error + " | Server Response: " + request.downloadHandler.text);
                 yield break;
@@ -363,13 +364,16 @@ namespace VRPenNamespace
 
             try
             {
-                currentJobId = ExtractJobIdFromJson(responseText); // Job ID 추출
-                Debug.Log("Upload Success. Job ID received: " + currentJobId);
+                // Job ID 추출 로직
+                JobIdResponse jobResponse = JsonUtility.FromJson<JobIdResponse>(responseText);
+                currentJobId = jobResponse.job_id;
+
+                Debug.Log("Upload Success. Job ID received: " + currentJobId);
 
                 if (!string.IsNullOrEmpty(currentJobId))
                 {
                     StartCoroutine(PollForMusicStatus(currentJobId)); // 상태 폴링 시작
-                }
+                }
             }
             catch (Exception e)
             {
@@ -377,97 +381,77 @@ namespace VRPenNamespace
             }
         }
 
-        // VRPen.cs 파일 내부 PollForMusicStatus 코루틴 수정
-
-        private IEnumerator PollForMusicStatus(string jobId) // 주기적으로 서버에 상태 문의
-        {
+        // PollForMusicStatus 코루틴: 1차 음악 로직 제거 및 완성만 폴링
+        private IEnumerator PollForMusicStatus(string jobId) // 주기적으로 서버에 상태 문의
+        {
             while (true)
             {
-                yield return new WaitForSeconds(PollingInterval); // 5초 대기
+                yield return new WaitForSeconds(PollingInterval); // ⭐ 1초 대기
 
-                // URL 조합: JobStatusUrl의 끝 슬래시를 제거하고 Job ID를 추가
-                string baseUrl = JobStatusUrl.TrimEnd('/');
+                string baseUrl = JobStatusUrl.TrimEnd('/');
                 string url = baseUrl + "/" + jobId;
 
                 UnityWebRequest statusRequest = UnityWebRequest.Get(url); // 상태 확인 GET 요청
 
-                yield return statusRequest.SendWebRequest();
+                yield return statusRequest.SendWebRequest();
 
                 if (statusRequest.result != UnityWebRequest.Result.Success)
                 {
-                    // 오류 시 응답 텍스트와 함께 출력
-                    Debug.LogWarning("Status check failed. Retrying... | Error: " + statusRequest.error
+                    Debug.LogWarning("Status check failed. Retrying... | Error: " + statusRequest.error
                     + " | Response: " + statusRequest.downloadHandler.text);
                     continue;
                 }
 
                 string response = statusRequest.downloadHandler.text;
+                Debug.Log($"[Server Response] Job ID: {jobId}, Status JSON: {response}");
 
-                // 디버깅: 서버 응답 JSON 전문 출력
-                Debug.Log($"[Server Response] Job ID: {jobId}, Status JSON: {response}");
+                // JSON 객체로 파싱
+                StatusResponse statusObject = JsonUtility.FromJson<StatusResponse>(response);
 
-                // JSON 객체로 파싱
-                StatusResponse statusObject = JsonUtility.FromJson<StatusResponse>(response);
-
-                // 2. 1차 음악 준비 상태 확인
-                if (statusObject != null && statusObject.status == "1st_ready")
+                if (statusObject == null)
                 {
-                    string musicUrl1st = statusObject.music_url_1st; // 파싱된 객체에서 URL을 가져옴
-
-                    // 최종 디버깅 로그: URL 값이 비어있는지 확인
-                    Debug.Log($"[Client Check] Status is 1st_ready. URL value: {musicUrl1st}");
-
-                    if (!string.IsNullOrEmpty(musicUrl1st))
-                    {
-                        if (!is1stMusicPlaying)
-                        {
-                            Debug.Log($"1ST MUSIC DOWNLOAD STARTING. URL: {musicUrl1st}");
-                            is1stMusicPlaying = true;
-                            StartCoroutine(DownloadAndPlayMusic(musicUrl1st, loop: true));
-                        }
-                    }
+                    Debug.LogError("Failed to parse StatusResponse object from server.");
+                    continue;
                 }
 
-                // 1. 최종 완료 상태 확인
-                else if (statusObject != null && statusObject.status == "completed")
+                // 1. 최종 완료 상태 확인
+                if (statusObject.status == "completed")
                 {
-                    string musicUrl = statusObject.music_url; // 파싱된 객체에서 URL을 가져옴
+                    string musicUrl = statusObject.music_url;
 
-                    if (!string.IsNullOrEmpty(musicUrl))
+                    if (!string.IsNullOrEmpty(musicUrl))
                     {
                         Debug.Log("Music generation fully completed! Starting FINAL download.");
                         StopAllCoroutines();
 
-                        // 1차 음악이 재생 중이었다면 멈추고 최종 음악 재생
-                        if (is1stMusicPlaying && MusicAudioSource != null)
-                        {
-                            MusicAudioSource.Stop();
-                            is1stMusicPlaying = false;
-                        }
-
                         StartCoroutine(DownloadAndPlayMusic(musicUrl, loop: false));
+                        yield break;
+                    }
+                    else
+                    {
+                        Debug.LogError("Completed status received, but music_url is empty.");
                         yield break;
                     }
                 }
 
-                // 3. 서버에서 명시적으로 실패 상태를 받은 경우
-                else if (statusObject != null && statusObject.status == "failed")
+                // 2. 서버에서 명시적으로 실패 상태를 받은 경우
+                else if (statusObject.status == "failed")
                 {
-                    Debug.LogError("Music generation failed on server: " + response);
+                    Debug.LogError($"Music generation failed on server: {statusObject.error} | Message: {statusObject.message}");
                     StopAllCoroutines();
                     yield break;
                 }
 
-                // 4. 완료나 실패가 아니면 계속 진행 중
-                Debug.Log("Music generation in progress...");
+                // 3. 완료나 실패가 아니면 계속 진행 중 
+                Debug.Log($"Music generation in progress... Message: {statusObject.message}");
             }
         }
 
-        // DownloadAndPlayMusic 함수 수정: 루프 옵션 추가 및 AudioType.UNKNOWN 사용
-        private IEnumerator DownloadAndPlayMusic(string url, bool loop)
+        // DownloadAndPlayMusic 함수: AudioType.WAV 명시 및 길이 오류 검사
+        private IEnumerator DownloadAndPlayMusic(string url, bool loop)
         {
-            // AudioType.WAV 대신 UNKNOWN을 사용하여 Unity가 포맷을 자동 감지
-            UnityWebRequest audioRequest = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.UNKNOWN);
+            // AudioType.WAV를 명시하여 Unity의 WAV 헤더 해석 오류 가능성을 줄임
+            UnityWebRequest audioRequest = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.WAV);
 
             yield return audioRequest.SendWebRequest();
 
@@ -484,6 +468,14 @@ namespace VRPenNamespace
                 MusicAudioSource.clip = clip;
                 MusicAudioSource.loop = loop;
                 MusicAudioSource.Play();
+
+                // 디버깅 강화: 클립 길이가 10초 미만이면 오류 메시지 출력 (서버에서 10초 생성 가정)
+                if (clip.length < 9.0f)
+                {
+                    // 서버에서 10초를 생성하도록 설정했으므로, 9초 미만이면 오류로 간주
+                    Debug.LogError($"[CLIP LENGTH ERROR] Downloaded clip is too short: {clip.length}s. Expected ~10s. Check server max_new_tokens or WAV encoding.");
+                }
+
                 Debug.Log($"Music loaded and playing (Loop: {loop})! CLIP LENGTH: {clip.length}s");
             }
             else
@@ -492,8 +484,7 @@ namespace VRPenNamespace
             }
         }
 
-        // Job ID를 실제 파싱하는 로직으로 교체
-        private string ExtractJobIdFromJson(string json)
+        private string ExtractJobIdFromJson(string json)
         {
             try
             {
@@ -512,50 +503,8 @@ namespace VRPenNamespace
             }
         }
 
-        // 1차 음악 URL 추출 함수
-        private string ExtractMusicUrl1stFromJson(string json)
-        {
-            try
-            {
-                StatusResponse response = JsonUtility.FromJson<StatusResponse>(json);
-
-                if (!string.IsNullOrEmpty(response.music_url_1st))
-                {
-                    return response.music_url_1st;
-                }
-                return null;
-            }
-            catch (Exception e)
-            {
-                Debug.LogError($"JSON Parsing Error (MusicUrl1st): {e.Message}. Response: {json}");
-                return null;
-            }
-        }
-
-        // 최종 음악 URL 추출 함수
-        private string ExtractMusicUrlFromJson(string json)
-        {
-            try
-            {
-                StatusResponse response = JsonUtility.FromJson<StatusResponse>(json);
-
-                if (!string.IsNullOrEmpty(response.music_url))
-                {
-                    return response.music_url;
-                }
-
-                Debug.LogWarning("Music URL not found in status response. Status: " + response.status + " Error: " + response.error);
-                return null;
-            }
-            catch (Exception e)
-            {
-                Debug.LogError($"JSON Parsing Error (MusicUrl): {e.Message}. Response: {json}");
-                return null;
-            }
-        }
-
 #if UNITY_EDITOR // 에디터 전용 블록 시작
-        [Button]
+        [Button]
         private void Save()
         {
             SaveCurrentScribble();
@@ -622,11 +571,11 @@ comment object: " + Scribble.name);
             var faces = new List<(int, int, int, int)>();
 
             int indexShift = 0;
-            // _core._strokeMeshes의 구조체가 VRPen.cs에 없으므로 임시 타입캐스팅 가정
-            foreach (var stroke in _core._strokeMeshes)
+            // _core._strokeMeshes의 구조체가 VRPen.cs에 없으므로 임시 타입캐스팅 가정
+            foreach (var stroke in _core._strokeMeshes)
             {
-                // StrokeMesh 구조체의 구체적인 멤버는 VRPen.cs에 없으므로 원래 코드를 유지
-                for (int i = 0; i < stroke.vertex.Count; i++)
+                // StrokeMesh 구조체의 구체적인 멤버는 VRPen.cs에 없으므로 원래 코드를 유지
+                for (int i = 0; i < stroke.vertex.Count; i++)
                 {
                     vertices.Add((stroke.colors[i], stroke.vertex[i]));
                 }
@@ -661,7 +610,7 @@ end_header");
             {
                 var p = v.Item2;
                 var c = v.Item1;
-                sb.AppendLine($"{p.x} {p.z} {p.y}  {c.r} {c.g} {c.b}");
+                sb.AppendLine($"{p.x} {p.z} {p.y}  {c.r} {c.g} {c.b}");
             }
 
             foreach (var f in faces)
@@ -684,15 +633,15 @@ end_header");
 
             var sb = new StringBuilder();
 
-            // 1. 헤더 라인 수정: SelectedSceneID 필드 추가
-            sb.AppendLine("StrokeIndex,ColorR,ColorG,ColorB,Count,ColorA,BrushSize,Start_X,Start_Y,Start_Z,End_X,End_Y,End_Z,TotalUndoCount,SelectedSceneID");
+            // 1. 헤더 라인 수정: SelectedSceneID 필드 추가
+            sb.AppendLine("StrokeIndex,ColorR,ColorG,ColorB,Count,ColorA,BrushSize,Start_X,Start_Y,Start_Z,End_X,End_Y,End_Z,TotalUndoCount,SelectedSceneID");
 
-            // 2. 색상별 누적 카운트를 위한 딕셔너리
-            var colorCounts = new Dictionary<Color, int>();
+            // 2. 색상별 누적 카운트를 위한 딕셔너리
+            var colorCounts = new Dictionary<Color, int>();
             int totalUndoCount = _core.UndoCount;
 
-            // 3. 스트로크 데이터 기록 (각 스트로크별로 한 줄 출력)
-            for (int i = 0; i < _core._strokeMeshes.Count; i++)
+            // 3. 스트로크 데이터 기록 (각 스트로크별로 한 줄 출력)
+            for (int i = 0; i < _core._strokeMeshes.Count; i++)
             {
                 var strokeMesh = _core._strokeMeshes[i];
                 var stroke = strokeMesh.Stroke;
@@ -700,8 +649,8 @@ end_header");
 
                 Color c = stroke.Color;
 
-                // 동일 색상 누적 카운트
-                if (!colorCounts.ContainsKey(c))
+                // 동일 색상 누적 카운트
+                if (!colorCounts.ContainsKey(c))
                 {
                     colorCounts[c] = 0;
                 }
@@ -712,29 +661,29 @@ end_header");
                 Vector3 end = stroke.Points.Last();
 
                 sb.AppendLine(
-                  $"{i}," + // StrokeIndex
-                            $"{c.r:F4},{c.g:F4},{c.b:F4}," + // Color R, G, B
-                            $"{currentCount}," + // Count
-                            $"{c.a:F4}," + // ColorA
-                            $"{stroke.BrushSize:F4}," + // BrushSize
-                            $"{start.x:F4},{start.y:F4},{start.z:F4}," + // Start_X, Y, Z
-                            $"{end.x:F4},{end.y:F4},{end.z:F4}," + // End_X, Y, Z
-                            $"{totalUndoCount}," + // TotalUndoCount
-                            $"{SelectedSceneID}" // ⭐씬 ID 추가
-                        );
+                    $"{i}," + // StrokeIndex
+                    $"{c.r:F4},{c.g:F4},{c.b:F4}," + // Color R, G, B
+                    $"{currentCount}," + // Count
+                    $"{c.a:F4}," + // ColorA
+                    $"{stroke.BrushSize:F4}," + // BrushSize
+                    $"{start.x:F4},{start.y:F4},{start.z:F4}," + // Start_X, Y, Z
+                    $"{end.x:F4},{end.y:F4},{end.z:F4}," + // End_X, Y, Z
+                    $"{totalUndoCount}," + // TotalUndoCount
+                    $"{SelectedSceneID}" // 씬 ID 추가
+                );
             }
 
-            // 4. 파일 저장 로직 (프로젝트 루트의 MusicGenerator_Server/ExportCSV 경로에 저장)
+            // 4. 파일 저장 로직 (프로젝트 루트의 MusicGenerator_Server/ExportCSV 경로에 저장)
 
-            // Assets 폴더 경로에서 한 단계 상위로 이동하여 프로젝트 루트 폴더 얻기
-            string projectRoot = Path.GetDirectoryName(Application.dataPath);
+            // Assets 폴더 경로에서 한 단계 상위로 이동하여 프로젝트 루트 폴더 얻기
+            string projectRoot = Path.GetDirectoryName(Application.dataPath);
 
-            // 프로젝트 루트 폴더에서 MusicGenerator_Server/ExportCSV 폴더를 지정
-            const string exportFolderName = "MusicGenerator_Server";
+            // 프로젝트 루트 폴더에서 MusicGenerator_Server/ExportCSV 폴더를 지정
+            const string exportFolderName = "MusicGenerator_Server";
             const string subFolderName = "ExportCSV";
 
-            // 최종 저장 경로: .../프로젝트이름/MusicGenerator_Server/ExportCSV
-            string exportDir = Path.Combine(projectRoot, exportFolderName, subFolderName);
+            // 최종 저장 경로: .../프로젝트이름/MusicGenerator_Server/ExportCSV
+            string exportDir = Path.Combine(projectRoot, exportFolderName, subFolderName);
 
             Directory.CreateDirectory(exportDir);
 
@@ -743,8 +692,8 @@ end_header");
             string filePath = Path.Combine(exportDir, $"{baseName}.csv");
             int index = 1;
 
-            // 이름 충돌 시 순번 부여 (SketchCSV, SketchCSV(1), ...)
-            while (File.Exists(filePath))
+            // 이름 충돌 시 순번 부여 (SketchCSV, SketchCSV(1), ...)
+            while (File.Exists(filePath))
             {
                 filePath = Path.Combine(exportDir, $"{baseName}({index}).csv");
                 index++;
@@ -818,7 +767,7 @@ end_header");
             public float BrushAlpha;
         }
 #endif // 에디터 전용 블록 끝
-    }
+    }
 
     [AttributeUsage(AttributeTargets.Method, Inherited = false, AllowMultiple = false)]
     public sealed class ButtonAttribute : Attribute
