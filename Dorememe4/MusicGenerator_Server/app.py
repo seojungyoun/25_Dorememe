@@ -13,7 +13,7 @@ import threading
 import io 
 import soundfile as sf 
 import pretty_midi
-from multiprocessing import Process, Queue, Manager # Queue와 Manager 명시적으로 임포트
+from multiprocessing import Process, Queue, Manager
 
 # 1. 모듈 임포트 및 초기 설정
 
@@ -43,11 +43,11 @@ DATA_JSONL = "./melody_tok.jsonl"
 VOCAB_JSON = "./melody_voc.json"
 CKPT_PATH = "./melModel_tf.pt" 
 
-# 장치 설정 (최적화: 멜로디 생성도 GPU 사용)
+# 장치 설정
 MUSICGEN_DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 GEN_DEVICE = MUSICGEN_DEVICE 
 
-# MusicGen 워커 수 (최적화: 병렬 처리. 2개로 유지)
+# MusicGen 워커 수 (병렬 처리. 2개)
 NUM_MUSICGEN_WORKERS = 2 
 
 # 랜덤 시드 설정
@@ -75,7 +75,7 @@ musicgen_queue = None
 musicgen_worker_process = None 
 
 
-# 2. 모델 로드 및 초기화 함수 (변경 없음)
+# 2. 모델 로드 및 초기화 함수
 
 def initialize_job_db_and_queues():
     """멀티프로세싱을 위한 Job DB 및 작업 큐 초기화."""
@@ -102,7 +102,7 @@ def load_generator_model():
         dataset = None
         raise
 
-# 3. MusicGen 전용 워커 클래스 (변경 없음)
+# 3. MusicGen 전용 워커 클래스
 
 class MusicGen_Worker(Process):
     """
@@ -165,7 +165,7 @@ class MusicGen_Worker(Process):
         prefix_tokens = job_data['prefix_tokens']
         season = job_data['season']
         safe_filename = job_data['safe_filename']
-        target_sec = job_data['target_sec'] # ⭐ 10.0 초로 넘어옴
+        target_sec = job_data['target_sec']
 
         try:
             prompt = prefix_to_text(prefix_tokens, include_tokens=True, season=season)
@@ -181,7 +181,6 @@ class MusicGen_Worker(Process):
         
         try:
             melody_stream = io.BytesIO(wav_data)
-            # MusicGen 토큰 계산: 10초 기준 512 토큰
             max_new_tokens = int(target_sec * 512 / 10) 
             
             output_wav_filename_styled = f'{safe_filename}_final_styled.wav'
@@ -228,7 +227,7 @@ class MusicGen_Worker(Process):
                 'music_url_1st': job_data.get('music_url_1st') 
             }
 
-# 4. 비동기 작업자 함수 (변경 없음)
+# 4. 비동기 작업자 함수
 
 def process_music_generation_1st(job_id, safe_filename, prefix_tokens, target_sec, shared_db, season, musicgen_q):
     """
@@ -294,7 +293,7 @@ def process_music_generation_1st(job_id, safe_filename, prefix_tokens, target_se
         return
 
 
-# 5. Flask 엔드포인트 (target_sec 변경)
+# 5. Flask 엔드포인트
 
 @app.route('/api/upload_data', methods=['POST'])
 def upload_data():
@@ -330,8 +329,7 @@ def upload_data():
         traceback.print_exc()
         return jsonify({'error': f'특징 추출 실패: {str(e)}'}), 400
     
-    # ⭐⭐ 최종 최적화: 음악 길이 20.0초에서 10.0초로 단축 ⭐⭐
-    target_sec = 10.0
+    target_sec = 20.0
 
     start_time = time.time() 
     
@@ -387,7 +385,7 @@ def download_music(filename):
     """음악 파일 다운로드."""
     return send_from_directory(OUTPUT_FOLDER, filename)
 
-# 6. 메인 실행 블록 (변경 없음)
+# 6. 메인 실행
 if __name__ == '__main__':
     multiprocessing.freeze_support() 
     

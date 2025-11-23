@@ -34,7 +34,6 @@ namespace VRPenNamespace
     {
         public string status;
         public string music_url;      // 최종 음악 URL (completed)
-        // public string music_url_1st; // 서버에서 제거됨
         public string message;        // 서버 진행 상태 메시지
         public string error;
     }
@@ -67,7 +66,7 @@ namespace VRPenNamespace
         public string ServerUrl = "http://localhost:5000/api/upload_data";
         public string JobStatusUrl = "http://localhost:5000/api/status";
         public AudioSource MusicAudioSource;
-        private const float PollingInterval = 1f; // ⭐ 최적화: 폴링 간격을 1초로 단축 (변경 지점)
+        private const float PollingInterval = 1f; 
         private string currentJobId = null;
 
         // 씬 선택 정보를 저장할 변수
@@ -86,7 +85,6 @@ namespace VRPenNamespace
             // SceneChange 클래스 접근 및 ID 가져오기
             try
             {
-                // SceneChange.cs가 네임스페이스 없이 전역에 있으므로 바로 접근
                 SelectedSceneID = SceneChange.SelectedSceneID_Global;
                 Debug.Log($"VRPen initialized with Scene ID: {SelectedSceneID}");
             }
@@ -97,7 +95,7 @@ namespace VRPenNamespace
             }
 
 
-#if UNITY_EDITOR // Start() 내부 에디터 전용 블록 시작
+#if UNITY_EDITOR
             EditorApplication.playModeStateChanged += PlayModeStateChanged;
 
             void PlayModeStateChanged(PlayModeStateChange obj)
@@ -114,7 +112,7 @@ namespace VRPenNamespace
                 Load();
             }
         }
-#endif // 에디터 전용 블록 끝
+#endif
 
         private void ChangeColor()
         {
@@ -299,7 +297,7 @@ namespace VRPenNamespace
 
         public void OnYesButtonclicked()
         {
-            ExportCSV(); // CSV Export
+            ExportCSV();
             StartCoroutine(UploadCSVAndStartPolling()); // CSV 업로드 및 폴링 시작
             Debug.Log("CSV Exported and starting upload...");
         }
@@ -314,7 +312,6 @@ namespace VRPenNamespace
             string filePath = Path.Combine(exportDir, $"{baseName}.csv");
             string latestFilePath = filePath;
 
-            // 파일 경로 찾는 로직 (기존 유지)
             if (File.Exists(filePath))
             {
                 int maxIndex = 0;
@@ -381,12 +378,11 @@ namespace VRPenNamespace
             }
         }
 
-        // PollForMusicStatus 코루틴: 1차 음악 로직 제거 및 완성만 폴링
         private IEnumerator PollForMusicStatus(string jobId) // 주기적으로 서버에 상태 문의
         {
             while (true)
             {
-                yield return new WaitForSeconds(PollingInterval); // ⭐ 1초 대기
+                yield return new WaitForSeconds(PollingInterval);
 
                 string baseUrl = JobStatusUrl.TrimEnd('/');
                 string url = baseUrl + "/" + jobId;
@@ -469,7 +465,7 @@ namespace VRPenNamespace
                 MusicAudioSource.loop = loop;
                 MusicAudioSource.Play();
 
-                // 디버깅 강화: 클립 길이가 10초 미만이면 오류 메시지 출력 (서버에서 10초 생성 가정)
+                // 클립 길이가 10초 미만이면 오류 메시지 출력 (서버에서 10초 생성 가정)
                 if (clip.length < 9.0f)
                 {
                     // 서버에서 10초를 생성하도록 설정했으므로, 9초 미만이면 오류로 간주
@@ -766,7 +762,7 @@ end_header");
             public float BrushSize;
             public float BrushAlpha;
         }
-#endif // 에디터 전용 블록 끝
+#endif 
     }
 
     [AttributeUsage(AttributeTargets.Method, Inherited = false, AllowMultiple = false)]
