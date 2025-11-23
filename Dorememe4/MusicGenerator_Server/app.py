@@ -12,7 +12,7 @@ from pathlib import Path
 import threading 
 import io 
 import soundfile as sf 
-import pretty_midi # pretty_midi 모듈을 가져옵니다.
+import pretty_midi
 
 # 1. 모듈 임포트 및 초기 설정
 
@@ -61,12 +61,10 @@ class Cfg:
         self.dropout = 0.1
 
 cfg = Cfg()
-# 전역 변수 초기화
+# 전역 변수
 model = None
 dataset = None
 musicgen_model_loaded = False 
-# SoundFont 경로 설정
-# pretty_midi의 기본 SoundFont 경로를 사용하여 TimGM6mb.sf2 파일을 찾습니다.
 SF2_PATH = os.path.join(os.path.dirname(pretty_midi.__file__), "TimGM6mb.sf2")
 app = Flask(__name__)
 job_status_db = None 
@@ -119,7 +117,10 @@ def load_musicgen_model():
 # 3. 비동기 작업자 함수 (1차 작업: 멜로디 생성)
 
 def process_music_generation_1st(job_id, safe_filename, prefix_tokens, target_sec, shared_db, season):
-    """1차 멜로디 생성 및 WAV 파일 저장. 바이너리 데이터를 공유 메모리(DB)에 저장 후 종료."""
+    """
+    1차 멜로디 생성 및 WAV 파일 저장. 
+    1차 완료 상태를 '1st_ready' 대신 '2nd_start_ready'로 변경하여 외부 노출을 방지.
+    """
     global model, dataset, SF2_PATH
     
     try:
@@ -152,7 +153,7 @@ def process_music_generation_1st(job_id, safe_filename, prefix_tokens, target_se
         
         try:
             audio, sr = sf.read(melody_wav_path)
-            os.remove(melody_wav_path) 
+            # 1차 파일은 2차 작업에서 임시로 사용
             sf.write(melody_wav_path, audio, sr)
             wav_data = Path(melody_wav_path).read_bytes()
             
@@ -162,12 +163,12 @@ def process_music_generation_1st(job_id, safe_filename, prefix_tokens, target_se
             return
             
         time.sleep(1.0) 
-            
+        
         music_url_melody = f'http://localhost:5000/music/{melody_wav_filename}'
 
         current_status = {
-            'status': '1st_ready',
-            'music_url_1st': music_url_melody,
+            'status': '2nd_start_ready', # 내부 상태: 1차 완료 및 2차 시작 준비
+            'music_url_1st': music_url_melody, # 1차 URL은 내부용으로만 저장
             'melody_wav_path': melody_wav_path,
             'wav_data': wav_data,
             'prefix_tokens': prefix_tokens,
@@ -176,7 +177,7 @@ def process_music_generation_1st(job_id, safe_filename, prefix_tokens, target_se
             'target_sec': target_sec
         }
         shared_db[job_id] = current_status
-        print(f"[{job_id}] 1차 멜로디 WAV 생성 및 메모리 로드 완료. 워커 프로세스 종료.")
+        print(f"[{job_id}] 1차 멜로디 WAV 생성 및 메모리 로드 완료. 2차 작업 준비 완료.")
 
     except Exception as e:
         traceback.print_exc()
@@ -186,10 +187,16 @@ def process_music_generation_1st(job_id, safe_filename, prefix_tokens, target_se
 # 4. 비동기 작업자 함수 (2차 작업: 스타일 변환)
 
 def process_stylization_2nd(job_id, job_data, shared_db):
-    """2차 MusicGen 스타일 변환만 담당. 메모리 데이터 사용."""
+    """2차 MusicGen 스타일 변환만 담당. 메모리 데이터 사용. 1차 URL 제거."""
     
     if not MODEL_AVAILABLE:
-        shared_db[job_id] = {'status': '1st_ready', 'error_2nd': '모델 모듈이 없어 2차 스타일 변환을 시작할 수 없습니다.'}
+        # 모델이 없는 경우, 최종 실패 상태로 변경 (1차 URL은 남겨둠)
+        status_update = job_data.copy()
+        status_update.update({
+            'status': 'failed', 
+            'error': '모델 모듈이 없어 2차 스타일 변환을 시작할 수 없습니다.'
+        })
+        shared_db[job_id] = status_update
         return
         
     # 작업 데이터 추출
@@ -205,7 +212,10 @@ def process_stylization_2nd(job_id, job_data, shared_db):
         print(f"[{job_id}] 2차 MusicGen 프롬프트 생성: {prompt}")
     except Exception as e:
         traceback.print_exc()
-        shared_db[job_id] = {'status': '1st_ready', 'error_2nd': f'2차 MusicGen 프롬프트 생성 실패: {str(e)}'}
+        # 1차 작업 상태를 유지하고 2차 실패 오류만 추가
+        status_update = dict(job_data)
+        status_update.update({'status': 'failed', 'error': f'2차 MusicGen 프롬프트 생성 실패: {str(e)}'})
+        shared_db[job_id] = status_update
         return
 
     shared_db[job_id] = {'status': 'in_progress', 'message': 'MusicGen 스타일 변환 준비 중...'}
@@ -235,15 +245,16 @@ def process_stylization_2nd(job_id, job_data, shared_db):
             max_new_tokens=max_new_tokens 
         )
         
+        # 임시 파일 및 1차 멜로디 파일 삭제
         os.remove(temp_safe_wav_path)
-        
         if os.path.exists(melody_wav_path):
-             os.remove(melody_wav_path) 
+            os.remove(melody_wav_path) 
         
         music_url_final = f'http://localhost:5000/music/{output_wav_filename_styled}'
         
-        current_status = dict(shared_db[job_id])
-        current_status.update({'status': 'completed', 'music_url': music_url_final})
+        current_status = dict(job_data)
+        current_status.pop('music_url_1st', None) # 1차 URL 제거
+        current_status.update({'status': 'completed', 'music_url': music_url_final, 'message': '최종 음원 생성 완료.'})
         shared_db[job_id] = current_status
         print(f"[{job_id}] 최종 스타일 변환 완료.")
             
@@ -252,9 +263,11 @@ def process_stylization_2nd(job_id, job_data, shared_db):
         if temp_safe_wav_path and os.path.exists(temp_safe_wav_path):
             os.remove(temp_safe_wav_path)
             
+        # 2차 실패 시, 1차 URL은 그대로 두어 디버깅에 활용
         shared_db[job_id] = {
-            'status': '1st_ready', 
-            'error_2nd': f'최종 스타일 변환 실패: {str(e)}'
+            'status': 'failed', 
+            'error': f'최종 스타일 변환 실패: {str(e)}',
+            'music_url_1st': job_data.get('music_url_1st') 
         }
 
 # 5. Flask 엔드포인트
@@ -265,11 +278,11 @@ def upload_data():
     global job_status_db
     
     if not musicgen_model_loaded and MODEL_AVAILABLE:
-          return jsonify({'error': 'MusicGen 모델이 로드되지 않았습니다. 서버 로그를 확인하세요.'}), 503
+        return jsonify({'error': 'MusicGen 모델이 로드되지 않았습니다. 서버 로그를 확인하세요.'}), 503
     
     if not MODEL_AVAILABLE:
         return jsonify({'error': '서버에 음악 생성 모듈이 없어 요청을 처리할 수 없습니다.'}), 500
-          
+            
     filename = request.headers.get('X-File-Name')
     if not filename or not request.data:
         return jsonify({'error': '파일 이름 또는 데이터가 누락되었습니다.'}), 400
@@ -295,7 +308,7 @@ def upload_data():
     
     target_sec = 20.0
 
-    job_status_db[job_id] = {'status': 'in_progress', 'message': '1차 멜로디 생성 시작...'}
+    job_status_db[job_id] = {'status': 'in_progress', 'message': '1차 멜로디 생성 및 최종 스타일 변환 시작...'}
     
     process_1st = multiprocessing.Process(
         target=process_music_generation_1st, 
@@ -304,13 +317,14 @@ def upload_data():
     process_1st.start()
     
     def check_and_start_2nd(job_id):
-        """1차 프로세스가 완료되면 2차 MusicGen 프로세스를 시작."""
+        """1차 프로세스가 완료되면 2차 MusicGen 프로세스를 시작. '2nd_start_ready' 상태 감지."""
         process_1st.join() 
         
         time.sleep(0.5) 
         
         status_info = job_status_db.get(job_id)
-        if status_info and status_info.get('status') == '1st_ready':
+        # 내부 상태 '2nd_start_ready' 감지
+        if status_info and status_info.get('status') == '2nd_start_ready': 
             print(f"[{job_id}] 1차 작업 완료 감지. 2차 스타일 변환 프로세스 즉시 시작.")
             
             process_2nd = multiprocessing.Process(
@@ -321,20 +335,21 @@ def upload_data():
         elif status_info and status_info.get('status') == 'failed':
             print(f"[{job_id}] 1차 작업 실패로 2차 작업 미실행.")
         else:
-             print(f"[{job_id}] 1차 작업 상태 불명({status_info.get('status', 'N/A')})으로 2차 작업 미실행.")
+            print(f"[{job_id}] 1차 작업 상태 불명({status_info.get('status', 'N/A')})으로 2차 작업 미실행.")
 
+    # 1차 작업이 완료되는 것을 감시하고 2차 작업을 시작하는 스레드
     threading.Thread(target=check_and_start_2nd, args=(job_id,)).start()
 
     return jsonify({
         'job_id': job_id, 
         'status': 'started',
-        'message': f'1차 멜로디 생성 시작됨 ({target_sec}초 목표). 1st_ready 상태 확인 후 청취하세요.'
+        'message': f'음악 생성 파이프라인 시작됨. 최종 "completed" 상태를 확인하세요.'
     })
 
 
 @app.route('/api/status/<job_id>', methods=['GET'])
 def get_job_status(job_id):
-    """작업 상태 확인 및 URL 호스트 대체."""
+    """작업 상태 확인 및 URL 호스트 대체. 1차 URL 노출 방지."""
     global job_status_db
     status_info = job_status_db.get(job_id)
 
@@ -344,8 +359,8 @@ def get_job_status(job_id):
     base_url = request.host_url.strip('/')
     status_dict = dict(status_info) 
 
-    if 'music_url_1st' in status_dict:
-        status_dict['music_url_1st'] = status_dict['music_url_1st'].replace('http://localhost:5000', base_url)
+    # 클라이언트에게 1차 URL 정보 숨기기
+    status_dict.pop('music_url_1st', None)
     
     if 'music_url' in status_dict:
         status_dict['music_url'] = status_dict['music_url'].replace('http://localhost:5000', base_url)
@@ -353,13 +368,18 @@ def get_job_status(job_id):
     if 'error_2nd' in status_dict:
         status_dict['error'] = status_dict.pop('error_2nd')
 
+    # 내부 상태 '2nd_start_ready'를 외부에는 'in_progress'로 표시하여 1차 완료 상태를 숨김
+    if status_dict.get('status') == '2nd_start_ready':
+        status_dict['status'] = 'in_progress'
+        status_dict['message'] = '최종 스타일 변환 대기/진행 중...'
+    
+    # 내부 상태 정보 제거 (데이터 보호)
     status_dict.pop('wav_data', None)
     status_dict.pop('prefix_tokens', None)
     status_dict.pop('melody_wav_path', None)
     status_dict.pop('safe_filename', None)
     status_dict.pop('season', None)
     status_dict.pop('target_sec', None)
-
 
     return jsonify(status_dict)
 
@@ -377,6 +397,7 @@ if __name__ == '__main__':
     
     if MODEL_AVAILABLE:
         try:
+            # 워커 프로세스가 모델을 로드할 수 있도록 메인 프로세스에서 한 번 로드 시도
             model, dataset = load_model(CKPT_PATH, DATA_JSONL, VOCAB_JSON, cfg, GEN_DEVICE)
             print("메인 프로세스 멜로디 모델 로드 완료.")
         except Exception as e:
@@ -384,7 +405,7 @@ if __name__ == '__main__':
             pass
         
         try:
-            load_musicgen_model()
+            load_musicgen_model() # MusicGen은 메인 프로세스에서 로드
         except Exception as e:
             print("="*50)
             print(f"FATAL: MusicGen 모델 로드에 심각한 문제가 발생했습니다.")
