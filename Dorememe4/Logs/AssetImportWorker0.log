@@ -15,7 +15,7 @@ C:/Users/Ellen/Desktop/Project/25_Dorememe/Dorememe4
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55206
+51596
 -job-worker-count
 3
 -background-job-worker-count
@@ -59,12 +59,12 @@ C:/Users/Ellen/Desktop/Project/25_Dorememe/Dorememe4
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15136]  Target information:
+Player connection [19504]  Target information:
 
-Player connection [15136]  * "[IP] 192.168.55.15 [Port] 0 [Flags] 2 [Guid] 3947620510 [EditorId] 3947620510 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6IHTGVK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [19504]  * "[IP] 192.168.55.15 [Port] 0 [Flags] 2 [Guid] 257563864 [EditorId] 257563864 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6IHTGVK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [15136] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [15136] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19504] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [19504] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,9 +75,9 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 27.80 ms, found 18 plugins.
+Refreshing native plugins compatible for Editor in 21.83 ms, found 18 plugins.
 Unity memory allocator detected: MetaXRAudio native memory allocations will be tracked.
-Preloading 2 native plugins for Editor in 2.17 ms.
+Preloading 2 native plugins for Editor in 1.79 ms.
 Initialize engine version: 6000.0.29f1 (9fafe5c9db65)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/Ellen/Desktop/Project/25_Dorememe/Dorememe4/Assets
@@ -92,52 +92,75 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     5945 MB
     Driver:   32.0.15.8157
+Shader 'Universal Render Pipeline/Nature/SpeedTree7': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree7': dependency 'BillboardShader' shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard' not found
+Shader 'Hidden/Universal Render Pipeline/StencilDeferred': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Hidden/Universal Render Pipeline/FallbackError': fallback shader 'Hidden/Core/FallbackError' not found
+Shader 'Universal Render Pipeline/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Particles/Unlit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Simple Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'TextMeshPro/Distance Field Overlay': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'Universal Render Pipeline/VR/SpatialMapping/Occlusion': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/VR/SpatialMapping/Wireframe': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/GBuffer_Visualization_Shader_Sample': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Unlit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Shader 'Universal Render Pipeline/Particles/Simple Lit': fallback shader 'Universal Render Pipeline/Particles/Unlit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/Simple Lit' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree8': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'URP/UI/Prerendered Opaque': fallback shader 'UI/Prerendered Opaque' not found
+Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Baked Lit': fallback shader 'Universal Render Pipeline/Unlit' not found
+Shader 'URP/UI/Prerendered': fallback shader 'UI/Prerendered' not found
+Shader 'TextMeshPro/Distance Field SSD': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Complex Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56364
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.003667 seconds.
-- Loaded All Assemblies, in  0.428 seconds
+Registered in 0.003811 seconds.
+- Loaded All Assemblies, in  0.419 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 240 ms
+Android Extension - Scanning For ADB Devices 1782 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.632 seconds
-Domain Reload Profiling: 1058ms
-	BeginReloadAssembly (150ms)
+- Finished resetting the current domain, in  2.158 seconds
+Domain Reload Profiling: 2575ms
+	BeginReloadAssembly (142ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (40ms)
+	RebuildCommonClasses (39ms)
 	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (50ms)
+	initialDomainReloadingComplete (51ms)
 	LoadAllAssembliesAndSetupDomain (171ms)
-		LoadAssemblies (148ms)
+		LoadAssemblies (139ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (168ms)
-			TypeCache.Refresh (167ms)
-				TypeCache.ScanAssembly (152ms)
+		AnalyzeDomain (167ms)
+			TypeCache.Refresh (166ms)
+				TypeCache.ScanAssembly (150ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (632ms)
+	FinalizeReload (2159ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (572ms)
+		SetupLoadedEditorAssemblies (2098ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (332ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (1879ms)
+			SetLoadedEditorAssemblies (3ms)
 			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (150ms)
-			ProcessInitializeOnLoadMethodAttributes (77ms)
+			ProcessInitializeOnLoadAttributes (138ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -147,16 +170,16 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.313 seconds
+- Loaded All Assemblies, in  1.077 seconds
 Script 'CharacterController' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 16.45 ms, found 18 plugins.
+Refreshing native plugins compatible for Editor in 15.44 ms, found 18 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 16.02 ms, found 18 plugins.
+Refreshing native plugins compatible for Editor in 14.84 ms, found 18 plugins.
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -164,6 +187,10 @@ Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
+Shader 'Universal Render Pipeline/Terrain/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
 Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -171,651 +198,237 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  3.014 seconds
-Domain Reload Profiling: 4318ms
-	BeginReloadAssembly (173ms)
+- Finished resetting the current domain, in  2.815 seconds
+Domain Reload Profiling: 3883ms
+	BeginReloadAssembly (183ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (37ms)
+	RebuildCommonClasses (48ms)
 	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (1042ms)
-		LoadAssemblies (519ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (786ms)
+		LoadAssemblies (458ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (626ms)
-			TypeCache.Refresh (383ms)
-				TypeCache.ScanAssembly (344ms)
-			BuildScriptInfoCaches (178ms)
-			ResolveRequiredComponents (61ms)
-	FinalizeReload (3014ms)
+		AnalyzeDomain (445ms)
+			TypeCache.Refresh (284ms)
+				TypeCache.ScanAssembly (258ms)
+			BuildScriptInfoCaches (129ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (2816ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2264ms)
+		SetupLoadedEditorAssemblies (2135ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
+			InitializePlatformSupportModulesInManaged (11ms)
 			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (161ms)
-			ProcessInitializeOnLoadAttributes (1854ms)
-			ProcessInitializeOnLoadMethodAttributes (215ms)
+			BeforeProcessingInitializeOnLoad (151ms)
+			ProcessInitializeOnLoadAttributes (1739ms)
+			ProcessInitializeOnLoadMethodAttributes (220ms)
 			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Shader 'Simulation/Standard Lit': fallback shader 'Simulation/Legacy/Standard' not found
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Simulation/URP/Lit': fallback shader 'Simulation/Legacy/Standard' not found
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Hidden/Simulation/Synthetic Lit': fallback shader 'Hidden/Simulation/Legacy/Synthetic' not found
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 15.83 ms, found 18 plugins.
-Preloading 2 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 19.16 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.09 ms.
 Unloading 462 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9221 unused Assets / (11.0 MB). Loaded Objects now: 10109.
-Memory consumption went from 257.6 MB to 246.6 MB.
-Total: 28.674200 ms (FindLiveObjects: 1.691800 ms CreateObjectMapping: 1.749000 ms MarkObjects: 19.683000 ms  DeleteObjects: 5.549300 ms)
+Unloading 9221 unused Assets / (11.2 MB). Loaded Objects now: 10109.
+Memory consumption went from 257.7 MB to 246.5 MB.
+Total: 29.006200 ms (FindLiveObjects: 1.630100 ms CreateObjectMapping: 1.919300 ms MarkObjects: 20.056900 ms  DeleteObjects: 5.398900 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 178926.925649 seconds.
-  path: Assets/01 Scence/Skybox.mat
-  artifactKey: Guid(a8bab8a16cf571745b753a507dd16556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/Skybox.mat using Guid(a8bab8a16cf571745b753a507dd16556) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf94e92666fd7df65a50aeff2c5089d6') in 1.0763514 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+Received Prepare
+Begin MonoManager ReloadAssembly
+NullReferenceException: Object reference not set to an instance of an object
+  at Tripolygon.UModeler.Hub.HubAnalytics.OnRelease (System.Boolean isReloading) [0x00019] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
+  at Tripolygon.UModeler.Analytics.AnalyticsBase.Release (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
+  at Tripolygon.UModeler.Hub.HubAnalyticsService.OnRelease (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
+  at Tripolygon.UModeler.UI.ApplicationServiceBase.Application_Released (System.Object sender, Tripolygon.UModeler.UI.ApplicationReleasedEventArgs e) [0x00007] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
+  at (wrapper delegate-invoke) System.EventHandler`1[Tripolygon.UModeler.UI.ApplicationReleasedEventArgs].invoke_void_object_TEventArgs(object,Tripolygon.UModeler.UI.ApplicationReleasedEventArgs)
+  at Tripolygon.UModeler.UI.Application.Release (System.Boolean isReloading) [0x0005f] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
+  at Tripolygon.UModeler.Editor.UI.UnityEditorApplication+<>c.<.cctor>b__6_1 () [0x00029] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
+  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x00017] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
 
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.136 seconds
+Script 'CharacterController' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 21.94 ms, found 18 plugins.
+Shader 'Universal Render Pipeline/Autodesk Interactive/AutodeskInteractive': fallback shader 'Hidden/Shader Graph/FallbackError' not found
+Shader 'Universal Render Pipeline/Autodesk Interactive/AutodeskInteractiveTransparent': fallback shader 'Hidden/Shader Graph/FallbackError' not found
+Shader 'Universal Render Pipeline/Autodesk Interactive/AutodeskInteractiveMasked': fallback shader 'Hidden/Shader Graph/FallbackError' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree8_PBRLit': fallback shader 'Hidden/Shader Graph/FallbackError' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree9_URP': fallback shader 'Hidden/Shader Graph/FallbackError' not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 18.11 ms, found 18 plugins.
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Shader 'Shader Graphs/Interactable': fallback shader 'Hidden/Shader Graph/FallbackError' not found
+Shader 'Shader Graphs/Unlit_Fresnel': fallback shader 'Hidden/Shader Graph/FallbackError' not found
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.630 seconds
+Domain Reload Profiling: 3763ms
+	BeginReloadAssembly (386ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (85ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (658ms)
+		LoadAssemblies (456ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (324ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (278ms)
+			ResolveRequiredComponents (31ms)
+	FinalizeReload (2633ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1799ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (148ms)
+			ProcessInitializeOnLoadAttributes (1447ms)
+			ProcessInitializeOnLoadMethodAttributes (175ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Shader 'Simulation/Standard Lit': fallback shader 'Simulation/Legacy/Standard' not found
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Simulation/URP/Lit': fallback shader 'Simulation/Legacy/Standard' not found
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Hidden/Simulation/Synthetic Lit': fallback shader 'Hidden/Simulation/Legacy/Synthetic' not found
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 17.44 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.09 ms.
+Unloading 92 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9221 unused Assets / (12.1 MB). Loaded Objects now: 10124.
+Memory consumption went from 251.7 MB to 239.7 MB.
+Total: 32.517900 ms (FindLiveObjects: 1.271800 ms CreateObjectMapping: 2.546700 ms MarkObjects: 22.160700 ms  DeleteObjects: 6.537600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 4976.932800 seconds.
-  path: Assets/01 Scence/Daytime sky.mat
-  artifactKey: Guid(cebda5295d6646a47af2315eaebe104b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/Daytime sky.mat using Guid(cebda5295d6646a47af2315eaebe104b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'daa98773d8c3d227d9d09b4964df9486') in 0.2603994 seconds
+  Time since last request: 273123.745432 seconds.
+  path: Assets/01 Scence/Night.mat
+  artifactKey: Guid(d6e419b8e15e5cf4c89981b6c8576c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01 Scence/Night.mat using Guid(d6e419b8e15e5cf4c89981b6c8576c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edb3c94f1217aae569903a70aa95d71b') in 0.7347433 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.690675 seconds.
-  path: Assets/01 Scence/Winter.unity
-  artifactKey: Guid(358d26f7b27dd9649a8ec41e1c274937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/Winter.unity using Guid(358d26f7b27dd9649a8ec41e1c274937) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fe3dde0665ba24b9118fd086275f1d9a') in 0.000781 seconds
+  Time since last request: 9.535939 seconds.
+  path: Assets/01 Scence/Daytime sky.mat
+  artifactKey: Guid(cebda5295d6646a47af2315eaebe104b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01 Scence/Daytime sky.mat using Guid(cebda5295d6646a47af2315eaebe104b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'daa98773d8c3d227d9d09b4964df9486') in 1.1311974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.168622 seconds.
+  path: Assets/01 Scence/buttobar!!.unity
+  artifactKey: Guid(3e51f2cb69232dc4e9edbde623822fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01 Scence/buttobar!!.unity using Guid(3e51f2cb69232dc4e9edbde623822fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee75c45fd72398ebad0a22371aaa828a') in 0.0005994 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 205.947467 seconds.
+  Time since last request: 6.180939 seconds.
+  path: Assets/01 Scence/Demo 2.unity
+  artifactKey: Guid(0d49c6d728b8b9b4baad698d2a10a035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01 Scence/Demo 2.unity using Guid(0d49c6d728b8b9b4baad698d2a10a035) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b29ebd0ec61abf9d44d761606028c52') in 0.0004718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.398061 seconds.
+  path: Assets/01 Scence/Scene_SeasonSelect2.unity
+  artifactKey: Guid(ded0f74328ca9eb479204ea5d617dea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01 Scence/Scene_SeasonSelect2.unity using Guid(ded0f74328ca9eb479204ea5d617dea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80802091b8dcfdd04286ff290d96d0f7') in 0.0005813 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.942756 seconds.
   path: Assets/01 Scence/Spring.unity
   artifactKey: Guid(12878ebda3d0a324a82a0aec6d620e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/Spring.unity using Guid(12878ebda3d0a324a82a0aec6d620e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ad5466582f6e048ca90318744f55dce') in 0.0007975 seconds
+Start importing Assets/01 Scence/Spring.unity using Guid(12878ebda3d0a324a82a0aec6d620e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '387f0567c83d7a77aa274c96178c5a62') in 0.0004638 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 24.941251 seconds.
+  Time since last request: 9.836245 seconds.
   path: Assets/01 Scence/summer.unity
   artifactKey: Guid(7e70f2558dc3bbd40843024c19550b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/summer.unity using Guid(7e70f2558dc3bbd40843024c19550b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05c08ba284ad1b52dea82f20756610d9') in 0.0005449 seconds
+Start importing Assets/01 Scence/summer.unity using Guid(7e70f2558dc3bbd40843024c19550b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6325fe2acbf161869c940443eb8c9f9e') in 0.0005477 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.911317 seconds.
+  Time since last request: 419.587355 seconds.
   path: Assets/01 Scence/Winter.unity
   artifactKey: Guid(358d26f7b27dd9649a8ec41e1c274937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/Winter.unity using Guid(358d26f7b27dd9649a8ec41e1c274937) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f27cb7549160990d0f51336b798ce09') in 0.000645 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 39.479056 seconds.
-  path: Assets/01 Scence/Fall.unity
-  artifactKey: Guid(4bad05916ca5632468560858a134036f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/Fall.unity using Guid(4bad05916ca5632468560858a134036f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '146c76883fe15666069aaf31c5274061') in 0.0008903 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-NullReferenceException: Object reference not set to an instance of an object
-  at Tripolygon.UModeler.Hub.HubAnalytics.OnRelease (System.Boolean isReloading) [0x00019] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Analytics.AnalyticsBase.Release (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Hub.HubAnalyticsService.OnRelease (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.UI.ApplicationServiceBase.Application_Released (System.Object sender, Tripolygon.UModeler.UI.ApplicationReleasedEventArgs e) [0x00007] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at (wrapper delegate-invoke) System.EventHandler`1[Tripolygon.UModeler.UI.ApplicationReleasedEventArgs].invoke_void_object_TEventArgs(object,Tripolygon.UModeler.UI.ApplicationReleasedEventArgs)
-  at Tripolygon.UModeler.UI.Application.Release (System.Boolean isReloading) [0x0005f] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at Tripolygon.UModeler.Editor.UI.UnityEditorApplication+<>c.<.cctor>b__6_1 () [0x00029] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x00017] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
-
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2.998 seconds
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 32.77 ms, found 18 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 19.57 ms, found 18 plugins.
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Could not open file C:/Users/Ellen/Desktop/Project/25_Dorememe/Dorememe4/Assets/XR/AndroidXR/AndroidXRSettingsInitializer for read
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
-UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool)
-UnityEditor.ScriptableSingleton`1<UnityEditor.XR.OpenXR.Features.Android.AndroidXRSettingsInitializer>:Save (bool)
-UnityEditor.XR.OpenXR.Features.Android.AndroidXRSettingsInitializer:OnLoad () (at ./Library/PackageCache/com.unity.xr.androidxr-openxr/Editor/AndroidXRSettingsInitializer.cs:20)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-[./Library/PackageCache/com.unity.xr.androidxr-openxr/Editor/AndroidXRSettingsInitializer.cs line 20]
-
-Assertion failed on expression: 'res'
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
-UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool)
-UnityEditor.ScriptableSingleton`1<UnityEditor.XR.OpenXR.Features.Android.AndroidXRSettingsInitializer>:Save (bool)
-UnityEditor.XR.OpenXR.Features.Android.AndroidXRSettingsInitializer:OnLoad () (at ./Library/PackageCache/com.unity.xr.androidxr-openxr/Editor/AndroidXRSettingsInitializer.cs:20)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-[./Library/PackageCache/com.unity.xr.androidxr-openxr/Editor/AndroidXRSettingsInitializer.cs line 20]
-
-Unknown error occurred while loading 'Assets/XR/AndroidXR/AndroidXRSettingsInitializer'.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
-UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool)
-UnityEditor.ScriptableSingleton`1<UnityEditor.XR.OpenXR.Features.Android.AndroidXRSettingsInitializer>:Save (bool)
-UnityEditor.XR.OpenXR.Features.Android.AndroidXRSettingsInitializer:OnLoad () (at ./Library/PackageCache/com.unity.xr.androidxr-openxr/Editor/AndroidXRSettingsInitializer.cs:20)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-[./Library/PackageCache/com.unity.xr.androidxr-openxr/Editor/AndroidXRSettingsInitializer.cs line 20]
-
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  3.266 seconds
-Domain Reload Profiling: 6259ms
-	BeginReloadAssembly (707ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (24ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (109ms)
-	RebuildCommonClasses (51ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (2177ms)
-		LoadAssemblies (2196ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (374ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (329ms)
-			ResolveRequiredComponents (30ms)
-	FinalizeReload (3266ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2305ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (218ms)
-			ProcessInitializeOnLoadAttributes (1830ms)
-			ProcessInitializeOnLoadMethodAttributes (220ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 21.97 ms, found 18 plugins.
-Preloading 2 native plugins for Editor in 0.12 ms.
-Unloading 92 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9221 unused Assets / (11.6 MB). Loaded Objects now: 10190.
-Memory consumption went from 257.8 MB to 246.3 MB.
-Total: 35.114500 ms (FindLiveObjects: 1.580200 ms CreateObjectMapping: 1.864900 ms MarkObjects: 25.099700 ms  DeleteObjects: 6.568000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-NullReferenceException: Object reference not set to an instance of an object
-  at Tripolygon.UModeler.Hub.HubAnalytics.OnRelease (System.Boolean isReloading) [0x00019] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Analytics.AnalyticsBase.Release (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Hub.HubAnalyticsService.OnRelease (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.UI.ApplicationServiceBase.Application_Released (System.Object sender, Tripolygon.UModeler.UI.ApplicationReleasedEventArgs e) [0x00007] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at (wrapper delegate-invoke) System.EventHandler`1[Tripolygon.UModeler.UI.ApplicationReleasedEventArgs].invoke_void_object_TEventArgs(object,Tripolygon.UModeler.UI.ApplicationReleasedEventArgs)
-  at Tripolygon.UModeler.UI.Application.Release (System.Boolean isReloading) [0x0005f] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at Tripolygon.UModeler.Editor.UI.UnityEditorApplication+<>c.<.cctor>b__6_1 () [0x00029] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x00017] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
-
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.243 seconds
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 18.14 ms, found 18 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 16.26 ms, found 18 plugins.
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.735 seconds
-Domain Reload Profiling: 3972ms
-	BeginReloadAssembly (411ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (92ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (732ms)
-		LoadAssemblies (468ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (370ms)
-			TypeCache.Refresh (17ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (319ms)
-			ResolveRequiredComponents (31ms)
-	FinalizeReload (2735ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1921ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (162ms)
-			ProcessInitializeOnLoadAttributes (1512ms)
-			ProcessInitializeOnLoadMethodAttributes (212ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 18.36 ms, found 18 plugins.
-Preloading 2 native plugins for Editor in 0.08 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9221 unused Assets / (11.0 MB). Loaded Objects now: 10193.
-Memory consumption went from 256.4 MB to 245.4 MB.
-Total: 33.376100 ms (FindLiveObjects: 1.317100 ms CreateObjectMapping: 1.911800 ms MarkObjects: 22.266100 ms  DeleteObjects: 7.879600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-NullReferenceException: Object reference not set to an instance of an object
-  at Tripolygon.UModeler.Hub.HubAnalytics.OnRelease (System.Boolean isReloading) [0x00019] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Analytics.AnalyticsBase.Release (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Hub.HubAnalyticsService.OnRelease (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.UI.ApplicationServiceBase.Application_Released (System.Object sender, Tripolygon.UModeler.UI.ApplicationReleasedEventArgs e) [0x00007] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at (wrapper delegate-invoke) System.EventHandler`1[Tripolygon.UModeler.UI.ApplicationReleasedEventArgs].invoke_void_object_TEventArgs(object,Tripolygon.UModeler.UI.ApplicationReleasedEventArgs)
-  at Tripolygon.UModeler.UI.Application.Release (System.Boolean isReloading) [0x0005f] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at Tripolygon.UModeler.Editor.UI.UnityEditorApplication+<>c.<.cctor>b__6_1 () [0x00029] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x00017] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
-
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.274 seconds
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 18.51 ms, found 18 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 17.53 ms, found 18 plugins.
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.723 seconds
-Domain Reload Profiling: 3995ms
-	BeginReloadAssembly (422ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (86ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (744ms)
-		LoadAssemblies (455ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (398ms)
-			TypeCache.Refresh (18ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (345ms)
-			ResolveRequiredComponents (30ms)
-	FinalizeReload (2728ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1951ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (165ms)
-			ProcessInitializeOnLoadAttributes (1569ms)
-			ProcessInitializeOnLoadMethodAttributes (185ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 17.48 ms, found 18 plugins.
-Preloading 2 native plugins for Editor in 0.09 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9221 unused Assets / (11.8 MB). Loaded Objects now: 10196.
-Memory consumption went from 256.4 MB to 244.6 MB.
-Total: 29.481100 ms (FindLiveObjects: 1.077400 ms CreateObjectMapping: 1.678600 ms MarkObjects: 19.899400 ms  DeleteObjects: 6.823700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 1222.810182 seconds.
-  path: Assets/01 Scence/Fall.unity
-  artifactKey: Guid(4bad05916ca5632468560858a134036f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/Fall.unity using Guid(4bad05916ca5632468560858a134036f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '991c20ce83517f93fed8c6c2b7610357') in 0.04649 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.163594 seconds.
-  path: Assets/01 Scence/summer.unity
-  artifactKey: Guid(7e70f2558dc3bbd40843024c19550b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/summer.unity using Guid(7e70f2558dc3bbd40843024c19550b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c7eeecce9d9484e4ad1622b6a5da2ce') in 0.0005884 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-NullReferenceException: Object reference not set to an instance of an object
-  at Tripolygon.UModeler.Hub.HubAnalytics.OnRelease (System.Boolean isReloading) [0x00019] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Analytics.AnalyticsBase.Release (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Hub.HubAnalyticsService.OnRelease (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.UI.ApplicationServiceBase.Application_Released (System.Object sender, Tripolygon.UModeler.UI.ApplicationReleasedEventArgs e) [0x00007] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at (wrapper delegate-invoke) System.EventHandler`1[Tripolygon.UModeler.UI.ApplicationReleasedEventArgs].invoke_void_object_TEventArgs(object,Tripolygon.UModeler.UI.ApplicationReleasedEventArgs)
-  at Tripolygon.UModeler.UI.Application.Release (System.Boolean isReloading) [0x0005f] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at Tripolygon.UModeler.Editor.UI.UnityEditorApplication+<>c.<.cctor>b__6_1 () [0x00029] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x00017] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
-
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.265 seconds
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 18.59 ms, found 18 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 16.67 ms, found 18 plugins.
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.805 seconds
-Domain Reload Profiling: 4065ms
-	BeginReloadAssembly (402ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (102ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (758ms)
-		LoadAssemblies (487ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (378ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (330ms)
-			ResolveRequiredComponents (34ms)
-	FinalizeReload (2806ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2026ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (169ms)
-			ProcessInitializeOnLoadAttributes (1637ms)
-			ProcessInitializeOnLoadMethodAttributes (188ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 16.13 ms, found 18 plugins.
-Preloading 2 native plugins for Editor in 0.08 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9221 unused Assets / (11.8 MB). Loaded Objects now: 10199.
-Memory consumption went from 326.2 MB to 314.3 MB.
-Total: 28.535700 ms (FindLiveObjects: 1.105000 ms CreateObjectMapping: 1.918100 ms MarkObjects: 19.697700 ms  DeleteObjects: 5.813000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 290.200581 seconds.
-  path: Assets/01 Scence/summer.unity
-  artifactKey: Guid(7e70f2558dc3bbd40843024c19550b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/summer.unity using Guid(7e70f2558dc3bbd40843024c19550b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6325fe2acbf161869c940443eb8c9f9e') in 0.0184828 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-NullReferenceException: Object reference not set to an instance of an object
-  at Tripolygon.UModeler.Hub.HubAnalytics.OnRelease (System.Boolean isReloading) [0x00019] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Analytics.AnalyticsBase.Release (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Hub.HubAnalyticsService.OnRelease (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.UI.ApplicationServiceBase.Application_Released (System.Object sender, Tripolygon.UModeler.UI.ApplicationReleasedEventArgs e) [0x00007] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at (wrapper delegate-invoke) System.EventHandler`1[Tripolygon.UModeler.UI.ApplicationReleasedEventArgs].invoke_void_object_TEventArgs(object,Tripolygon.UModeler.UI.ApplicationReleasedEventArgs)
-  at Tripolygon.UModeler.UI.Application.Release (System.Boolean isReloading) [0x0005f] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at Tripolygon.UModeler.Editor.UI.UnityEditorApplication+<>c.<.cctor>b__6_1 () [0x00029] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x00017] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
-
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.292 seconds
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 17.23 ms, found 18 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 17.14 ms, found 18 plugins.
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.737 seconds
-Domain Reload Profiling: 4023ms
-	BeginReloadAssembly (430ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (102ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (755ms)
-		LoadAssemblies (466ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (399ms)
-			TypeCache.Refresh (17ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (347ms)
-			ResolveRequiredComponents (30ms)
-	FinalizeReload (2737ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1977ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (178ms)
-			ProcessInitializeOnLoadAttributes (1570ms)
-			ProcessInitializeOnLoadMethodAttributes (194ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 16.90 ms, found 18 plugins.
-Preloading 2 native plugins for Editor in 0.09 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9221 unused Assets / (11.7 MB). Loaded Objects now: 10202.
-Memory consumption went from 256.4 MB to 244.7 MB.
-Total: 28.833100 ms (FindLiveObjects: 1.067400 ms CreateObjectMapping: 2.073700 ms MarkObjects: 19.436200 ms  DeleteObjects: 6.253900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-NullReferenceException: Object reference not set to an instance of an object
-  at Tripolygon.UModeler.Hub.HubAnalytics.OnRelease (System.Boolean isReloading) [0x00019] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Analytics.AnalyticsBase.Release (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.Hub.HubAnalyticsService.OnRelease (System.Boolean isReloading) [0x00000] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at Tripolygon.UModeler.UI.ApplicationServiceBase.Application_Released (System.Object sender, Tripolygon.UModeler.UI.ApplicationReleasedEventArgs e) [0x00007] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at (wrapper delegate-invoke) System.EventHandler`1[Tripolygon.UModeler.UI.ApplicationReleasedEventArgs].invoke_void_object_TEventArgs(object,Tripolygon.UModeler.UI.ApplicationReleasedEventArgs)
-  at Tripolygon.UModeler.UI.Application.Release (System.Boolean isReloading) [0x0005f] in <db0f9bfc5ab342038dd25261e46cfd15>:0 
-  at Tripolygon.UModeler.Editor.UI.UnityEditorApplication+<>c.<.cctor>b__6_1 () [0x00029] in <796d15bd8fc549d4a7d2e0ec26344f93>:0 
-  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x00017] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
-
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.266 seconds
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 17.46 ms, found 18 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 17.06 ms, found 18 plugins.
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.756 seconds
-Domain Reload Profiling: 4016ms
-	BeginReloadAssembly (412ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (99ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (750ms)
-		LoadAssemblies (482ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (374ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (330ms)
-			ResolveRequiredComponents (31ms)
-	FinalizeReload (2756ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1930ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (162ms)
-			ProcessInitializeOnLoadAttributes (1521ms)
-			ProcessInitializeOnLoadMethodAttributes (215ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 19.14 ms, found 18 plugins.
-Preloading 2 native plugins for Editor in 0.08 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9221 unused Assets / (11.6 MB). Loaded Objects now: 10205.
-Memory consumption went from 326.1 MB to 314.5 MB.
-Total: 31.968900 ms (FindLiveObjects: 1.069600 ms CreateObjectMapping: 2.808700 ms MarkObjects: 21.497100 ms  DeleteObjects: 6.592200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 428.787824 seconds.
-  path: Assets/01 Scence/Winter.unity
-  artifactKey: Guid(358d26f7b27dd9649a8ec41e1c274937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/Winter.unity using Guid(358d26f7b27dd9649a8ec41e1c274937) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa329bc1fe78e5ba37ba225c47b5de64') in 0.0318803 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.022787 seconds.
-  path: Assets/01 Scence/Spring.unity
-  artifactKey: Guid(12878ebda3d0a324a82a0aec6d620e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/Spring.unity using Guid(12878ebda3d0a324a82a0aec6d620e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c04a74d97e1513c738e1d6d12af0156') in 0.0006518 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 63.315881 seconds.
-  path: Assets/01 Scence/Winter.unity
-  artifactKey: Guid(358d26f7b27dd9649a8ec41e1c274937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01 Scence/Winter.unity using Guid(358d26f7b27dd9649a8ec41e1c274937) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b76c1a5803373d64ef0b64b8c9dbf55e') in 0.0005865 seconds
+Start importing Assets/01 Scence/Winter.unity using Guid(358d26f7b27dd9649a8ec41e1c274937) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b76c1a5803373d64ef0b64b8c9dbf55e') in 0.0008293 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 

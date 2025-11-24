@@ -742,83 +742,6 @@ Transform:
   - {fileID: 1871694034}
   m_Father: {fileID: 1345602697}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &55120440
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 55120443}
-  - component: {fileID: 55120442}
-  - component: {fileID: 55120441}
-  m_Layer: 0
-  m_Name: Pen
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &55120441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55120440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e47bf27f54354d7dbd00fcd676d3b390, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _asset: {fileID: -944628639613478452, guid: 0cd32b9045bfdd4438941f5a0b81ec9e, type: 3}
-  _drawAction: {fileID: 7584226106317088145, guid: 0cd32b9045bfdd4438941f5a0b81ec9e, type: 3}
-  _changeColorAction: {fileID: -5580063010216643958, guid: 0cd32b9045bfdd4438941f5a0b81ec9e, type: 3}
-  _undoAction: {fileID: -3670985704386997631, guid: 0cd32b9045bfdd4438941f5a0b81ec9e, type: 3}
---- !u!114 &55120442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55120440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cae5133c1ccd144db02446f6d525bdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _brushPoint: {fileID: 0}
-  _elementDistance: 0.1
-  _paintDelay: 0.5
-  _material: {fileID: 2100000, guid: 2941333e74caa614fabd9972e2e19ea4, type: 2}
-  _brushSize: 0.02
-  _brushAlpha: 1
-  _colors:
-  - {r: 0, g: 0, b: 1, a: 1}
-  - {r: 0, g: 1, b: 1, a: 1}
-  - {r: 0, g: 1, b: 0, a: 1}
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  ServerUrl: http://localhost:5000/api/upload_data
-  JobStatusUrl: http://localhost:5000/api/status
-  MusicAudioSource: {fileID: 690876439}
-  Scribble: {fileID: 11400000, guid: 5dbcbbae276e7af459a1602b20fd8944, type: 2}
---- !u!4 &55120443
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55120440}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8755383, y: 1.4172034, z: 4.188484}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &56027618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4894,7 +4817,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 55120442}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: VRPenNamespace.VRPen, VRPen
         m_MethodName: Done
         m_Mode: 1
@@ -12242,7 +12165,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 55120442}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: VRPenNamespace.VRPen, VRPen
         m_MethodName: Clear
         m_Mode: 1
@@ -15221,7 +15144,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 55120442}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: VRPenNamespace.VRPen, VRPen
         m_MethodName: SetBrushAlpha
         m_Mode: 0
@@ -22656,7 +22579,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 55120442}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: VRPenNamespace.VRPen, VRPen
         m_MethodName: SetBrushSize
         m_Mode: 0
@@ -33386,7 +33309,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 299639869}
   - {fileID: 1249617921}
-  - {fileID: 55120443}
   - {fileID: 2136302225}
   - {fileID: 1345602697}
   - {fileID: 371770968}
