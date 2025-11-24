@@ -23520,7 +23520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1168589009}
   - component: {fileID: 1168589007}
-  - component: {fileID: 1168589008}
+  - component: {fileID: 1168589010}
   m_Layer: 0
   m_Name: Music Manager
   m_TagString: Untagged
@@ -23625,21 +23625,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1168589008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168589006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e8661799a273714392a33a63a978da4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UploadUrl: http://127.0.0.1:5000/api/upload_data
-  JobStatusUrl: http://127.0.0.1:5000/api/status
-  PollingInterval: 5
 --- !u!4 &1168589009
 Transform:
   m_ObjectHideFlags: 0
@@ -23655,6 +23640,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1168589010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168589006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c3807a8d5f91048a0c496881b4592e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UploadUrl: http://127.0.0.1:5000/api/upload_data
+  JobStatusUrl: http://127.0.0.1:5000/api/status
+  PollingInterval: 5
 --- !u!1001 &1169079893
 PrefabInstance:
   m_ObjectHideFlags: 0

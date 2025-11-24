@@ -394,9 +394,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6795534}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e8661799a273714392a33a63a978da4, type: 3}
+  m_Script: {fileID: 11500000, guid: d7c3807a8d5f91048a0c496881b4592e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UploadUrl: http://127.0.0.1:5000/api/upload_data
+  JobStatusUrl: http://127.0.0.1:5000/api/status
+  PollingInterval: 5
 --- !u!1 &8236817
 GameObject:
   m_ObjectHideFlags: 3
@@ -15442,37 +15445,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161480086}
   m_CullTransparentMesh: 1
---- !u!1 &1164596717
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1164596718}
-  m_Layer: 0
-  m_Name: brush
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1164596718
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1164596717}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1165096891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28827,4 +28799,3 @@ SceneRoots:
   - {fileID: 2077644375}
   - {fileID: 2032002979}
   - {fileID: 1401096185}
-  - {fileID: 1164596718}
