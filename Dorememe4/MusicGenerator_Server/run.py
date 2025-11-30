@@ -73,8 +73,12 @@ def get_run_dir(base_dir: str = "./runs") -> Path:
     return run_dir
 
 
-if __name__ == "__main__":
-    df = read_csv_strict(INPUT_CSV)
+def generate_music(
+        csv_path: str,
+        target_sec: float = 40.0,
+        base_dir: str = "./runs"
+):
+    df = read_csv_strict(csv_path)
 
     season = get_season(df)
     if season:
@@ -87,9 +91,9 @@ if __name__ == "__main__":
     print(prefix)
     print("=============================================")
 
-    toks = generate(prefix)
+    toks = generate(prefix_tokens=prefix, target_sec=target_sec)
 
-    runs_dir = get_run_dir("./runs")
+    runs_dir = get_run_dir(base_dir)
 
     out_midi = runs_dir / f"melody.mid"
     base_wav = runs_dir / f"melody.wav"
@@ -120,8 +124,25 @@ if __name__ == "__main__":
         use_fp16=True,
         do_sample=True,
         temperature=1.05,
-        top_p=0.95,
-        max_new_tokens=512
+        top_k=250,
+        top_p=0.92,
+        guidance_scale=3.0,
+        max_new_tokens=1024
     )
     print("FINAL saved:", final_wav)
     print("Done.")
+
+    return {
+        "runs_dir": runs_dir,
+        "run_id": runs_dir.name,
+        "melody_midi": str(out_midi),
+        "melody_wav": str(base_wav),
+        "final_wav": str(final_wav),
+        "prompt": prompt,
+    }
+
+if __name__ == "__main__":
+    result = generate_music(
+        csv_path=INPUT_CSV,
+        target_sec=40.0,
+    )

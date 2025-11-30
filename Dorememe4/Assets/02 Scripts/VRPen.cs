@@ -63,8 +63,8 @@ namespace VRPenNamespace
         private global::VRPenNamespace.IVrPenInput _input;
 
         // 서버 통신 및 오디오 재생 변수
-        public string ServerUrl = "http://localhost:5000/api/upload_data";
-        public string JobStatusUrl = "http://localhost:5000/api/status";
+        public string ServerUrl = "http://127.0.0.1/api/upload_data";
+        public string JobStatusUrl = "http://127.0.0.1/api/status";
         public AudioSource MusicAudioSource;
         private const float PollingInterval = 1f; 
         private string currentJobId = null;
