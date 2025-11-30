@@ -176,7 +176,7 @@ class MusicGen_Worker(Process):
             self.shared_db[job_id] = status_update
             return
 
-        self.shared_db[job_id] = {'status': 'in_progress', 'message': 'MusicGen 스타일 변환 중... (추론 가속)'}
+        self.shared_db[job_id] = {'status': 'in_progress', 'message': 'MusicGen 스타일 변환 중...'}
         temp_safe_wav_path = None
         
         try:

@@ -1,5 +1,12 @@
 import subprocess
 from pathlib import Path
+import os
+
+FLUIDSYNTH_EXEC = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    'executables', 
+    'fluidsynth.exe'
+)
 
 def midi_to_wav(midi_path, wav_path, sf2_path, sample_rate=32000):
     midi_path = str(midi_path)

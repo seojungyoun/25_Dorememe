@@ -4851,8 +4851,8 @@ MonoBehaviour:
   - {r: 0, g: 1, b: 0, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  ServerUrl: http://127.0.0.1/api/upload_data
-  JobStatusUrl: http://127.0.0.1/api/status
+  ServerUrl: http://127.0.0.1:5000/api/upload_data
+  JobStatusUrl: http://127.0.0.1:5000/api/status
   MusicAudioSource: {fileID: 690876439}
   Scribble: {fileID: 11400000, guid: 5dbcbbae276e7af459a1602b20fd8944, type: 2}
 --- !u!4 &272821884
@@ -6637,9 +6637,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 371770966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6c09f5defa388c4493fca088b12d4cb, type: 3}
+  m_Script: {fileID: 11500000, guid: d7c3807a8d5f91048a0c496881b4592e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UploadUrl: http://127.0.0.1:5000/api/upload_data
+  JobStatusUrl: http://127.0.0.1:5000/api/status
+  PollingInterval: 5
 --- !u!4 &371770968
 Transform:
   m_ObjectHideFlags: 0
