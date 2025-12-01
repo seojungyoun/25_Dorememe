@@ -629,14 +629,25 @@ end_header");
 
             var sb = new StringBuilder();
 
-            // 1. 헤더 라인 수정: SelectedSceneID 필드 추가
+            // 1. 헤더 라인 (필요하다면 마지막 컬럼명을 SelectedSceneID -> Season 등으로 변경해도 됩니다)
             sb.AppendLine("StrokeIndex,ColorR,ColorG,ColorB,Count,ColorA,BrushSize,Start_X,Start_Y,Start_Z,End_X,End_Y,End_Z,TotalUndoCount,SelectedSceneID");
 
-            // 2. 색상별 누적 카운트를 위한 딕셔너리
+            // 2. SceneID를 계절 이름(String)으로 변환
+            string seasonName = "Unknown";
+            switch (SelectedSceneID)
+            {
+                case 0: seasonName = "Spring"; break;
+                case 1: seasonName = "Summer"; break;
+                case 2: seasonName = "Autumn"; break;
+                case 3: seasonName = "Winter"; break;
+                default: seasonName = "Unknown"; break;
+            }
+
+            // 3. 색상별 누적 카운트를 위한 딕셔너리
             var colorCounts = new Dictionary<Color, int>();
             int totalUndoCount = _core.UndoCount;
 
-            // 3. 스트로크 데이터 기록 (각 스트로크별로 한 줄 출력)
+            // 4. 스트로크 데이터 기록
             for (int i = 0; i < _core._strokeMeshes.Count; i++)
             {
                 var strokeMesh = _core._strokeMeshes[i];
@@ -657,38 +668,30 @@ end_header");
                 Vector3 end = stroke.Points.Last();
 
                 sb.AppendLine(
-                    $"{i}," + // StrokeIndex
-                    $"{c.r:F4},{c.g:F4},{c.b:F4}," + // Color R, G, B
-                    $"{currentCount}," + // Count
-                    $"{c.a:F4}," + // ColorA
-                    $"{stroke.BrushSize:F4}," + // BrushSize
-                    $"{start.x:F4},{start.y:F4},{start.z:F4}," + // Start_X, Y, Z
-                    $"{end.x:F4},{end.y:F4},{end.z:F4}," + // End_X, Y, Z
-                    $"{totalUndoCount}," + // TotalUndoCount
-                    $"{SelectedSceneID}" // 씬 ID 추가
+                $"{i}," + // StrokeIndex
+                $"{c.r:F4},{c.g:F4},{c.b:F4}," + // Color R, G, B
+                $"{currentCount}," + // Count
+                $"{c.a:F4}," + // ColorA
+                $"{stroke.BrushSize:F4}," + // BrushSize
+                $"{start.x:F4},{start.y:F4},{start.z:F4}," + // Start_X, Y, Z
+                $"{end.x:F4},{end.y:F4},{end.z:F4}," + // End_X, Y, Z
+                $"{totalUndoCount}," + // TotalUndoCount
+                $"{seasonName}" 
                 );
             }
 
-            // 4. 파일 저장 로직 (프로젝트 루트의 MusicGenerator_Server/ExportCSV 경로에 저장)
-
-            // Assets 폴더 경로에서 한 단계 상위로 이동하여 프로젝트 루트 폴더 얻기
+            // 5. 파일 저장 로직
             string projectRoot = Path.GetDirectoryName(Application.dataPath);
-
-            // 프로젝트 루트 폴더에서 MusicGenerator_Server/ExportCSV 폴더를 지정
             const string exportFolderName = "MusicGenerator_Server";
             const string subFolderName = "ExportCSV";
-
-            // 최종 저장 경로: .../프로젝트이름/MusicGenerator_Server/ExportCSV
             string exportDir = Path.Combine(projectRoot, exportFolderName, subFolderName);
 
             Directory.CreateDirectory(exportDir);
 
             const string baseName = "SketchCSV";
-
             string filePath = Path.Combine(exportDir, $"{baseName}.csv");
             int index = 1;
 
-            // 이름 충돌 시 순번 부여 (SketchCSV, SketchCSV(1), ...)
             while (File.Exists(filePath))
             {
                 filePath = Path.Combine(exportDir, $"{baseName}({index}).csv");
@@ -698,7 +701,6 @@ end_header");
             try
             {
                 File.WriteAllText(filePath, sb.ToString(), Encoding.UTF8);
-
                 Debug.Log($"CSV Exported to custom path: {filePath}");
             }
             catch (Exception e)

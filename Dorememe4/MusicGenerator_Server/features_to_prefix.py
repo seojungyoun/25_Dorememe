@@ -1,6 +1,7 @@
 from typing import List, Dict
 from pathlib import Path
 import pandas as pd
+import numpy as np
 import math
 
 def read_csv_strict(path: str) -> pd.DataFrame:
@@ -9,7 +10,7 @@ def read_csv_strict(path: str) -> pd.DataFrame:
 def get_season(df):
     season_col = None
     for c in df.columns:
-        if c.strip().lower() == "season":
+        if c.strip().lower() == "selectedsceneid":
             season_col = c
             break
     if season_col is None or len(df) == 0:
@@ -59,34 +60,48 @@ def session_to_features(df: pd.DataFrame, season: str) -> Dict[str, object]:
     idx_max = df["Count"].astype(float).idxmax()
     dom = df.loc[idx_max]
 
-    r_val = float(dom["ColorR"])
-    g_val = float(dom["ColorG"])
-    b_val = float(dom["ColorB"])
+    r_i = float(dom["ColorR"])
+    g_i = float(dom["ColorG"])
+    b_i = float(dom["ColorB"])
 
-    if max(r_val, g_val, b_val) <= 1.0:
-        r_i = int(round(r_val * 255))
-        g_i = int(round(g_val * 255))
-        b_i = int(round(b_val * 255))
-    else:
-        r_i = int(round(r_val))
-        g_i = int(round(g_val))
-        b_i = int(round(b_val))
+    mask = (
+        (df["ColorR"] == r_i) &
+        (df["ColorG"] == g_i) &
+        (df["ColorB"] == b_i)
+    )
+    a_i = float(df.loc[mask, "ColorA"].astype(float).median())
+
+    if "ColorA" in df_sorted.columns:
+        alpha_series = df_sorted["ColorA"].astype(float)
+
+    if "BrushSize" in df_sorted.columns:
+        brush_series = df_sorted["BrushSize"].astype(float)
 
     # KEY
-    r = r_i / 255.0
-    g = g_i / 255.0
-    b = b_i / 255.0
-    yb = (r + g) / 2.0 - b # yellow - blue
-    rg = r - g
-    angle = math.atan2(rg, yb) # opponent color space
-    if angle < 0:
-        angle += 2 * math.pi
-    sector = int(round(angle / (2 * math.pi / 12))) % 12
-    KEY_NAMES = ["D","A","E","B","F#","C#","G#","D#","A#","F","C","G"] # 스크랴 빈이 색-KEY
-    key_name = KEY_NAMES[sector]
     _KEYS = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"]
     _KEY2IDX = {k:i for i,k in enumerate(_KEYS)}
-    key = _KEY2IDX[key_name]
+    BASE = {
+        (1.0, 0.0, 0.0): "C", # red
+        (1.0, 0.9216, 0.0157): "D", # yellow
+        (0.0, 1.0, 0.0): "A", # green
+        (0.0, 1.0, 1.0): "E", # cyan
+        (0.0, 0.0, 1.0): "B", # blue
+    } # Scriabin Key
+    eps = 1e-4
+    base = None
+    for (tr, tg, tb), k in BASE.items():
+        # picked rgb - target rgb
+        if abs(r_i - tr) <= eps and abs(g_i - tg) <= eps and abs(b_i - tb) <= eps:
+            base = k
+            break
+    if base is None:
+        base = "C"
+
+    offset = int(round(a_i * 4)) - 2
+    idx = (_KEY2IDX[base] + offset) % 12
+    key_name = _KEYS[idx]
+    key = idx
+    print("[DEBUG] base:", base, "alpha:", a_i, "offset:", offset, "key_name:", key_name)
 
     # MODE
     if season in {"spring", "summer"}:
@@ -95,19 +110,10 @@ def session_to_features(df: pd.DataFrame, season: str) -> Dict[str, object]:
         mode_major = False
 
     # BPM
-    brightness = 0.299 * r_i + 0.587 * g_i + 0.114 * b_i # Luma, 표준 밝기 계산식
-    brightness_norm = (brightness - 30) / (230 - 30) # normalization
-    brightness_norm = max(0.0, min(1.0, brightness_norm)) # clamp
-    if brightness_norm < 0.2:
-        bpm = 60
-    elif brightness_norm < 0.4:
-        bpm = 80
-    elif brightness_norm < 0.6:
-        bpm = 100
-    elif brightness_norm < 0.8:
-        bpm = 120
-    else:
-        bpm = 140
+    luma = (0.299 * (r_i**2) + 0.587 * (g_i**2) + 0.114 * (b_i**2)) # 0~1
+    raw_bpm = 60 + luma * (140 - 60) # 60~140
+    allowed = [60, 80, 100, 120, 140]
+    bpm = min(allowed, key=lambda t: abs(t - raw_bpm))
 
     # REG
     dx = end_x - start_x
@@ -125,37 +131,51 @@ def session_to_features(df: pd.DataFrame, season: str) -> Dict[str, object]:
     # RHY
     undo_total = float(last.get("TotalUndoCount", 0.0))
     stroke_count = len(df_sorted)
-    actions = undo_total + stroke_count
-    if actions <= 0:
-        ratio = 0.0
-    else:
-        ratio = undo_total / actions # 전체 actions 중 undo 비율
-    rhy = int(round(2.0 * ratio))
+    ratio = undo_total / max(1.0, stroke_count) # 전체 중 undo 비율
+    rhy = int(round(2.0 * min(1.0, ratio)))
     rhy = max(0, min(2, rhy))
 
     # DENS
-    THIN  = 0.30
-    THICK = 0.70
+    BRUSH_MIN  = 0.001
+    BRUSH_MAX = 0.05
+    dens = 1
     if "BrushSize" in df_sorted.columns:
-        brush_size = float(df_sorted.iloc[-1]["BrushSize"]) # 보류
-        if brush_size < THIN:
-            dens = 0
-        elif brush_size < THICK:
-            dens = 1
+        if len(brush_series):
+            bs_min = float(brush_series.min())
+            bs_max = float(brush_series.max())
+            if bs_min == bs_max:
+                bs = bs_min
+            else:
+                bins = np.linspace(BRUSH_MIN, BRUSH_MAX, 11) # edges
+                hist, edges = np.histogram(brush_series, bins=bins)
+                k = int(hist.argmax())
+                bs = float((edges[k] + edges[k+1]) / 2.0)
+                
+            bs = max(BRUSH_MIN, min(BRUSH_MAX, bs))
+            norm_bs = (bs - BRUSH_MIN) / (BRUSH_MAX - BRUSH_MIN)
+            norm_bs = max(0.0, min(1.0, norm_bs))
+            
+            if norm_bs < (1.0/3.0):
+                dens = 0
+            elif norm_bs < (2.0/3.0):
+                dens = 1
+            else:
+                dens = 2
         else:
-            dens = 2
+            dens = 1
 
     # CHR
-    TRANSPARENT = 0.40
-    OPAQUE = 0.60
-    if "ColorA" in df_sorted.columns:
-        alpha = float(df_sorted["ColorA"].median())
-        if alpha < TRANSPARENT:
-            chr = 0
-        elif alpha > OPAQUE:
-            chr = 2
+    chro = 1
+    if (brush_series is not None) and (alpha_series is not None) and len(brush_series) and len(alpha_series):
+        idx_max = brush_series.idxmax()
+        a = float(alpha_series.loc[idx_max])
+        a = max(0.0, min(1.0, a))
+        if a < (1.0/3.0):
+            chro = 0
+        elif a < (2.0/3.0):
+            chro = 1
         else:
-            chr = 1
+            chro = 2
 
     pos = 0
 
@@ -166,6 +186,6 @@ def session_to_features(df: pd.DataFrame, season: str) -> Dict[str, object]:
         "reg": reg,
         "rhy_idx": rhy,
         "dens_idx": dens,
-        "chr_idx": chr,
+        "chr_idx": chro,
         "pos_idx": pos,
     }

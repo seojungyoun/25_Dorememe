@@ -101,13 +101,11 @@ def prefix_to_text(prefix, include_tokens=False, season=None, variety=True):
         ch = 1
     chr_map = ["mostly diatonic lines", "occasional chromatic passing tones", "frequent chromatic runs"]
     chr_txt = chr_map[ch]
-    
-    ##
-    style_txt = None
-    ##
 
     # Season
-    season_txt = None
+    season_txt = ""
+    style_txt = ""
+    
     if isinstance(season, str):
         s = season.strip().lower()
         season_map = {
@@ -153,8 +151,7 @@ def prefix_to_text(prefix, include_tokens=False, season=None, variety=True):
         "light arrangement",
     ]
 
-    # base = ", ".join(parts) //parts 리스트를 ", ".join()으로 결합하기 전에, None 값을 모두 제거하여 유효한 문자열 항목만 남겨야 함
-    base = ", ".join([p for p in parts if p is not None])
+    base = ", ".join(parts)
 
     if include_tokens:
         tok = " ".join([
