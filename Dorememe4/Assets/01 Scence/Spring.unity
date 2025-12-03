@@ -2784,8 +2784,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uACC4\uC808\uBCC4 \uC0C1\uD669\uC744 \uC120\uD0DD\uD558\uC5EC \uB2F9\uC2E0\uC758
-    \uACC4\uC808\uC744 \uADF8\uB824\uBCF4\uC138\uC694!"
+  m_text: "\uACC4\uC808\uBCC4 \uD14C\uB9C8\uB97C \uC120\uD0DD\uD574 \uB098\uB9CC\uC758
+    \uACF5\uAC04\uC744 \uAFB8\uBA70 \uBCF4\uC138\uC694!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fdc4750b6ebada849b197e4b1be944ba, type: 2}
   m_sharedMaterial: {fileID: 8463330155951308215, guid: fdc4750b6ebada849b197e4b1be944ba, type: 2}
